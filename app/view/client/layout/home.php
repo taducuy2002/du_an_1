@@ -1,6 +1,7 @@
 
 <!-- WRAPPER START -->
-CÁC THƯƠNG HIỆU KHÁC
+1000.000
+
 <!-- Mobile-header-top Start -->
 <div class="mobile-header-top d-block d-md-none">
     <div class="container">
@@ -32,7 +33,7 @@ CÁC THƯƠNG HIỆU KHÁC
             <div class="row">
                 <div class="col-md-4 offset-md-4 col-7">
                     <div class="logo text-md-center">
-                        <a href="index.php"><img src="img/logo/logo1.png" alt="" style="width:130px"></a>
+                        <a href="index.php"><img src="img/logo/logo2.png" alt="" style="width:130px"></a>
                     </div>
                 </div>
                 <div class="col-md-4 col-5">
@@ -276,7 +277,7 @@ CÁC THƯƠNG HIỆU KHÁC
         <!-- Slider-banner start -->
         <div class="slider-banner">
             <div class="single-banner banner-1">
-                <a class="banner-thumb" href="#"><img src="img/banner/banner1.jfif" alt="" id="anhbanner"/></a>
+                <a class="banner-thumb" href="#"><img src="img/banner/banner1.jpg" alt="" id="anhbanner"/></a>
                 <span class="pro-label new-label">new</span>
                 <span class="price" id="tex1">$50.00</span>
                 <div class="banner-brief">
@@ -286,7 +287,7 @@ CÁC THƯƠNG HIỆU KHÁC
                 <a href="#" class="button-one font-16px" data-text="Buy now">Buy now</a>
             </div>
             <div class="single-banner banner-2">
-                <a class="banner-thumb" href="#"><img src="img/banner/banner2.jfif" alt="" id="anhbanner"/></a>
+                <a class="banner-thumb" href="#"><img src="img/banner/banner7.jpg" alt="" id="anhbanner"/></a>
                 <div class="banner-brief">
                     <h2 class="banner-title"><a href="#">New Product 2024</a></h2>
                     <p class="hidden-md hidden-sm d-none d-md-block">Lorem Ipsum is simply dummy text of the printing and types sate industry. Lorem Ipsum has been the industry.</p>
@@ -301,9 +302,9 @@ CÁC THƯƠNG HIỆU KHÁC
         <div class="slider-area">
             <div class="bend niceties preview-2">
                 <div id="ensign-nivoslider" class="slides">
-                    <img src="img/banner2.jfif" alt="" title="#slider-direction-1"  />
-                    <img src="img/banner2.jfif" alt="" title="#slider-direction-2"  />
-                    <img src="img/banner2.jfif" alt="" title="#slider-direction-3"  />
+                    <img src="img/banner/banner2.jpg" alt="" title="#slider-direction-1"  />
+                    <img src="img/banner/banner3.jpg" alt="" title="#slider-direction-2"  />
+                    <img src="img/banner/banner1.jpg" alt="" title="#slider-direction-3"  />
                 </div>
                 <!-- direction 1 -->
                 <div id="slider-direction-1" class="t-cn slider-direction">
@@ -441,7 +442,29 @@ CÁC THƯƠNG HIỆU KHÁC
                     <div class="single-product">
                         <div class="product-img">
                             <span class="pro-label new-label">new</span>
-                            <a href="single-product.html"><img src="img/product/3.jpg" alt="" /></a>
+                            <?php
+                            foreach ($listsp as $sp) {
+                               extract($sp);
+                               $loadsp = "index.php?act=sanpham&id".$id;
+                               echo ' <a href="'.$loadsp.'"><img src="" alt="" />'.$img.'</a>
+                            <div class="product-action clearfix">
+                                <a href="wishlist.html" data-bs-toggle="tooltip" data-placement="top" title="Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
+                                <a href="#" data-bs-toggle="modal"  data-bs-target="#productModal" title="Quick View"><i class="zmdi zmdi-zoom-in"></i></a>
+                                <a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
+                                <a href="cart.html" data-bs-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-info clearfix">
+                            <div class="fix">
+                                <h4 class="post-title floatleft"><a href="#">'.$ten_san_pham.'</a></h4>
+        
+                            </div>
+                            <div class="fix">
+                                <span class="pro-price floatleft">'.$gia.'</span>
+                                <span class="pro-rating floatright">';
+                            }
+                            ?>
+                            <!-- <a href="single-product.html"><img src="img/product/3.jpg" alt="" /></a>
                             <div class="product-action clearfix">
                                 <a href="wishlist.html" data-bs-toggle="tooltip" data-placement="top" title="Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
                                 <a href="#" data-bs-toggle="modal"  data-bs-target="#productModal" title="Quick View"><i class="zmdi zmdi-zoom-in"></i></a>
@@ -461,7 +484,7 @@ CÁC THƯƠNG HIỆU KHÁC
                                     <a href="#"><i class="zmdi zmdi-star"></i></a>
                                     <a href="#"><i class="zmdi zmdi-star"></i></a>
                                     <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                    <a href="#"><i class="zmdi zmdi-star-half"></i></a>
+                                    <a href="#"><i class="zmdi zmdi-star-half"></i></a> -->
                                 </span>
                             </div>
                         </div>
@@ -481,7 +504,7 @@ CÁC THƯƠNG HIỆU KHÁC
                 <!-- single-discount-product start -->
                 <div class="col-lg-12">
                     <div class="discount-product">
-                        <img src="img/banner1.jfif" alt="" />
+                        <img src="img/banner/banner7.jpg" alt="" />
                         <div class="discount-img-brief">
                             <div class="onsale">
                                 <span class="onsale-text">On Sale</span>
@@ -499,7 +522,7 @@ CÁC THƯƠNG HIỆU KHÁC
                 <!-- single-discount-product start -->
                 <div class="col-lg-12">
                     <div class="discount-product">
-                        <img src="img/banner2.jfif" alt="" />
+                        <img src="img/banner/banner4.jpg" alt="" />
                         <div class="discount-img-brief">
                             <div class="onsale">
                                 <span class="onsale-text">On Sale</span>
@@ -517,7 +540,7 @@ CÁC THƯƠNG HIỆU KHÁC
                 <!-- single-discount-product start -->
                 <div class="col-lg-12">
                     <div class="discount-product">
-                        <img src="img/banner3.jfif" alt="" />
+                        <img src="img/banner/banner5.jpg" alt="" />
                         <div class="discount-img-brief">
                             <div class="onsale">
                                 <span class="onsale-text">On Sale</span>
@@ -535,7 +558,7 @@ CÁC THƯƠNG HIỆU KHÁC
                 <!-- single-discount-product start -->
                 <div class="col-lg-12">
                     <div class="discount-product">
-                        <img src="img/banner4.jfif" alt="" />
+                        <img src="img/banner/banner6.jpg" alt="" />
                         <div class="discount-img-brief">
                             <div class="onsale">
                                 <span class="onsale-text">On Sale</span>
@@ -569,17 +592,10 @@ CÁC THƯƠNG HIỆU KHÁC
             <div class="col-lg-12 text-center">
                 <!-- Nav tabs -->
                 <ul class="tab-menu nav clearfix">
-                      <?php
-                      foreach ($listdm as $dm) {
-                        extract($dm);
-                        $linkdm = "index.php?act=sanpham&id".$id;
-                        echo '<li><a href="' .$linkdm. '">' .$ten_danh_muc. ' </a></li>';
-                      }
-                      ?>      
-                    <!-- <li><a class="active" href="#new-arrivals" data-bs-toggle="tab">MLB</a></li>
+                    <li><a class="active" href="#new-arrivals" data-bs-toggle="tab">MLB</a></li>
                     <li><a href="#best-seller"  data-bs-toggle="tab">PUMA</a></li>
                     <li><a href="#most-view" data-bs-toggle="tab">GUCCI</a></li>
-                    <li><a href="#discounts" data-bs-toggle="tab">PROMAX</a></li> -->
+                    <li><a href="#discounts" data-bs-toggle="tab">PROMAX</a></li>
                 </ul>
             </div>
             <div class="col-lg-12">

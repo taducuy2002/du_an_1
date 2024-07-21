@@ -1,12 +1,12 @@
 <?php
 session_start();
-include "model/pdo.php";
+include "view/model/pdo.php";
 include "view/client/golobal.php";
-include "model/clientmodel/client.php";
+include "view/model/clientmodel/client.php";
 include "view/client/layout/header.php";
 include "view/client/layout/home.php";
-include "../../model/clientmodel/client.php";
 $listdm = loadAll_danhmuc();
+$listsp = loadAll_sanpham($kyw, $iddm);
 if(!isset($_SESSION['mycart'])){
     $_SESSION['mycart'] = [];
 }
