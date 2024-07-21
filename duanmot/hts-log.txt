@@ -1,0 +1,45 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 29 Jun 2024 09:08:35 at https://template.hasthemes.com/hurst-v1/hurst/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://template.hasthemes.com/hurst-v1/hurst/index.html -O1 "D:\duanmot\duanmot" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+19:04:54	Warning: 	Retry after error -4 (No data (connection closed)) at link https://template.hasthemes.com/hurst-v1/hurst/404.html (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:04:54	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/single-blog.html (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:04:54	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/single-blog-sidebar.html (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:04:54	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/about.html (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:04:56	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/contact.html (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:04:57	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/img/banner/1.jpg (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:04:57	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/img/banner/2.jpg (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:04:58	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/img/slider/slider-1/1.jpg (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:04:58	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/img/slider/slider-1/2.jpg (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:04:58	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/img/slider/slider-1/3.jpg (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:04:59	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/img/product/1.jpg (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:04:59	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/img/product/2.jpg (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:04:59	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/img/product/3.jpg (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:04:59	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/img/product/4.jpg (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:05:00	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/img/discount/1.jpg (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:05:00	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/img/discount/2.jpg (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:05:00	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/img/discount/3.jpg (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:05:00	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/img/discount/4.jpg (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:05:01	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/img/product/5.jpg (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:05:01	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/img/product/6.jpg (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:05:01	Warning: 	Retry after error -4 (Connect Error) at link https://template.hasthemes.com/hurst-v1/hurst/img/product/7.jpg (from https://template.hasthemes.com/hurst-v1/hurst/index.html)
+19:05:01	Error: 	"Not Found" (404) at link https://template.hasthemes.com/hurst-v1/hurst/css/images/ui-bg_inset-hard_100_fcfdfd_1x100.png (from https://template.hasthemes.com/hurst-v1/hurst/css/jquery-ui.min.css)
+19:05:01	Error: 	"Not Found" (404) at link https://template.hasthemes.com/hurst-v1/hurst/css/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png (from https://template.hasthemes.com/hurst-v1/hurst/css/jquery-ui.min.css)
+19:05:01	Error: 	"Not Found" (404) at link https://template.hasthemes.com/hurst-v1/hurst/css/images/ui-bg_glass_85_dfeffc_1x400.png (from https://template.hasthemes.com/hurst-v1/hurst/css/jquery-ui.min.css)
+19:05:01	Error: 	"Not Found" (404) at link https://template.hasthemes.com/hurst-v1/hurst/css/images/ui-bg_glass_75_d0e5f5_1x400.png (from https://template.hasthemes.com/hurst-v1/hurst/css/jquery-ui.min.css)
+19:05:01	Error: 	"Not Found" (404) at link https://template.hasthemes.com/hurst-v1/hurst/css/images/ui-bg_inset-hard_100_f5f8f9_1x100.png (from https://template.hasthemes.com/hurst-v1/hurst/css/jquery-ui.min.css)
+19:05:01	Error: 	"Not Found" (404) at link https://template.hasthemes.com/hurst-v1/hurst/css/images/ui-bg_glass_95_fef1ec_1x400.png (from https://template.hasthemes.com/hurst-v1/hurst/css/jquery-ui.min.css)
+19:05:01	Error: 	"Not Found" (404) at link https://template.hasthemes.com/hurst-v1/hurst/css/images/ui-icons_469bdd_256x240.png (from https://template.hasthemes.com/hurst-v1/hurst/css/jquery-ui.min.css)
+19:05:01	Error: 	"Not Found" (404) at link https://template.hasthemes.com/hurst-v1/hurst/css/images/ui-icons_d8e7f3_256x240.png (from https://template.hasthemes.com/hurst-v1/hurst/css/jquery-ui.min.css)
+19:05:01	Error: 	"Not Found" (404) at link https://template.hasthemes.com/hurst-v1/hurst/css/images/ui-icons_6da8d5_256x240.png (from https://template.hasthemes.com/hurst-v1/hurst/css/jquery-ui.min.css)
+19:05:01	Error: 	"Not Found" (404) at link https://template.hasthemes.com/hurst-v1/hurst/css/images/ui-icons_217bc0_256x240.png (from https://template.hasthemes.com/hurst-v1/hurst/css/jquery-ui.min.css)
+19:05:01	Error: 	"Not Found" (404) at link https://template.hasthemes.com/hurst-v1/hurst/css/images/ui-icons_f9bd01_256x240.png (from https://template.hasthemes.com/hurst-v1/hurst/css/jquery-ui.min.css)
+19:05:01	Error: 	"Not Found" (404) at link https://template.hasthemes.com/hurst-v1/hurst/css/images/ui-icons_2e83ff_256x240.png (from https://template.hasthemes.com/hurst-v1/hurst/css/jquery-ui.min.css)
+19:05:01	Error: 	"Not Found" (404) at link https://template.hasthemes.com/hurst-v1/hurst/css/images/ui-icons_cd0a0a_256x240.png (from https://template.hasthemes.com/hurst-v1/hurst/css/jquery-ui.min.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 9 hours 56 minutes 28 seconds : 195 links scanned, 160 files written (5207572 bytes overall) [2749613 bytes received at 76 bytes/sec], 3108942 bytes transferred using HTTP compression in 83 files, ratio 16%, 5.6 requests per connection
+(13 errors, 21 warnings, 0 messages)
