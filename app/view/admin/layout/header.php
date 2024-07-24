@@ -40,7 +40,7 @@
 
 
         <li class="">
-            <a href="index.php?act=listdm" ">
+            <a href="index.php?act=listdm">
                 <i class='bx bxs-category'></i>
                 <span class="text">Danh Mục</span>
             </a>

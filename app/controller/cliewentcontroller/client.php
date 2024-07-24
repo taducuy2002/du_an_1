@@ -1,12 +1,13 @@
 <?php
 session_start();
-include "view/model/pdo.php";
-include "view/client/golobal.php";
-include "view/model/clientmodel/client.php";
+include "model/pdo.php";
+include "view/client/global.php";
+include "model/clientmodel/client.php";
 include "view/client/layout/header.php";
-include "view/client/layout/home.php";
-$listdm = loadAll_danhmuc();
-$listsp = loadAll_sanpham($kyw, $iddm);
+$loadsp_dm = loadAll_danhmuc();
+$listsp = loadAll_sanpham_home();
+$spnew = loadAll_sanpham_top10();
+$spyt = loadAll_sanpham_yeuthich_top10();
 if(!isset($_SESSION['mycart'])){
     $_SESSION['mycart'] = [];
 }
@@ -14,9 +15,10 @@ if(isset($_GET['act'])){
     $act = $_GET['act'];
     switch ($act){
         // phần sản phẩm
-         case 'allsp':
-            $listsp = loadAll_san_pham('',0);
-            include "../../view/client/layout/xemsanpham/allsanpham.php";
+        // load tất cả sản phẩm
+         case 'allsanpham':
+            $listsp = loadAll_sanpham('', 0);
+            include "view/client/layout/xemsanpham/allsanpham.php";
             break;
          case "sanpham":
             if(isset($_POST['kyw']) && $_POST['kyw'] !=''){
@@ -24,17 +26,23 @@ if(isset($_GET['act'])){
             }else{
                 $kyw = '';
             }
-            if(isset($_GET['iddm']) && $_GET['iddm'] > 0){
-                $iddm = $_GET['iddm'];
+            if(isset($_GET['id']) && $_GET['id'] > 0){
+                $iddm = $_GET['id'];
             }else{
                 $iddm = 0;
             }
             $listsp = loadAll_san_pham($kyw, $iddm);
             $tendm= load_ten_danhmuc($iddm);
-            include "../../view/client/layout/xemsanpham/allsanpham_dm.php";
-
-
-        
+            include "view/client/layout/xemsanpham/sanpham_dm.php";
+        case "spchitiet":
+            if(isset($_GET['idsp'])){
+                $id = $_GET['idsp'];
+                $loadAll_pro = get_product_details($id);
+                $onesp= loadone_sanpham($id);
+                extract($onesp);
+                include "view/client/layout/xemsanpham/sanphamct.php";
+            }
+            break;
 
         default:
             # code...
@@ -42,7 +50,8 @@ if(isset($_GET['act'])){
 
     }
 }else{
-    include "../../view/client/layout/home.php";
+    include "view/client/layout/home.php";
+    include "view/client/layout/footer.php";
 }
-include "../../view/client/layout/footer.php";
+
 ?>

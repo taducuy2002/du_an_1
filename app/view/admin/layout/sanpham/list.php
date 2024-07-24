@@ -42,12 +42,12 @@
                 <input type="text" name="keyword">
                 <select name="iddm">
                   <option value="0" selected>Tất cả</option>
-                 <?php
-                 foreach ($list_danhmuc as $danh_muc) {
-                  extract($danh_muc);
-                  echo '<option value="'.$id.'">' .$ten_danh_muc. '</option>';
-                 }
-                 ?>
+                  <?php
+                  foreach ($list_danhmuc as $danh_muc) {
+                    extract($danh_muc);
+                    echo '<option value="' . $id . '">' . $ten_danh_muc . '</option>';
+                  }
+                  ?>
                 </select><br>
                 <input type="submit" value="Tìm kiếm" name="btn" class="button">
               </form>
@@ -56,36 +56,36 @@
                   <tr>
                     <th>ID</th>
                     <th>Tên sản phẩm</th>
-                    <th>Giá</th>
-                    <th>Img</th>
+                    <th>Giá sản phẩm</th>
+                    <th>Ảnh sản phẩm</th>
                     <th>Mô tả</th>
-                    <th>lượt xem</th>
-                    <th>danh mục</th>
+                    <th>Lượt xem</th>
+                    <th>Danh mục</th>
                     <th>Thao tác</th>
 
                   </tr>
-             <?php
-             foreach ($list_sanpham as $sanpham) {
-              extract($sanpham);
-              $suasp = "index.php?act=suasp&id=".$id;
-              $xoasp ="index.php?act=xoasp&id=".$id;
+                  <?php
+                  foreach ($list_sanpham as $sanpham) {
+                    extract($sanpham);
+                    $suasp = "index.php?act=suasp&id=" . $id;
+                    $xoasp = "index.php?act=xoasp&id=" . $id;
 
-              echo '<tr>
-              <td>' .$id.  '</td>
-              <td>' .$ten_san_pham. '</td>
-              <td>' .$gia. '</td>
-              <td><img src ="../../img/'.$img.'" style = "width: 100px;"></td>
-              <td>' .$mo_ta. '</td>
-              <td>' .$luot_xem. '</td>
-              <td>' .$id_danh_muc. '</td>
+                    echo '<tr>
+              <td>' . $id . '</td>
+              <td>' . $ten_san_pham . '</td>
+              <td>' . $gia . '</td>
+              <td><img src ="../../img/' . $img . '" style = "width: 100px;"></td>
+              <td>' . $mo_ta . '</td>
+              <td>' . $luot_xem . '</td>
+              <td>' . $id_danh_muc . '</td>
 
               <td>
-              <a href="'.$suasp.'"><input type="button" class="button" value="Sửa"></a>
-              <a href="'.$xoasp.'"><input type="button" class="button" value="Xóa"></a>
+              <a href="' . $suasp . '"><input type="button" class="button" value="Sửa"></a>
+              <a href="' . $xoasp . '"><input type="button" class="button" value="Xóa"></a>
               </td>
               </tr>';
-             }
-             ?>
+                  }
+                  ?>
 
                 </thead>
 

@@ -1,4 +1,3 @@
-
 <main>
     <div class="head-title">
         <div class="left">
@@ -20,45 +19,45 @@
         <li>
             <i class='bx bxs-calendar-check'></i>
             <span class="text">
-				<?php foreach ($count_bill as $key => $bill):
+                <?php foreach ($count_bill as $key => $bill):
                     extract($bill);
 
                     ?>
                     <h3>
-						<?= $bill['count'] ?>
-					</h3>
+                        <?= $bill['count'] ?>
+                    </h3>
                 <?php endforeach; ?>
 
-				<p>Đơn Hàng</p>
-			</span>
+                <p>Đơn Hàng</p>
+            </span>
         </li>
         <li>
             <i class='bx bxs-group'></i>
             <span class="text">
-				<?php foreach ($count_account as $key => $ac):
+                <?php foreach ($count_account as $key => $ac):
                     extract($ac);
 
                     ?>
                     <h3>
-						<?= $ac['count'] ?>
-					</h3>
+                        <?= $ac['count'] ?>
+                    </h3>
                 <?php endforeach; ?>
-				<p>Khách Hàng</p>
-			</span>
+                <p>Khách Hàng</p>
+            </span>
         </li>
         <li>
             <i class='bx bxs-dollar-circle'></i>
             <span class="text">
-				<?php foreach ($Sum_total as $key => $money):
+                <?php foreach ($Sum_total as $key => $money):
                     extract($money);
                     ?>
                     <h3>
-						<?= number_format($doanh_thu, 0, '.', ',') ?> $
-					</h3>
+                        <?= number_format($doanh_thu, 0, '.', ',') ?> $
+                    </h3>
 
                 <?php endforeach; ?>
-				<p>Tổng Doanh Thu</p>
-			</span>
+                <p>Tổng Doanh Thu</p>
+            </span>
         </li>
 
     </ul>
@@ -73,64 +72,64 @@
             </div>
             <table>
                 <thead>
-                <tr>
-                    <th>Khách Hàng</th>
-                    <th>Ngày</th>
-                    <th>Trạng Thái</th>
-                </tr>
+                    <tr>
+                        <th>Khách Hàng</th>
+                        <th>Ngày</th>
+                        <th>Trạng Thái</th>
+                    </tr>
                 </thead>
                 <tbody>
-                <?php foreach ($loadAll_bill_home as $key => $bill):
-                    extract($bill);
-                    $kh = $bill["ten_nguoi_nhan"] . '<br>
+                    <?php foreach ($loadAll_bill_home as $key => $bill):
+                        extract($bill);
+                        $kh = $bill["ten_nguoi_nhan"] . '<br>
                     	' . $bill["email_nguoi_nhan"];
-                    $trangthaidh = get_ttdh($bill["trang_thai"]);
-                    ?>
-                    <tr>
-                        <td>
-                            <p>
-                                <?= $kh ?>
-                            </p>
-                        </td>
-                        <td>
-                            <p>
-                                <?= $bill["ngay_dat_hang"] ?>
-                            </p>
-                        </td>
-                        <td>
-                            <!-- <select name="" id="" class=" <?php
-                            if ($bill["trang_thai"] == 0) {
-                                echo 'status completed';
-                            } elseif ($bill["trang_thai"] == 1) {
-                                echo 'status pending';
+                        $trangthaidh = get_ttdh($bill["trang_thai"]);
+                        ?>
+                        <tr>
+                            <td>
+                                <p>
+                                    <?= $kh ?>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    <?= $bill["ngay_dat_hang"] ?>
+                                </p>
+                            </td>
+                            <td>
+                                <!-- <select name="" id="" class=" <?php
+                                if ($bill["trang_thai"] == 0) {
+                                    echo 'status completed';
+                                } elseif ($bill["trang_thai"] == 1) {
+                                    echo 'status pending';
 
-                            } elseif ($bill["trang_thai"] == 2) {
-                                echo 'status cancel';
-                            } elseif ($bill["trang_thai"] == 3) {
-                                echo 'status process';
-                            } elseif ($bill["trang_thai"] == 4) {
-                                echo 'status bluecheck';
-                            } ?>">
-									<option value=""><?= $trangthaidh ?></option>
-								</select> -->
-                            <span class=" <?php
-                            if ($bill["trang_thai"] == 0) {
-                                echo 'status completed';
-                            } elseif ($bill["trang_thai"] == 1) {
-                                echo 'status pending';
+                                } elseif ($bill["trang_thai"] == 2) {
+                                    echo 'status cancel';
+                                } elseif ($bill["trang_thai"] == 3) {
+                                    echo 'status process';
+                                } elseif ($bill["trang_thai"] == 4) {
+                                    echo 'status bluecheck';
+                                } ?>">
+                                    <option value=""><?= $trangthaidh ?></option>
+                                </select> -->
+                                <span class=" <?php
+                                if ($bill["trang_thai"] == 0) {
+                                    echo 'status completed';
+                                } elseif ($bill["trang_thai"] == 1) {
+                                    echo 'status pending';
 
-                            } elseif ($bill["trang_thai"] == 2) {
-                                echo 'status cancel';
-                            } elseif ($bill["trang_thai"] == 3) {
-                                echo 'status process';
-                            } elseif ($bill["trang_thai"] == 4) {
-                                echo 'status bluecheck';
-                            } ?>">
-									<?= $trangthaidh ?>
-								</span>
-                        </td>
-                    </tr>
-                <?php endforeach; ?>
+                                } elseif ($bill["trang_thai"] == 2) {
+                                    echo 'status cancel';
+                                } elseif ($bill["trang_thai"] == 3) {
+                                    echo 'status process';
+                                } elseif ($bill["trang_thai"] == 4) {
+                                    echo 'status bluecheck';
+                                } ?>">
+                                    <?= $trangthaidh ?>
+                                </span>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
                 </tbody>
             </table>
         </div>

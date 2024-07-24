@@ -1,10 +1,11 @@
 <?php
-// function loadAll_sanpham_home()
-// {
-//     $sql = "SELECT * FROM san_pham ORDER BY RAND()";
-//     $listsp = pdo_query($sql);
-//     return $listsp;
-// }
+require_once "model/pdo.php";
+function loadAll_sanpham_home()
+{
+    $sql = "SELECT * FROM san_pham ORDER BY id desc limit 0,9";
+    $listsp = pdo_query($sql);
+    return $listsp;
+}
 function loadAll_danhmuc()
 {
     $sql = "SELECT * FROM danh_muc where 1 order by id desc";
@@ -33,5 +34,26 @@ function loadAll_sanpham($kyw, $iddm)
     $sql .= " order by san_pham.id desc";
     $listsp = pdo_query($sql);
     return $listsp;
+}
+function loadAll_sanpham_top10(){
+    $sql = "SELECT * FROM san_pham WHERE 1  order by id desc limit 0,10";
+    $listsp = pdo_query($sql);
+    return $listsp;
+}
+function loadAll_sanpham_yeuthich_top10()
+{
+    $sql = "SELECT * FROM san_pham ORDER BY luot_xem DESC LIMIT 8";
+    $listspyt = pdo_query($sql);
+    return $listspyt;
+}
+//biến thể
+function get_product_details($id) {
+    $sql = "SELECT ram, soluong FROM sanpham_bienthe WHERE id = ?";
+    return pdo_query($sql, $id);
+}
+function loadone_sanpham($id){
+    $sql = "SELECT * FROM san_pham WHERE id ='$id'";
+    $sp = pdo_query_one($sql);
+    return $sp;
 }
 ?>
