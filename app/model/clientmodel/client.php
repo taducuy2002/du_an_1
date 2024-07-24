@@ -56,4 +56,12 @@ function loadone_sanpham($id){
     $sp = pdo_query_one($sql);
     return $sp;
 }
+//phần client tài khoản 
+function insert_taikhoan($user, $password, $fullname, $ngaysinh, $phone, $email, $diachi)
+{
+
+    $sql = "INSERT INTO tai_khoan (id, ten_dang_nhap, mat_khau, ho_ten, ngay_sinh, so_dien_thoai, email, dia_chi)
+            VALUES(NULL, '$user', '$password', '$fullname', '$ngaysinh', '$phone', '$email', '$diachi')";
+    pdo_execute($sql);
+}
 ?>

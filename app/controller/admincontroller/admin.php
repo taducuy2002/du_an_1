@@ -5,6 +5,7 @@ include "../../model/adminmodel/binhluan.php";
 include "../../model/adminmodel/chucvu.php";
 include "../../model/adminmodel/danhmuc.php";
 include "../../model/adminmodel/sanpham.php";
+include "../../model/adminmodel/nguoidung.php";
 
 if (isset($_GET['act'])) {
     $act = $_GET['act'];
@@ -172,19 +173,6 @@ if (isset($_GET['act'])) {
             }
             $list_sanpham = loadall_sanpham();
             include '../../view/admin/layout/sanpham/list.php';
-            break;
-        case 'dsbl':
-            $listbinhluan = loadall_binhluan();
-            include "../../view/admin/layout/binhluan/list.php";
-            break;
-
-        // Xóa bình luận
-        case 'xoabl':
-            if (isset($_GET['idbl']) && ($_GET['idbl'] > 0)) {
-                delete_binhluan($_GET['idbl']);
-            }
-            $listbinhluan = loadall_binhluan();
-            include "../../view/admin/layout/binhluan/list.php";
             break;
         default:
             # code...

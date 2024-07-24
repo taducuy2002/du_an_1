@@ -1,7 +1,6 @@
 <?php
-session_start();
 include "model/pdo.php";
-include "view/client/global.php";
+include "view/client/golobal.php";
 include "model/clientmodel/client.php";
 include "view/client/layout/header.php";
 $loadsp_dm = loadAll_danhmuc();
@@ -34,6 +33,7 @@ if(isset($_GET['act'])){
             $listsp = loadAll_san_pham($kyw, $iddm);
             $tendm= load_ten_danhmuc($iddm);
             include "view/client/layout/xemsanpham/sanpham_dm.php";
+            break;
         case "spchitiet":
             if(isset($_GET['idsp'])){
                 $id = $_GET['idsp'];
@@ -43,15 +43,30 @@ if(isset($_GET['act'])){
                 include "view/client/layout/xemsanpham/sanphamct.php";
             }
             break;
+            /// Giỏ hàng
+            case "addtocart":
+                if(isset($_POST['addtocart']) && ($_POST['addtocart'])){
+                    $id = $_POST["id"];
+                $name = $_POST["name"];
+                $img = $_POST["img"];
+                $gia = $_POST["price"];
+                if (isset($_POST['soluong'])) {
+                    $soluong = $_POST['soluong'];
+                } else {
+                    $soluong = 1;
+                }
+                $tinhtien = $soluong * $gia;
+                array_push($_SESSION['mycart'], $spadd); // Thêm sản phẩm vào giỏ hàng
+            }
+            include "view/client/layout/quanlygiohang/giohang.php"; // Hiển thị lại trang giỏ hàng
+            break;
 
         default:
             # code...
             break;
-
     }
 }else{
-    include "view/client/layout/home.php";
-    include "view/client/layout/footer.php";
+    include "../../view/client/layout/home.php";
+    include "../../view/client/layout/footer.php";
 }
-
 ?>
