@@ -426,7 +426,7 @@
                             <div class="product-action">
                             <form action="index.php?act=addtocart" method="post">
                                 <input type="hidden" name="id" value="'.$id.'">
-                               <input type="hidden" name="img" value="'.$hinh.'">
+                               <input type="hidden" name="img" value="'.$img.'">
                                 <input type="hidden" name="name" value="'.$ten_san_pham.'">
                                <input type="hidden" name="price" value="'.$gia.'">
                                <input type="submit" name="addtocart" value="Add to Cart" class="buttonbtn"></a>
