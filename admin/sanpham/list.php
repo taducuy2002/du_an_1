@@ -74,7 +74,7 @@
               <td>' . $id . '</td>
               <td>' . $ten_san_pham . '</td>
               <td>' . $gia . '</td>
-              <td><img src ="../../img/' . $img . '" style = "width: 100px;"></td>
+              <td><img src ="../img/' . $img . '" style = "width: 100px;"></td>
               <td>' . $mo_ta . '</td>
               <td>' . $luot_xem . '</td>
               <td>' . $id_danh_muc . '</td>

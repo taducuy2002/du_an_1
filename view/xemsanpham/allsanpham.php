@@ -7,7 +7,7 @@
                                     <div class="row">
                                         <div class="col-md-4 offset-md-4 col-7">
                                             <div class="logo text-md-center">
-                                                <a href="index.html"><img src="img/logo/logo.png" alt="" /></a>
+                                                <a href="index.html"><img src="img/logo/logo2.png" alt="" /></a>
                                             </div>
                                         </div>
                                         <div class="col-md-4 col-5">
@@ -241,7 +241,7 @@
                                             </div>
                                             <div class="breadcumbs pb-15">
                                                 <ul>
-                                                    <li><a href="#">Home</a></li>
+                                                    <li><a href="index.php?act=home">Home</a></li>
                                                     <li>Product grid view</li>
                                                 </ul>
                                             </div>
@@ -282,7 +282,7 @@
                                                             <div class="single-product">
                                                                 <div class="product-img">
                                                                     <span class="pro-price-2">'.$gia.'</span>
-                                                                    <a href="'.$linksp.'"><img src="'.$hinh.'" alt="" /></a>
+                                                                    <a href="'.$linksp.'"><img src="'.$hinh.'" alt="" style="width:300px;height:300px"/></a>
                                                                 </div>
                                                                 <div class="product-info clearfix text-center">
                                                                     <div class="fix">

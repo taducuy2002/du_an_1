@@ -62,7 +62,7 @@
                     <td>' . $ten_danh_muc. '</td>
                     <td>' . $mo_ta . '</td>
                     <td>' . $trang_thai . '</td>
-                    <td><img src="../../img/' . $img . '" style="width: 100px;"></td>
+                    <td><img src="../img/' . $img . '" style="width: 100px;"></td>
                     <td>
                     <a href="' . $suadm . '"><input type="button" class="button" value="Sửa"></a>  
                     <a href="' . $xoadm . '"><input type="button" class="button" value="Xóa"></a>
