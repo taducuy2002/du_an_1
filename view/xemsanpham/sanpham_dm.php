@@ -1,355 +1,579 @@
-<body class="sticky-header">
-    <a href="#top" class="back-to-top" id="backto-top"><i class="fal fa-arrow-up"></i></a>
-    <header class="header axil-header header-style-1">
-        <div class="axil-header-top">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-sm-6">
-                        <div class="header-top-dropdown">
-                            <div class="dropdown">
-                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    English
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">English</a></li>
-                                    <li><a class="dropdown-item" href="#">Arabic</a></li>
-                                    <li><a class="dropdown-item" href="#">Spanish</a></li>
-                                </ul>
+<div class="wrapper bg-dark-white">
+                        <!-- HEADER-AREA START -->
+                        <header id="sticky-menu" class="header header-2">
+                            <div class="header-area">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-4 offset-md-4 col-7">
+                                            <div class="logo text-md-center">
+                                                <a href="index.html"><img src="img/logo/logo2.png" alt="" /></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-5">
+                                            <div class="mini-cart text-end">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="dropdown">
-                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    USD
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">USD</a></li>
-                                    <li><a class="dropdown-item" href="#">AUD</a></li>
-                                    <li><a class="dropdown-item" href="#">EUR</a></li>
-                                </ul>
+                            <!-- MAIN-MENU START -->
+                            <div class="menu-toggle menu-toggle-2 hamburger hamburger--emphatic d-none d-md-block">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="header-top-link">
-                            <ul class="quick-link">
-                                <li><a href="#">Help</a></li>
-                                <li><a href="sign-up.html">Join Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Start Mainmenu Area  -->
-        <div id="axil-sticky-placeholder"></div>
-        <div class="axil-mainmenu">
-            <div class="container">
-                <div class="header-navbar">
-                    <div class="header-brand">
-                        <a href="index.php" class="logo logo-dark">
-                            <img src="views/Client/assets/images/logo/logo.png" alt="Site Logo">
-                        </a>
-                        <a href="index.php" class="logo logo-light">
-                            <img src="views/Client/assets/images/logo/logo-light.png" alt="Site Logo">
-                        </a>
-                    </div>
-                    <div class="header-main-nav">
-                        <!-- Start Mainmanu Nav -->
-                        <nav class="mainmenu-nav">
-                            <button class="mobile-close-btn mobile-nav-toggler"><i class="fas fa-times"></i></button>
-                            <div class="mobile-nav-brand">
-                                <a href="index.php" class="logo">
-                                    <img src="views/Client/assets/images/logo/logo.png" alt="Site Logo">
-                                </a>
-                            </div>
-                            <ul class="mainmenu">
-                                <li><a href="index.php?">Trang chủ</a></li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Danh mục sản phẩm</a>
-                                    <ul class="axil-submenu">
-                                        <?php
-                                        foreach ($listdm as $dm) {
-                                            extract($dm);
-                                            $linkdm = "index.php?act=sanpham&id=" . $id;
-                                            echo '<li><a href="' . $linkdm . '">' . $ten_danh_muc . '</a></li>';
-                                        }
-                                        ?>
+                            <div class="main-menu  d-none d-md-block">
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.html">home</a>
+                                            <div class="sub-menu menu-scroll">
+                                                <ul>
+                                                    <li class="menu-title">Page's</li>
+                                                    <li><a href="index.html">Home Version 1</a></li>
+                                                    <li><a href="index-2.html">Home Version 2</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="shop.html">products</a>
+                                            <div class="mega-menu menu-scroll">
+                                                <div class="table">
+                                                    <div class="table-cell">
+                                                        <div class="half-width">
+                                                            <ul>
+                                                                <li class="menu-title">best brands</li>
+                                                                <li><a href="#">henning koppel</a></li>
+                                                                <li><a href="#">jehs + Laub</a></li>
+                                                                <li><a href="#">vicke lindstrand</a></li>
+                                                                <li><a href="#">don chadwick</a></li>
+                                                                <li><a href="#">akiko kuwahata</a></li>
+                                                                <li><a href="#">barbro berlin</a></li>
+                                                                <li><a href="#">cecilia hall</a></li>
+                                                                <li><a href="#">don chadwick</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="half-width">
+                                                            <ul>
+                                                                <li class="menu-title">popular brands</li>
+                                                                <li><a href="#">akiko kuwahata</a></li>
+                                                                <li><a href="#">barbro berlin</a></li>
+                                                                <li><a href="#">cecilia hall</a></li>
+                                                                <li><a href="#">don chadwick</a></li>
+                                                                <li><a href="#">henning koppel</a></li>
+                                                                <li><a href="#">jehs + Laub</a></li>
+                                                                <li><a href="#">vicke lindstrand</a></li>
+                                                                <li><a href="#">don chadwick</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="full-width">
+                                                            <div class="mega-menu-img">
+                                                                <a href="single-product.html"><img src="img/megamenu/1.jpg" alt="" /></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pb-80"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">Shortcodes</a>
+                                            <div class="sub-menu menu-scroll">
+                                                <ul>
+                                                    <li class="menu-title">Shortcodes</li>
+                                                    <li><a href="elements-accordions.html">Accordion</a></li>
+                                                    <li><a href="elements-toggles.html">Toggles</a></li>
+                                                    <li><a href="elements-tab.html">Tab</a></li>
+                                                    <li><a href="elements-product-tab.html">Product Tab</a></li>
+                                                    <li><a href="elements-product-tab-2.html">Product Tab 2</a></li>
+                                                    <li><a href="elements-carousel.html">product carousel</a></li>
+                                                    <li><a href="elements-carousel-2.html">product carousel 2</a></li>
+                                                    <li><a href="elements-featured-product.html">Featured Product</a></li>
+                                                    <li><a href="elements-featured-product-2.html">Featured Product 2</a></li>
+                                                    <li><a href="elements-button.html">Button</a></li>
+                                                    <li><a href="elements-table.html">Table</a></li>
+                                                    <li><a href="elements-progress-bars.html">Progress Bar</a></li>
+                                                    <li><a href="elements-blog.html">Blog</a></li>
+                                                    <li><a href="elements-blog-2.html">Blog - 2</a></li>
+                                                    <li><a href="elements-team.html">Team</a></li>
+                                                    <li><a href="elements-footer.html">Footer</a></li>
+                                                    <li><a href="elements-footer-2.html">Footer 2</a></li>
+                                                    <li><a href="elements-map.html">Map</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="shop-sidebar.html">accesories</a></li>
+                                        <li><a href="shop-list.html">lookbook</a></li>
+                                        <li><a href="blog.html">blog</a></li>
+                                        <li><a href="#">pages</a>
+                                            <div class="sub-menu menu-scroll">
+                                                <ul>
+                                                    <li class="menu-title">Page's</li>
+                                                    <li><a href="shop.html">Shop</a></li>
+                                                    <li><a href="shop-sidebar.html">Shop Sidebar</a></li>
+                                                    <li><a href="shop-grid-right-sidebar.html">Shop Right Sidebar</a></li>
+                                                    <li><a href="shop-list.html">Shop List</a></li>
+                                                    <li><a href="shop-list-right-sidebar.html">Shop List right sidebar</a></li>
+                                                    <li><a href="single-product.html">Single Product</a></li>
+                                                    <li><a href="single-product-sidebar.html">Single Product Sidebar</a></li>
+                                                    <li><a href="cart.html">Shopping Cart</a></li>
+                                                    <li><a href="wishlist.html">Wishlist</a></li>
+                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="order.html">Order</a></li>
+                                                    <li><a href="login.html">login / Registration</a></li>
+                                                    <li><a href="my-account.html">My Account</a></li>
+                                                    <li><a href="404.html">404</a></li>
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="single-blog.html">Single Blog</a></li>
+                                                    <li><a href="single-blog-sidebar.html">Single Blog Sidebar</a></li>
+                                                    <li><a href="about.html">About Us</a></li>
+                                                    <li><a href="contact.html">Contact</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="about.html">about us</a></li>
+                                        <li><a href="contact.html">contact</a></li>
                                     </ul>
-                                </li>
-
-                                <li><a href="index.php?act=allsanpham">Sản phẩm</a></li>
-
-
-                                <li><a href="index.php?act=baiviet">Bài viết</a></li>
-                                <li><a href="index.php?act=lienhe">Liên hệ</a></li>
-                            </ul>
-                        </nav>
-                        <!-- End Mainmanu Nav -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Mainmenu Area -->
-    </header>
-    <main class="main-wrapper">
-        <!-- Start Breadcrumb Area  -->
-        <div class="axil-breadcrumb-area">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-8">
-                        <div class="inner">
-                            <ul class="axil-breadcrumb">
-                                <li class="axil-breadcrumb-item"><a href="index.php">Home</a></li>
-                            </ul>
-                            <h1 class="title">Sản phẩm: <?= $tendm ?></h1>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-4">
-                        <div class="inner">
-                            <div class="bradcrumb-thumb">
-                                <img src="views/Client/assets/images/product/product-45.png" alt="Image">
+                                </nav>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Breadcrumb Area  -->
-        <!-- Start Shop Area  -->
-        <div class="axil-shop-area axil-section-gap bg-color-white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="axil-shop-top">
-                            <div class="row">
-                                <div class="col-lg-9">
-                                    <div class="category-select">
+                            <!-- MAIN-MENU END -->
+                        </header>
+                        <!-- HEADER-AREA END -->
+                        <!-- Mobile-menu start -->
+                        <div class="mobile-menu-area">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-12 d-block d-md-none">
+                                        <div class="mobile-menu">
+                                            <nav id="dropdown">
+                                                <ul>
+                                                    <li><a href="index.html">home</a>
+                                                        <ul>
+                                                            <li><a href="index.html">Home Version 1</a></li>
+                                                            <li><a href="index-2.html">Home Version 2</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="shop.html">products</a></li>
+                                                    <li><a href="shop-sidebar.html">accesories</a></li>
+                                                    <li><a href="shop-list.html">lookbook</a></li>
+                                                    <li><a href="blog.html">blog</a></li>
+                                                    <li><a href="#">pages</a>
+                                                        <ul>
+                                                            <li><a href="shop.html">Shop</a></li>
+                                                            <li><a href="shop-sidebar.html">Shop Sidebar</a></li>
+                                                            <li><a href="shop-list.html">Shop List</a></li>
+                                                            <li><a href="single-product.html">Single Product</a></li>
+                                                            <li><a href="single-product-sidebar.html">Single Product Sidebar</a></li>
+                                                            <li><a href="cart.html">Shopping Cart</a></li>
+                                                            <li><a href="wishlist.html">Wishlist</a></li>
+                                                            <li><a href="checkout.html">Checkout</a></li>
+                                                            <li><a href="order.html">Order</a></li>
+                                                            <li><a href="login.html">login / Registration</a></li>
+                                                            <li><a href="my-account.html">My Account</a></li>
+                                                            <li><a href="404.html">404</a></li>
+                                                            <li><a href="blog.html">Blog</a></li>
+                                                            <li><a href="single-blog.html">Single Blog</a></li>
+                                                            <li><a href="single-blog-sidebar.html">Single Blog Sidebar</a></li>
+                                                            <li><a href="about.html">About Us</a></li>
+                                                            <li><a href="contact.html">Contact</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="about.html">about us</a></li>
+                                                    <li><a href="contact.html">contact</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row row--15">
-                    <?php
-                    foreach ($listsp as $sp) {
-                        extract($sp);
-                        $hinh = $img_path . $img;
-                        $linksp = "index.php?act=spchitiet&idsp=" . $id;
-                        echo ' <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="axil-product product-style-one has-color-pick mt--40">
-                            <div class="thumbnail">
-                                <a href="' . $linksp . '">
-                                    <img src="' . $hinh . '" style="width: 290px; height: 270px;">
-                                </a>
-                                <div class="product-hover-action">
-                                    <ul class="cart-action">
-                                        
-                                        <li class="select-option"> <form action="index.php?act=addtocart" method="post">
-                                        <input type="hidden" name="id" value="' . $id . '">
-                                        <input type="hidden" name="img" value="' . $img . '">
-                                        <input type="hidden" name="name" value="' . $ten_san_pham . '">
-                                        <input type="hidden" name="price" value="' . $gia . '">
-                                        <input type="submit" name="addtocart" value="Add to Cart">
-                                        </form></li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <h5 class="title"><a href="' . $linksp . '">' . $ten_san_pham . '</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price current-price">' . $gia . '$</span>
-
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>';
-                    }
-                    ?>
-                    <!-- End Single Product  -->
-                </div>
-            </div>
-            <!-- End .container -->
-        </div>
-        <!-- End Shop Area  -->
-
-    </main>
-
-    <div class="service-area">
-        <div class="container">
-            <div class="row row-cols-xl-4 row-cols-sm-2 row-cols-1 row--20">
-                <div class="col">
-                    <div class="service-box service-style-2">
-                        <div class="icon">
-                            <img src="views/Client/assets/images/icons/service1.png" alt="Service">
-                        </div>
-                        <div class="content">
-                            <h6 class="title">Fast &amp; Secure Delivery</h6>
-                            <p>Tell about your service.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="service-box service-style-2">
-                        <div class="icon">
-                            <img src="views/Client/assets/images/icons/service2.png" alt="Service">
-                        </div>
-                        <div class="content">
-                            <h6 class="title">Money Back Guarantee</h6>
-                            <p>Within 10 days.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="service-box service-style-2">
-                        <div class="icon">
-                            <img src="views/Client/assets/images/icons/service3.png" alt="Service">
-                        </div>
-                        <div class="content">
-                            <h6 class="title">24 Hour Return Policy</h6>
-                            <p>No question ask.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="service-box service-style-2">
-                        <div class="icon">
-                            <img src="views/Client/assets/images/icons/service4.png" alt="Service">
-                        </div>
-                        <div class="content">
-                            <h6 class="title">Pro Quality Support</h6>
-                            <p>24/7 Live support.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Start Footer Area  -->
-    <footer class="axil-footer-area footer-style-2">
-        <!-- Start Footer Top Area  -->
-        <div class="footer-top separator-top">
-            <div class="container">
-                <div class="row">
-                    <!-- Start Single Widget  -->
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="axil-footer-widget">
-                            <h5 class="widget-title">Support</h5>
-                            <!-- <div class="logo mb--30">
-                            <a href="index.html">
-                                <img class="light-logo" src="assets/images/logo/logo.png" alt="Logo Images">
-                            </a>
-                        </div> -->
-                            <div class="inner">
-                                <p>13 phố Trịnh Văn Bô <br>
-                                    phường Phương Canh, Nam Từ Liêm <br>
-                                    TP Hà Nội.
-                                </p>
-                                <ul class="support-list-item">
-                                    <li><a href="#"><i class="fal fa-envelope-open"></i> tunvph36486@fpt.edu.vn</a></li>
-                                    <li><a href="#"><i class="fal fa-phone-alt"></i> 0967725130</a></li>
-                                    <!-- <li><i class="fal fa-map-marker-alt"></i> 685 Market Street,  <br> Las Vegas, LA 95820, <br> United States.</li> -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Widget  -->
-                    <!-- Start Single Widget  -->
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="axil-footer-widget">
-                            <h5 class="widget-title">Account</h5>
-                            <div class="inner">
-                                <ul>
-                                    <li><a href="my-account.html">My Account</a></li>
-                                    <li><a href="index.php?act=dangnhap1">Login / Register</a></li>
-                                    <li><a href="cart.html">Cart</a></li>
-                                    <li><a href="wishlist.html">Wishlist</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Widget  -->
-                    <!-- Start Single Widget  -->
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="axil-footer-widget">
-                            <h5 class="widget-title">Quick Link</h5>
-                            <div class="inner">
-                                <ul>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Terms Of Use</a></li>
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Widget  -->
-                    <!-- Start Single Widget  -->
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="axil-footer-widget">
-                            <h5 class="widget-title">Download App</h5>
-                            <div class="inner">
-                                <span>Save $3 With App & New User only</span>
-                                <div class="download-btn-group">
-                                    <div class="qr-code">
-                                        <img src="views/Client/assets/images/others/qr.png" alt="Axilthemes">
-                                    </div>
-                                    <div class="app-link">
-                                        <a href="#">
-                                            <img src="views/Client/assets/images/others/app-store.png" alt="App Store">
-                                        </a>
-                                        <a href="#">
-                                            <img src="views/Client/assets/images/others/play-store.png" alt="Play Store">
-                                        </a>
+                        <!-- Mobile-menu end -->
+                        <!-- HEADING-BANNER START -->
+                        <div class="heading-banner-area overlay-bg">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="heading-banner">
+                                            <div class="heading-banner-title">
+                                                <h2>Product Grid View</h2>
+                                            </div>
+                                            <div class="breadcumbs pb-15">
+                                                <ul>
+                                                    <li><a href="index.php?act=home">Home</a></li>
+                                                    <li>Product grid view</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End Single Widget  -->
-                </div>
-            </div>
-        </div>
-        <!-- End Footer Top Area  -->
-        <!-- Start Copyright Area  -->
-        <div class="copyright-area copyright-default separator-top">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-4">
-                        <div class="social-share">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-discord"></i></a>
+                        <!-- HEADING-BANNER END -->
+                        <!-- PRODUCT-AREA START -->
+                        <div class="product-area pt-80 pb-80 product-style-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-9 col-sm-12 col-xs-12">
+                                        <!-- Shop-Content End -->
+                                        <div class="shop-content mt-tab-30 mt-xs-30">
+                                            <div class="product-option mb-30 clearfix">
+                                                <!-- Nav tabs -->
+                                                <ul class="shop-tab">
+                                                    <h1>Sản phẩm: <?=$tendm?></h1>
+                                                </ul>
+                                                
+                                            </div>
+                                            <!-- Tab panes -->
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="grid-view">                            
+                                                    <div class="row">
+                                                        <!-- //// code php sản phẩm -->
+                                                         <?php
+                                                         foreach ($listsp as $sp) {
+                                                            extract($sp);
+                                                            $hinh = $img_path . $img;
+                                                            $linksp="index.php?act=spchitiet&idsp=" .$id;
+                                                            echo '<div class="col-lg-4 col-md-6">
+                                                            <div class="single-product">
+                                                               <div class="product-img">
+                                                                <span class="pro-price-2">'.$gia.'</span>
+                                                                <span class="pro-label new-label">new</span>
+                                                               <a href="'.$linksp.'"><img src="'.$hinh.'" alt="" style="width:300px;height:200px;"/></a>
+                                                             <div class="product-action">
+                                                              <form action="index.php?act=addtocart" method="post">
+                                                               <input type="hidden" name="id" value="'.$id.'">
+                                                                <input type="hidden" name="img" value="'.$img.'">
+                                                               <input type="hidden" name="name" value="'.$ten_san_pham.'">
+                                                                 <input type="hidden" name="price" value="'.$gia.'">
+                                                                 <input type="submit" name="addtocart" value="Add to Cart" class="buttonbtn"></a>
+                                                               </form>
+                                                                  </div>
+                                                                 </div>
+                                                                
+                                                                <div class="product-info clearfix text-center">
+                                                                    <div class="fix">
+                                                                        <h4 class="post-title"><a href="#">'.$ten_san_pham.'</a></h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>';
+                                                         }
+                                                         ?>
+                                                    
+                                                         <!-- <div class="col-lg-4 col-md-6">
+                                                            <div class="single-product">
+                                                                <div class="product-img">
+                                                                    <span class="pro-price-2">$ 56.20</span>
+                                                                    <a href="single-product.html"><img src="img/product/8.jpg" alt="" /></a>
+                                                                </div>
+                                                                <div class="product-info clearfix text-center">
+                                                                    <div class="fix">
+                                                                        <h4 class="post-title"><a href="#">dummy Product name</a></h4>
+                                                                    </div>
+                                                                    <div class="fix">
+                                                                        <span class="pro-rating">
+                                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
+                                                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="product-action clearfix">
+                                                                        <a href="wishlist.html" data-bs-toggle="tooltip" data-placement="top" title="Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
+                                                                        <a href="#" data-bs-toggle="modal"  data-bs-target="#productModal" title="Quick View"><i class="zmdi zmdi-zoom-in"></i></a>
+                                                                        <a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
+                                                                        <a href="cart.html" data-bs-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                        <!-- Single-product end -->
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                            <!-- Pagination start -->
+                                            <div class="shop-pagination  text-center">
+                                                <div class="pagination">
+                                                    <ul>
+                                                        <li><a href="#"><i class="zmdi zmdi-long-arrow-left"></i></a></li>
+                                                        <li><a href="#">01</a></li>
+                                                        <li><a class="active" href="#">02</a></li>
+                                                        <li><a href="#">03</a></li>
+                                                        <li><a href="#">04</a></li>
+                                                        <li><a href="#">05</a></li>
+                                                        <li><a href="#"><i class="zmdi zmdi-long-arrow-right"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- Pagination end -->
+                                        </div>
+                                        <!-- Shop-Content End -->
+                                    </div>
+                                    <div class="col-md-3 col-sm-12 col-xs-12">
+                                        <!-- Widget-Search start -->
+                                        <aside class="widget widget-search mb-30">
+                                            <form action="#">
+                                                <input type="text" placeholder="Search here..." />
+                                                <button type="submit">
+                                                    <i class="zmdi zmdi-search"></i>
+                                                </button>
+                                            </form>
+                                        </aside>
+                                        <!-- Widget-search end -->
+                                        <!-- Widget-Categories start -->
+                                        <aside class="widget widget-categories  mb-30">
+                                            <div class="widget-title">
+                                                <h4>Categories</h4>
+                                            </div>
+                                            <div id="cat-treeview"  class="widget-info product-cat boxscrol2">
+                                                <ul>
+                                                    <li><span>Chair</span>
+                                                        <ul>
+                                                            <li><a href="#">T-Shirts</a></li>
+                                                            <li><a href="#">Striped Shirts</a></li>
+                                                            <li><a href="#">Half Shirts</a></li>
+                                                            <li><a href="#">Formal Shirts</a></li>
+                                                            <li><a href="#">Bilazers</a></li>
+                                                        </ul>
+                                                    </li>          
+                                                    <li class="open"><span>Furniture</span>
+                                                        <ul>
+                                                            <li><a href="#">Men Bag</a></li>
+                                                            <li><a href="#">Shoes</a></li>
+                                                            <li><a href="#">Watch</a></li>
+                                                            <li><a href="#">T-shirt</a></li>
+                                                            <li><a href="#">Shirt</a></li>
+                                                        </ul>
+                                                    </li>          
+                                                    <li><span>Accessories</span>
+                                                        <ul>
+                                                            <li><a href="#">T-Shirts</a></li>
+                                                            <li><a href="#">Striped Shirts</a></li>
+                                                            <li><a href="#">Half Shirts</a></li>
+                                                            <li><a href="#">Formal Shirts</a></li>
+                                                            <li><a href="#">Bilazers</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><span>Top Brands</span>
+                                                        <ul>
+                                                            <li><a href="#">T-Shirts</a></li>
+                                                            <li><a href="#">Striped Shirts</a></li>
+                                                            <li><a href="#">Half Shirts</a></li>
+                                                            <li><a href="#">Formal Shirts</a></li>
+                                                            <li><a href="#">Bilazers</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><span>Jewelry</span>
+                                                        <ul>
+                                                            <li><a href="#">T-Shirts</a></li>
+                                                            <li><a href="#">Striped Shirts</a></li>
+                                                            <li><a href="#">Half Shirts</a></li>
+                                                            <li><a href="#">Formal Shirts</a></li>
+                                                            <li><a href="#">Bilazers</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                        <!-- Widget-categories end -->
+                                        <!-- Shop-Filter start -->
+                                        <aside class="widget shop-filter mb-30">
+                                            <div class="widget-title">
+                                                <h4>Price</h4>
+                                            </div>
+                                            <div class="widget-info">
+                                                <div class="price_filter">
+                                                    <div class="price_slider_amount">
+                                                        <input type="submit"  value="You range :"/> 
+                                                        <input type="text" id="amount" name="price"  placeholder="Add Your Price" /> 
+                                                    </div>
+                                                    <div id="slider-range"></div>
+                                                </div>
+                                            </div>
+                                        </aside>
+                                        <!-- Shop-Filter end -->
+                                        <!-- Widget-Color start -->
+                                        <aside class="widget widget-color mb-30">
+                                            <div class="widget-title">
+                                                <h4>Color</h4>
+                                            </div>
+                                            <div class="widget-info color-filter clearfix">
+                                                <ul>
+                                                    <li><a href="#"><span class="color color-1"></span>LightSalmon<span class="count">12</span></a></li>
+                                                    <li><a href="#"><span class="color color-2"></span>Dark Salmon<span class="count">20</span></a></li>
+                                                    <li><a href="#"><span class="color color-3"></span>Tomato<span class="count">59</span></a></li>
+                                                    <li><a class="active" href="#"><span class="color color-4"></span>Deep Sky Blue<span class="count">45</span></a></li>
+                                                    <li><a href="#"><span class="color color-5"></span>Electric Purple<span class="count">78</span></a></li>
+                                                    <li><a href="#"><span class="color color-6"></span>Atlantis<span class="count">10</span></a></li>
+                                                    <li><a href="#"><span class="color color-7"></span>Deep Lilac<span class="count">15</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                        <!-- Widget-Color end -->
+                                        <!-- Widget-Size start -->
+                                        <aside class="widget widget-size mb-30">
+                                            <div class="widget-title">
+                                                <h4>Size</h4>
+                                            </div>
+                                            <div class="widget-info size-filter clearfix">
+                                                <ul>
+                                                    <li><a href="#">M</a></li>
+                                                    <li><a class="active" href="#">S</a></li>
+                                                    <li><a href="#">L</a></li>
+                                                    <li><a href="#">SL</a></li>
+                                                    <li><a href="#">XL</a></li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                        <!-- Widget-Size end -->
+                                        <!-- Widget-banner start -->
+                                        <aside class="widget widget-banner hidden-sm">
+                                            <div class="widget-info widget-banner-img">
+                                                <a href="#"><img src="img/banner/5.jpg" alt="" /></a>
+                                            </div>
+                                        </aside>
+                                        <!-- Widget-banner end -->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-12">
-                        <div class="copyright-left d-flex flex-wrap justify-content-center">
-                            <ul class="quick-link">
-                                <li>© 2023. All rights reserved by <a target="_blank" href="https://axilthemes.com/">Axilthemes</a>.</li>
-                            </ul>
+                        <!-- PRODUCT-AREA END -->
+                        <!-- FOOTER START -->
+                        <footer>
+                            <!-- Footer-area start -->
+                            <div class="footer-area footer-3">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+                                            <div class="single-footer">
+                                                <h3 class="footer-title  title-border">Contact Us</h3>
+                                                <ul class="footer-contact">
+                                                    <li><span>Address :</span>28 Green Tower, Street Name,<br>New York City, USA</li>
+                                                    <li><span>Cell-Phone :</span>012345 - 123456789</li>
+                                                    <li><span>Email :</span>your-email@gmail.com</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3">
+                                            <div class="single-footer">
+                                                <h3 class="footer-title  title-border">accounts</h3>
+                                                <ul class="footer-menu">
+                                                    <li><a href="my-account.html"><i class="zmdi zmdi-dot-circle"></i>My Account</a></li>
+                                                    <li><a href="wishlist.html"><i class="zmdi zmdi-dot-circle"></i>My Wishlist</a></li>
+                                                    <li><a href="cart.html"><i class="zmdi zmdi-dot-circle"></i>My Cart</a></li>
+                                                    <li><a href="login.html"><i class="zmdi zmdi-dot-circle"></i>Sign In</a></li>
+                                                    <li><a href="checkout.html"><i class="zmdi zmdi-dot-circle"></i>Check out</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 hidden-sm col-xs-12">
+                                            <div class="single-footer">
+                                                <h3 class="footer-title  title-border">shipping</h3>
+                                                <ul class="footer-menu">
+                                                    <li><a href="#"><i class="zmdi zmdi-dot-circle"></i>New Products</a></li>
+                                                    <li><a href="#"><i class="zmdi zmdi-dot-circle"></i>Top Sellers</a></li>
+                                                    <li><a href="#"><i class="zmdi zmdi-dot-circle"></i>Manufactirers</a></li>
+                                                    <li><a href="#"><i class="zmdi zmdi-dot-circle"></i>Suppliers</a></li>
+                                                    <li><a href="#"><i class="zmdi zmdi-dot-circle"></i>Specials</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                            <div class="single-footer">
+                                                <h3 class="footer-title  title-border">Email Newsletters</h3>
+                                                <div class="footer-subscribe">
+                                                    <form action="#">
+                                                        <input type="text" name="email" placeholder="Email Address..." />
+                                                        <button class="button-one submit-btn-4" type="submit" data-text="Subscribe">Subscribe</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Footer-area end -->
+                            <!-- Copyright-area start -->
+                            <div class="copyright-area copyright-2">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="copyright">
+                                                <p class="mb-0">&copy; <a href="https://themeforest.net/user/codecarnival/portfolio" target="_blank">CodeCarnival </a> 2022. All Rights Reserved.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="payment  text-md-end">
+                                                <a href="#"><img src="img/payment/1.png" alt="" /></a>
+                                                <a href="#"><img src="img/payment/2.png" alt="" /></a>
+                                                <a href="#"><img src="img/payment/3.png" alt="" /></a>
+                                                <a href="#"><img src="img/payment/4.png" alt="" /></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Copyright-area start -->
+                        </footer>
+                        <!-- FOOTER END -->
+                        <!-- QUICKVIEW PRODUCT -->
+                        <div id="quickview-wrapper">
+                           <!-- Modal -->
+                           <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modal-product">
+                                                <div class="product-images">
+                                                    <div class="main-image images">
+                                                        <img alt="#" src="img/product/quickview-photo.jpg"/>
+                                                    </div>
+                                                </div><!-- .product-images -->
+            
+                                                <div class="product-info">
+                                                    <h1>Aenean eu tristique</h1>
+                                                    <div class="price-box-3">
+                                                        <hr />
+                                                        <div class="s-price-box">
+                                                            <span class="new-price">$160.00</span>
+                                                            <span class="old-price">$190.00</span>
+                                                        </div>
+                                                        <hr />
+                                                    </div>
+                                                    <a href="shop.html" class="see-all">See all features</a>
+                                                    <div class="quick-add-to-cart">
+                                                        <form method="post" class="cart">
+                                                            <div class="numbers-row">
+                                                                <input type="number" id="french-hens" value="3" min="1">
+                                                            </div>
+                                                            <button class="single_add_to_cart_button" type="submit">Add to cart</button>
+                                                        </form>
+                                                    </div>
+                                                    <div class="quick-desc">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero.
+                                                    </div>
+                                                    <div class="social-sharing">
+                                                        <div class="widget widget_socialsharing_widget">
+                                                            <h3 class="widget-title-modal">Share this product</h3>
+                                                            <ul class="social-icons">
+                                                                <li><a target="_blank" title="Google +" href="#" class="gplus social-icon"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                                                <li><a target="_blank" title="Twitter" href="#" class="twitter social-icon"><i class="zmdi zmdi-twitter"></i></a></li>
+                                                                <li><a target="_blank" title="Facebook" href="#" class="facebook social-icon"><i class="zmdi zmdi-facebook"></i></a></li>
+                                                                <li><a target="_blank" title="LinkedIn" href="#" class="linkedin social-icon"><i class="zmdi zmdi-linkedin"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .product-info -->
+                                            </div><!-- .modal-product -->
+                                        </div><!-- .modal-body -->
+                                    </div><!-- .modal-content -->
+                                </div><!-- .modal-dialog -->
+                           </div>
+                           <!-- END Modal -->
                         </div>
+                        <!-- END QUICKVIEW PRODUCT -->  
+                        
                     </div>
-                    <div class="col-xl-4 col-lg-12">
-                        <div class="copyright-right d-flex flex-wrap justify-content-xl-end justify-content-center align-items-center">
-                            <span class="card-text">Accept For</span>
-                            <ul class="payment-icons-bottom quick-link">
-                                <li><img src="views/Client/assets/images/icons/cart/cart-1.png" alt="paypal cart"></li>
-                                <li><img src="views/Client/assets/images/icons/cart/cart-2.png" alt="paypal cart"></li>
-                                <li><img src="views/Client/assets/images/icons/cart/cart-5.png" alt="paypal cart"></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Copyright Area  -->
-    </footer>
-    <!-- End Footer Area  -->
-
-    <!-- Product Quick View Modal Start -->
-</body>

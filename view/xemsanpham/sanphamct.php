@@ -1,5 +1,4 @@
 <div class="wrapper bg-dark-white">
-DUMMY PRODUCT NAME
 			<!-- HEADER-AREA START -->
 			<header id="sticky-menu" class="header header-2">
 				<div class="header-area">
@@ -130,8 +129,16 @@ DUMMY PRODUCT NAME
 									<div class="product-description">
 										<p>'.$mo_ta.' </p>
 									</div>
+									<form action="index.php?act=addtocart" method="post">
+                                    <input type="hidden" name="id" value="'.$id.'">
+                                    <input type="hidden" name="img" value="'.$img.'">
+                                    <input type="hidden" name="name" value="'.$ten_san_pham.'">
+                                    <input type="hidden" name="price" value="'.$gia.'">
+                                    <input type="submit" name="addtocart" value="Add to Cart" class="buttonbtn"></a>
+                                    </form>
                                  ';
                                  ?>
+								 
 								<!-- <div class="single-pro-slider single-big-photo view-lightbox slider-for">
 									<div>
 										<img src="img/single-product/medium/1.jpg" alt="" />

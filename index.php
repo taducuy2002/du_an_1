@@ -4,7 +4,6 @@ include "view/header.php";
 include "model/pdo.php";
 include "golobal.php";
 include "model/client/client.php";
-
 $loadsp_dm = loadAll_danhmuc();
 $listsp = loadAll_sanpham_home();
 $spnew = loadAll_sanpham_top10();
@@ -35,7 +34,7 @@ if(isset($_GET['act'])){
             }else{
                 $iddm = 0;
             }
-            $listsp = loadAll_san_pham($kyw, $iddm);
+            $listsp = loadAll_sanpham($kyw, $iddm);
             $tendm= load_ten_danhmuc($iddm);
             include "view/xemsanpham/sanpham_dm.php";
         case "spchitiet":

@@ -172,7 +172,7 @@
 							<div class="mobile-menu">
 								<nav id="dropdown">
 									<ul>
-										<li><a href="index.html">home</a>
+										<li><a href="index.php?act=home">home</a>
 											<ul>
 												<li><a href="index.html">Home Version 1</a></li>
 												<li><a href="index-2.html">Home Version 2</a></li>
@@ -224,7 +224,7 @@
 								</div>
 								<div class="breadcumbs pb-15">
 									<ul>
-										<li><a href="index.html">Home</a></li>
+										<li><a href="index.php?act=home">Home</a></li>
 										<li>Shopping Cart</li>
 									</ul>
 								</div>

@@ -1,5 +1,4 @@
 <div class="wrapper bg-dark-white">
-            php
                         <!-- HEADER-AREA START -->
                         <header id="sticky-menu" class="header header-2">
                             <div class="header-area">
@@ -261,12 +260,9 @@
                                             <div class="product-option mb-30 clearfix">
                                                 <!-- Nav tabs -->
                                                 <ul class="shop-tab">
-                                                    <li><a class="active" href="#grid-view" data-bs-toggle="tab"><i class="zmdi zmdi-view-module"></i></a></li>
-                                                    <li><a href="#list-view"  data-bs-toggle="tab"><i class="zmdi zmdi-view-list"></i></a></li>
+                                                    <h1>Các sản phẩm của chúng tôi</h1>
                                                 </ul>
-                                                <div class="showing text-end d-none d-md-block">
-                                                    <p class="mb-0">Showing 01-09 of 17 Results</p>
-                                                </div>
+                            
                                             </div>
                                             <!-- Tab panes -->
                                             <div class="tab-content">
@@ -280,10 +276,21 @@
                                                             $linksp="index.php?act=spchitiet&idsp=" .$id;
                                                             echo '<div class="col-lg-4 col-md-6">
                                                             <div class="single-product">
-                                                                <div class="product-img">
-                                                                    <span class="pro-price-2">'.$gia.'</span>
-                                                                    <a href="'.$linksp.'"><img src="'.$hinh.'" alt="" style="width:300px;height:300px"/></a>
-                                                                </div>
+                                                               <div class="product-img">
+                                                                <span class="pro-price-2">'.$gia.'</span>
+                                                                <span class="pro-label new-label">new</span>
+                                                               <a href="'.$linksp.'"><img src="'.$hinh.'" alt="" style="width:300px;height:200px;"/></a>
+                                                             <div class="product-action">
+                                                              <form action="index.php?act=addtocart" method="post">
+                                                               <input type="hidden" name="id" value="'.$id.'">
+                                                                <input type="hidden" name="img" value="'.$img.'">
+                                                               <input type="hidden" name="name" value="'.$ten_san_pham.'">
+                                                                 <input type="hidden" name="price" value="'.$gia.'">
+                                                                 <input type="submit" name="addtocart" value="Add to Cart" class="buttonbtn"></a>
+                                                               </form>
+                                                                  </div>
+                                                                 </div>
+                                                                
                                                                 <div class="product-info clearfix text-center">
                                                                     <div class="fix">
                                                                         <h4 class="post-title"><a href="#">'.$ten_san_pham.'</a></h4>
