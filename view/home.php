@@ -1,4 +1,4 @@
-cart.html
+
 <!-- WRAPPER START -->
 
 <!-- Mobile-header-top Start -->
@@ -39,7 +39,7 @@ cart.html
                     <div class="mini-cart text-end">
                         <ul>
                             <li>
-                                <a class="cart-icon" href="#">
+                                <a class="cart-icon" href="index.php?act=addtocart">
                                     <i class="zmdi zmdi-shopping-cart"></i>
                                     <span>3</span>
                                 </a>
@@ -49,34 +49,9 @@ cart.html
                                     </div>
 
                                     <div class="all-cart-product clearfix">
-                                        <div class="single-cart clearfix">
-                                            <div class="cart-photo">
-                                                <a href="#"><img src="img/cart/1.jpg" alt="" /></a>
-                                            </div>
-                                            <div class="cart-info">
-                                                <h5><a href="#">dummy product name</a></h5>
-                                                <p class="mb-0">Price : $ 100.00</p>
-                                                <p class="mb-0">Qty : 02 </p>
-                                                <span class="cart-delete"><a href="#"><i class="zmdi zmdi-close"></i></a></span>
-                                            </div>
-                                        </div>
-                                        <div class="single-cart clearfix">
-                                            <div class="cart-photo">
-                                                <a href="#"><img src="img/cart/2.jpg" alt="" /></a>
-                                            </div>
-                                            <div class="cart-info">
-                                                <h5><a href="#">dummy product name</a></h5>
-                                                <p class="mb-0">Price : $ 300.00</p>
-                                                <p class="mb-0">Qty : 01 </p>
-                                                <span class="cart-delete"><a href="#"><i class="zmdi zmdi-close"></i></a></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cart-totals">
-                                        <h5 class="mb-0">Total <span class="floatright">$500.00</span></h5>
                                     </div>
                                     <div class="cart-bottom  clearfix">
-                                        <a href="cart.html" class="button-one floatleft text-uppercase" data-text="View cart">View cart</a>
+                                        <a href="index.php?act=addtocart" class="button-one floatleft text-uppercase" data-text="View cart">View cart</a>
                                         <a href="checkout.html" class="button-one floatright text-uppercase" data-text="Check out">Check out</a>
                                     </div>
                                 </div>
@@ -448,11 +423,14 @@ cart.html
                         <div class="product-img">
                             <span class="pro-label new-label">new</span>
                             <a href="'.$linksp.'"><img src="'.$hinh.'" alt="" style="width:300px;height:200px;"/></a>
-                            <div class="product-action clearfix">
-                                <a href="wishlist.html" data-bs-toggle="tooltip" data-placement="top" title="Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
-                                <a href="#" data-bs-toggle="modal"  data-bs-target="#productModal" title="Quick View"><i class="zmdi zmdi-zoom-in"></i></a>
-                                <a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                <a href="index.php?act=addtocart" data-bs-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
+                            <div class="product-action">
+                            <form action="index.php?act=addtocart" method="post">
+                                <input type="hidden" name="id" value="'.$id.'">
+                               <input type="hidden" name="img" value="'.$hinh.'">
+                                <input type="hidden" name="name" value="'.$ten_san_pham.'">
+                               <input type="hidden" name="price" value="'.$gia.'">
+                               <input type="submit" name="addtocart" value="Add to Cart" class="buttonbtn"></a>
+                                </form>
                             </div>
                         </div>
                         <div class="product-info clearfix">
@@ -462,19 +440,17 @@ cart.html
                             <div class="fix">
                                 <span class="pro-price floatleft">'.$gia.'</span>
                                 <span class="pro-rating floatright">
-                                    <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                    <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                    <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                    <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                    <a href="#"><i class="zmdi zmdi-star-half"></i></a>
+                                    
                                 </span>
                             </div>
                         </div>
-                    </div>';
+                    </div>
+                    ';
                         }
                         ?>
                         
                     <!-- Single-product end -->
+                    
                 </div>
             </div>
         </div>

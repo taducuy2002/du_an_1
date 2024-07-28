@@ -1,9 +1,9 @@
 <?php
+session_start();
 include "view/header.php";
 include "model/pdo.php";
 include "golobal.php";
 include "model/client/client.php";
-include "golobal.php";
 
 $loadsp_dm = loadAll_danhmuc();
 $listsp = loadAll_sanpham_home();
@@ -15,6 +15,9 @@ if(!isset($_SESSION['mycart'])){
 if(isset($_GET['act'])){
     $act = $_GET['act'];
     switch ($act){
+        case "home";
+        include "view/home.php";
+        break;
         // phần sản phẩm
         // load tất cả sản phẩm
          case 'allsanpham':
@@ -45,11 +48,8 @@ if(isset($_GET['act'])){
             }
             break;
         // phần giỏ hàng
-        case "giohang":
-            include "./view/quanlygiohang/giohang.php";
-            break;
+        
         // thêm sản phẩm vào giỏ hàng
-        case 'addtocart':
             case 'addtocart':
                 if(isset($_POST['addtocart'])&&($_POST['addtocart'])){
                     $id = $_POST['id'];
@@ -64,7 +64,14 @@ if(isset($_GET['act'])){
                 }
                 include "./view/quanlygiohang/giohang.php";
                 break;
-
+            case "delecart":
+                if(isset($_GET['idcart'])){
+                    array_splice($_SESSION['mycart'], $_GET['idcart'],1);
+                }else{
+                    $_SESSION['mycart']=[];
+                }
+                header("location: index.php?act=addtocart");
+                break;
         default:
         include "view/home.php";
             break;
