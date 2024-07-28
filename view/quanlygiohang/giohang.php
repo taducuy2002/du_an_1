@@ -256,7 +256,7 @@
 																<th class="product-price">Giá</th>
 																<th class="product-quantity">Số lượng</th>
 																<th class="product-subtotal">Thành tiền</th>
-																<th class="product-remove">Thao tác</th>
+																<th class="product-remove">Xóa sản phẩm</th>
 															</tr>
 														</thead>
 														<tbody>
@@ -312,7 +312,8 @@
 											
 								
 									
-									<div class="classbtn"><a href="index.php?act=home"><button>Thêm sản phẩm</button></a></div>
+									<div class="classbtn"><a href="index.php?act=home"><input type="button" name="" id="" value="Thêm sản phẩm"></a></div>
+									<div class="classbtn"><a href="index.php?act=delecart"><input type="button" name="" id="" value="Xóa tất cả"></a></div>
 									
 									
 			<footer>

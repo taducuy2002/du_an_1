@@ -39,9 +39,8 @@ if(isset($_GET['act'])){
             $tendm= load_ten_danhmuc($iddm);
             include "view/xemsanpham/sanpham_dm.php";
         case "spchitiet":
-            if(isset($_GET['idsp'])){
+            if(isset($_GET['idsp'])&& ($_GET['idsp'])>0){
                 $id = $_GET['idsp'];
-                $loadAll_pro = get_product_details($id);
                 $onesp= loadone_sanpham($id);
                 extract($onesp);
                 include "view/xemsanpham/sanphamct.php";

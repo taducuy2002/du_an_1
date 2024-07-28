@@ -1,6 +1,5 @@
 
 <!-- WRAPPER START -->
-
 <!-- Mobile-header-top Start -->
 <div class="mobile-header-top d-block d-md-none">
     <div class="container">

@@ -45,11 +45,7 @@ function loadAll_sanpham_yeuthich_top10()
     $listspyt = pdo_query($sql);
     return $listspyt;
 }
-//biến thể
-function get_product_details($id) {
-    $sql = "SELECT ram, soluong FROM sanpham_bienthe WHERE id = ?";
-    return pdo_query($sql, $id);
-}
+
 function loadone_sanpham($id){
     $sql = "SELECT * FROM san_pham WHERE id ='$id'";
     $sp = pdo_query_one($sql);
