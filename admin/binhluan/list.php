@@ -29,12 +29,12 @@
           <div class="col-sm-6">
             <h1>Quản lý bình luận</h1>
           </div>
-          <div class="col-sm-6">
+          <!-- <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
               <li class="breadcrumb-item active">Danh sách bình luận</li>
             </ol>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -62,21 +62,21 @@
                   <tbody>
                     <?php foreach ($list_binhluan as $binhluan): ?>
                       <tr>
-                        <td><?= htmlspecialchars($binhluan['idbl']) ?></td>
+                        <td><?= htmlspecialchars($binhluan['id']) ?></td>
                         <td><?= htmlspecialchars($binhluan['id_user']) ?></td>
-                        <td><?= htmlspecialchars($binhluan['id_pro']) ?></td>
-                        <td><?= htmlspecialchars($binhluan['noidung']) ?></td>
-                        <td><?= htmlspecialchars($binhluan['ngaybinhluan']) ?></td>
+                        <td><?= htmlspecialchars($binhluan['id_product']) ?></td>
+                        <td><?= htmlspecialchars($binhluan['noi_dung']) ?></td>
+                        <td><?= htmlspecialchars($binhluan['ngay_bl']) ?></td>
                         <td><?= htmlspecialchars($binhluan['trangthai']) ?></td>
                         <td>
-                          <?php if ($binhluan['trangthai'] == 'active'): ?>
+                          <?php if ($binhluan['trangthai'] == 'Active'): ?>
                             <a onclick="return confirm('Bạn có chắc chắn muốn thay đổi trạng thái bình luận này?')"
-                              href="index.php?act=updateTrangThaiBL&idbl=<?= htmlspecialchars($binhluan['idbl']) ?>&trangthai=inactive">
+                              href="index.php?act=updateTrangThaiBL&id=<?= htmlspecialchars($binhluan['id']) ?>&trangthai=Inactive">
                               <input type="button" value="Ẩn" class="button">
                             </a>
                           <?php else: ?>
                             <a onclick="return confirm('Bạn có chắc chắn muốn thay đổi trạng thái bình luận này?')"
-                              href="index.php?act=updateTrangThaiBL&idbl=<?= htmlspecialchars($binhluan['idbl']) ?>&trangthai=active">
+                              href="index.php?act=updateTrangThaiBL&id=<?= htmlspecialchars($binhluan['id']) ?>&trangthai=Active">
                               <input type="button" value="Hiện" class="button">
                             </a>
                           <?php endif; ?>

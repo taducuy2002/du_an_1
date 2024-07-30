@@ -24,72 +24,72 @@
 <body>
 
 
-<!-- SIDEBAR -->
-<section id="sidebar">
-    <a href="/view/home.php" class="brand">
-        <i class='bx bxs'></i>
-        <span class="text">Sneaker</span>
-    </a>
-    <ul class="side-menu top">
-        <li class="">
-            <a href="index.php?act=home">
-                <i class='bx bxs-dashboard'></i>
-                <span class="text">Trang Chủ</span>
-            </a>
-        </li>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+        <a href="/view/home.php" class="brand">
+            <i class='bx bxs'></i>
+            <span class="text">Sneaker</span>
+        </a>
+        <ul class="side-menu top">
+            <li class="">
+                <a href="index.php?act=home">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="text">Trang Chủ</span>
+                </a>
+            </li>
 
 
-        <li class="">
-            <a href="index.php?act=listdm">
-                <i class='bx bxs-category'></i>
-                <span class="text">Quản lý danh mục</span>
-            </a>
-        </li>
+            <li class="">
+                <a href="index.php?act=listdm">
+                    <i class='bx bxs-category'></i>
+                    <span class="text">Quản lý danh mục</span>
+                </a>
+            </li>
 
-        <li class="">
-            <a href="index.php?act=listsp">
-                <i class='bx bxs-shopping-bag'></i>
-                <span class="text">Quản lý sản phẩm</span>
-            </a>
-        </li>
+            <li class="">
+                <a href="index.php?act=listsp">
+                    <i class='bx bxs-shopping-bag'></i>
+                    <span class="text">Quản lý sản phẩm</span>
+                </a>
+            </li>
 
-        <li class="">
-            <a href="index.php?act=listnd" >
-                <i class='bx bxs-group'></i>
-                <span class="text">Quản lý thành viên</span>
-            </a>
-        </li>
-        <li class="">
-            <a href="index.php?act=listbinhluan">
-                <i class='bx bxs-message-dots'></i>
-                <span class="text">Quản lý bình luận</span>
-            </a>
-        </li>
-        <li class="">
-            <a href="index.php?act=listhd">
-                <i class='bx bxs-shopping-bag-alt'></i>
-                <span class="text">Quản lý đơn hàng</span>
-            </a>
-        </li>
-        <li class="">
-            <a href="index.php?act=listthongke">
-                <i class='bx bxs-doughnut-chart'></i>
-                <span class="text">Thống Kê Doanh Thu</span>
-            </a>
-        </li>
-        <li class="">
-            <a href="index.php" class="brand-link">
-                <i class='bx bxs-user'></i>
-                <span class="text">Trang Người Dùng</span>
-            </a>
-        </li>
+            <li class="">
+                <a href="index.php?act=listnd">
+                    <i class='bx bxs-group'></i>
+                    <span class="text">Quản lý thành viên</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="index.php?act=listbl">
+                    <i class='bx bxs-message-dots'></i>
+                    <span class="text">Quản lý bình luận</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="index.php?act=listhd">
+                    <i class='bx bxs-shopping-bag-alt'></i>
+                    <span class="text">Quản lý đơn hàng</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="index.php?act=listthongke">
+                    <i class='bx bxs-doughnut-chart'></i>
+                    <span class="text">Thống Kê Doanh Thu</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="index.php" class="brand-link">
+                    <i class='bx bxs-user'></i>
+                    <span class="text">Trang Người Dùng</span>
+                </a>
+            </li>
 
-    </ul>
+        </ul>
 
-</section>
-<section id="content">
-    <nav>
-        <!-- <i class='bx bx-menu'></i>
+    </section>
+    <section id="content">
+        <nav>
+            <!-- <i class='bx bx-menu'></i>
 
         <form action="#">
             <div class="form-input">
@@ -102,4 +102,4 @@
 
 
         </ul> -->
-    </nav>
+        </nav>

@@ -1,6 +1,6 @@
 <?php
-session_start();
-ob_start();
+// session_start();
+// ob_start();
 
 include "../model/pdo.php";
 include "../model/admin/baiviet.php";
@@ -185,10 +185,10 @@ if (isset($_GET['act'])) {
 
         // Cập nhật trạng thái bình luận
         case 'updateTrangThaiBL':
-            if (isset($_GET['idbl']) && isset($_GET['trangthai'])) {
-                $idbl = $_GET['idbl'];
+            if (isset($_GET['id']) && isset($_GET['trangthai'])) {
+                $id = $_GET['id'];
                 $trangthai = $_GET['trangthai'];
-                update_binhluan_trangthai($idbl, $trangthai);
+                update_binhluan_trangthai($id, $trangthai);
             }
             $list_binhluan = loadall_binhluan();
             include "./binhluan/list.php";
