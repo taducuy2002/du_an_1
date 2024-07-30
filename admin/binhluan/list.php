@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
   <meta charset="UTF-8">
@@ -31,8 +31,8 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">DataTables</li>
+              <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+              <li class="breadcrumb-item active">Danh sách bình luận</li>
             </ol>
           </div>
         </div>
@@ -55,22 +55,31 @@
                       <th>ID Sản phẩm</th>
                       <th>Nội dung bình luận</th>
                       <th>Ngày bình luận</th>
+                      <th>Trạng thái</th>
                       <th>Thao tác</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <?php foreach ($listbinhluan as $binhluan): ?>
+                    <?php foreach ($list_binhluan as $binhluan): ?>
                       <tr>
-                        <td><?= $binhluan['idbl'] ?></td>
-                        <td><?= $binhluan['id_user'] ?></td>
-                        <td><?= $binhluan['id_pro'] ?></td>
-                        <td><?= $binhluan['noidung'] ?></td>
-                        <td><?= $binhluan['ngaybinhluan'] ?></td>
+                        <td><?= htmlspecialchars($binhluan['idbl']) ?></td>
+                        <td><?= htmlspecialchars($binhluan['id_user']) ?></td>
+                        <td><?= htmlspecialchars($binhluan['id_pro']) ?></td>
+                        <td><?= htmlspecialchars($binhluan['noidung']) ?></td>
+                        <td><?= htmlspecialchars($binhluan['ngaybinhluan']) ?></td>
+                        <td><?= htmlspecialchars($binhluan['trangthai']) ?></td>
                         <td>
-                          <a onclick="return confirm('Bạn có chắc chắn muốn xóa bình luận này hay không?')"
-                            href="index.php?act=xoabl&idbl=<?= $binhluan['idbl'] ?>">
-                            <input type="button" value="Xóa" class="button">
-                          </a>
+                          <?php if ($binhluan['trangthai'] == 'active'): ?>
+                            <a onclick="return confirm('Bạn có chắc chắn muốn thay đổi trạng thái bình luận này?')"
+                              href="index.php?act=updateTrangThaiBL&idbl=<?= htmlspecialchars($binhluan['idbl']) ?>&trangthai=inactive">
+                              <input type="button" value="Ẩn" class="button">
+                            </a>
+                          <?php else: ?>
+                            <a onclick="return confirm('Bạn có chắc chắn muốn thay đổi trạng thái bình luận này?')"
+                              href="index.php?act=updateTrangThaiBL&idbl=<?= htmlspecialchars($binhluan['idbl']) ?>&trangthai=active">
+                              <input type="button" value="Hiện" class="button">
+                            </a>
+                          <?php endif; ?>
                         </td>
                       </tr>
                     <?php endforeach; ?>

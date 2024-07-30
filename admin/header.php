@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="admincss/css/listing.css">
     <link rel="stylesheet" href="admincss/css/liststyle.css">
 
-    <title>UniQue</title>
+    <title>Trang quản lý</title>
 </head>
 
 <body>
@@ -26,9 +26,9 @@
 
 <!-- SIDEBAR -->
 <section id="sidebar">
-    <a href="#" class="brand">
-        <i class='bx bxs-alarm-add	'></i>
-        <span class="text">UniQue</span>
+    <a href="/view/home.php" class="brand">
+        <i class='bx bxs'></i>
+        <span class="text">Sneaker</span>
     </a>
     <ul class="side-menu top">
         <li class="">
@@ -42,33 +42,33 @@
         <li class="">
             <a href="index.php?act=listdm">
                 <i class='bx bxs-category'></i>
-                <span class="text">Danh Mục</span>
+                <span class="text">Quản lý danh mục</span>
             </a>
         </li>
 
         <li class="">
             <a href="index.php?act=listsp">
                 <i class='bx bxs-shopping-bag'></i>
-                <span class="text">Sản Phẩm</span>
+                <span class="text">Quản lý sản phẩm</span>
             </a>
         </li>
 
         <li class="">
             <a href="index.php?act=listnd" >
                 <i class='bx bxs-group'></i>
-                <span class="text">Khách Hàng</span>
+                <span class="text">Quản lý thành viên</span>
             </a>
         </li>
         <li class="">
             <a href="index.php?act=listbinhluan">
                 <i class='bx bxs-message-dots'></i>
-                <span class="text">Bình Luận</span>
+                <span class="text">Quản lý bình luận</span>
             </a>
         </li>
         <li class="">
             <a href="index.php?act=listhd">
                 <i class='bx bxs-shopping-bag-alt'></i>
-                <span class="text">Quản Lý Đơn Hàng</span>
+                <span class="text">Quản lý đơn hàng</span>
             </a>
         </li>
         <li class="">
@@ -78,14 +78,7 @@
             </a>
         </li>
         <li class="">
-            <a href="index.php?act=listcv">
-                <i class='bx bxs-chart'></i>
-                <span class="text">Quản lý chức vụ</span>
-            </a>
-        </li>
-
-        <li class="">
-            <a href="../../index.php" class="brand-link">
+            <a href="index.php" class="brand-link">
                 <i class='bx bxs-user'></i>
                 <span class="text">Trang Người Dùng</span>
             </a>
@@ -96,7 +89,7 @@
 </section>
 <section id="content">
     <nav>
-        <i class='bx bx-menu'></i>
+        <!-- <i class='bx bx-menu'></i>
 
         <form action="#">
             <div class="form-input">
@@ -108,5 +101,5 @@
         <label for="switch-mode" class="switch-mode"></label>
 
 
-        </ul>
+        </ul> -->
     </nav>

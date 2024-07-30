@@ -1,10 +1,15 @@
 <?php
+session_start();
+ob_start();
+
 include "../model/pdo.php";
 include "../model/admin/baiviet.php";
 include "../model/admin/chucvu.php";
 include "../model/admin/danhmuc.php";
 include "../model/admin/sanpham.php";
+include "../model/admin/binhluan.php";
 include "header.php";
+
 
 if (isset($_GET['act'])) {
     $act = $_GET['act'];
@@ -173,6 +178,22 @@ if (isset($_GET['act'])) {
             $list_sanpham = loadall_sanpham();
             include 'sanpham/list.php';
             break;
+        case 'listbl':
+            $list_binhluan = loadall_binhluan();
+            include "./binhluan/list.php";
+            break;
+
+        // Cập nhật trạng thái bình luận
+        case 'updateTrangThaiBL':
+            if (isset($_GET['idbl']) && isset($_GET['trangthai'])) {
+                $idbl = $_GET['idbl'];
+                $trangthai = $_GET['trangthai'];
+                update_binhluan_trangthai($idbl, $trangthai);
+            }
+            $list_binhluan = loadall_binhluan();
+            include "./binhluan/list.php";
+            break;
+
         default:
             # code...
             break;

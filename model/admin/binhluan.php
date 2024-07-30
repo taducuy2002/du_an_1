@@ -1,8 +1,8 @@
 <?php
 function insert_binhluan($noidung, $id_user, $id_pro, $ngaybinhluan)
 {
-    $sql = "INSERT INTO binhluan (noidung, iduser, idpro, ngaybinhluan) VALUES ('$noidung', '$id_user', '$id_pro', '$ngaybinhluan')";
-    pdo_execute($sql);
+    $sql = "INSERT INTO binhluan (noidung, id_user, id_pro, ngaybinhluan) VALUES (?, ?, ?, ?)";
+    pdo_execute($sql, [$noidung, $id_user, $id_pro, $ngaybinhluan]);
 }
 
 function loadall_binhluan()
@@ -11,9 +11,9 @@ function loadall_binhluan()
     return pdo_query($sql);
 }
 
-function delete_binhluan($idbl)
+function update_binhluan_trangthai($idbl, $trangthai)
 {
-    $sql = "DELETE FROM binhluan WHERE idbl = $idbl";
-    pdo_execute($sql);
+    $sql = "UPDATE binhluan SET trangthai = ? WHERE idbl = ?";
+    pdo_execute($sql, [$trangthai, $idbl]);
 }
 ?>

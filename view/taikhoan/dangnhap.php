@@ -1,56 +1,71 @@
-<!-- 
-    <div class="axil-signin-area"> -->
 
-        <!-- Start Header -->
-        <div class="signin-header">
-            <div class="row align-items-center">
-                <div class="col-sm-4">
-                    <a href="index.php" class="site-logo"><img src="views/Client/assets/images/logo/logo.png" alt="logo"></a>
-                </div>
-                <div class="col-sm-8">
-                    <div class="singin-header-btn">
-                        <p>Not a member?</p>
-                        <a href="index.php?act=dangkyform" class="axil-btn btn-bg-secondary sign-up-btn">Sign Up Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Header -->
+<a id="top"></a>
+	
 
-        <div class="row">
-            <div class="col-xl-4 col-lg-6">
-                <div class="axil-signin-banner bg_image bg_image--9">
-                    <h3 class="title">We Offer the Best Products</h3>
-                </div>
-            </div>
-            <div class="col-lg-6 offset-xl-2">
-                <div class="axil-signin-form-wrap">
-                    <div class="axil-signin-form">
-                        <h3 class="title">Sign in to eTrade.</h3>
-                        <p class="b2 mb--55">Enter your detail below</p>
-                        <form class="singin-form" action="index.php?act=dangnhap" method="POST" >
-                            <div class="form-group">
-                                <label>User Name</label>
-                                <input type="text" class="form-control" name="username" >
-                            </div>
-                            <div class="form-group">
-                                <label>Password</label>
-                                <input type="password" class="form-control" name="password" >
-                            </div>
-                            <div class="form-group d-flex align-items-center justify-content-between">
-                                <input type="submit" name="submit" class="axil-btn btn-bg-primary submit-btn" value="Sign In">
-                                <a href="forgot-password.html" class="forgot-btn">Forget password?</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+	<!-- Page Breadcrumb -->
+	<!-- container -->
+	<div class="container">
+		<div class="page-breadcrumb">
+			<ol class="breadcrumb">
+				<li><a title="Home" href="index.php">TRANG CHỦ</a></li>
+				<li class="active">ĐĂNG NHẬP</li>
+			</ol>
+			<div class="return-home-link pull-right">
+				<a title="Return to home page" href="index.php">QUAY TRỞ VỀ TRANG CHỦ</a>
+			</div>
+		</div>
+		<div class="page-header bottom-shadow">
+			<h3>ĐĂNG NHẬP</h3>
 
-
-  
-
-
-
-
-<!-- Mirrored from new.axilthemes.com/demo/template/etrade/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Nov 2023 09:30:16 GMT -->
+		</div><!-- Section Header /- -->
+	</div><!-- container /- -->
+	<!-- Page Breadcrumb /- -->
+	
+	<div class="page-wizard">
+		<!-- container -->
+		<div class="container">
+			<!-- contact-form-details -->
+			<div class="contact-form-details row">
+				<!-- col-md-6 -->
+				<div class="col-md-6 col-sm-6">
+					<div class="section-header">
+						<h3>NGƯỜI DÙNG ĐÃ ĐĂNG KÍ</h3>
+					</div><!-- Section Header Over -->
+					<div class="contact-form bottom-shadow">
+						<form class="form-horizontal login-page" action="index.php?act=dangnhap" method="post">
+							<div class="form-group">
+								<label class="col-md-4">TÀI KHOẢN</label>
+								<div class="col-md-8">
+									<input type="text" class="form-control" id="txt_email" placeholder="NHẬP TÀI KHOẢN" name="user" required />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="password" class="col-md-4">MẬT KHẨU</label>
+								<div class="col-md-8">
+									<input type="password" class="form-control" id="password" placeholder="*****" name="pass" required />
+								</div>
+							</div>
+							<div class="drop-line bottom-shadow"></div>
+							<div class="form-group">
+								<a title=">Forgot Password " href="index.php?act=quenmk">Quên mật khẩu ?</a>	
+								<input type="submit" value="ĐĂNG NHẬP" name="dangnhap" class="btn btn-default  pull-right">
+							</div>
+						</form>
+					</div>
+				</div><!-- col-md-6 /- -->
+				<!-- col-md-6 -->
+				<div class="col-md-6 col-sm-6"> 
+					<div class="section-header">
+						<h3>NGƯỜI DÙNG MỚI</h3>
+					</div><!-- Section Header Over -->
+					<div class="contact-details new-user-register register-user bottom-shadow"> 
+						<h3>ĐĂNG KÝ NGAY</h3>
+						<p>Aliquam placerat, mi non interdum volutpat, nisi magna euismod arcu, at congue augue ex nec lectus. Phasellus fermentum libero id neque rhoncus, sed posuere sem dictum. In nec fermentum ante. Morbi et massa arcu. Suspendisse tempus mattis viverra. </p>
+						<div class="drop-line bottom-shadow"></div>
+						<a title="Continue" href="index.php?act=dangky" class="btn btn-next btn-fill btn-warning btn-wd btn-sm">ĐĂNG KÝ</a>
+					</div>
+				</div><!-- col-md-6 /- -->	
+			</div><!-- Contact Form details /- -->
+		</div>
+	</div>
+	

@@ -1,68 +1,104 @@
-<body>
 
-    <!-- Start Header -->
-    <div class="signin-header">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <a href="index.php" class="site-logo"><img src="views/Client/assets/images/logo/logo.png" alt="logo"></a>
-            </div>
-            <div class="col-md-6">
-                <div class="singin-header-btn">
-                    <p>Already a member?</p>
-                    <a href="index.php?act=dangnhap1" class="axil-btn btn-bg-secondary sign-up-btn">Sign In</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Header -->
-
-    <div class="row">
-        <div class="col-xl-4 col-lg-6">
-            <div class="axil-signin-banner bg_image bg_image--10">
-                <h3 class="title">We Offer the Best Products</h3>
-            </div>
-        </div>
-        <div class="col-lg-6 offset-xl-2">
-            <div class="axil-signin-form-wrap">
-                <div class="axil-signin-form">
-                    <h3 class="title">I'm New Here</h3>
-                    <p class="b2 mb--55">Enter your detail below</p>
-                    <form class="singin-form" action="index.php?act=dangky" method="POST">
-                        <div class="form-group">
-                            <label>User Name</label>
-                            <input type="text" class="form-control" name="username">
-                        </div>
-                        <div class="form-group">
-                            <label>Pass Word</label>
-                            <input type="text" class="form-control" name="password">
-                        </div>
-                        <div class="form-group">
-                            <label>Full Name</label>
-                            <input type="text" class="form-control" name="fullname">
-                        </div>
-                        <div class="form-group">
-                            <label>Ngày sinh</label>
-                            <input type="date" class="form-control" name="ngaysinh">
-                        </div>
-                        <div class="form-group">
-                            <label>Phone</label>
-                            <input type="text" class="form-control" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" class="form-control" name="email" >
-                        </div>
-                        <div class="form-group">
-                            <label>Address</label>
-                            <input type="text" class="form-control" name="diachi">
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" class="axil-btn btn-bg-primary submit-btn" name="submit" value="Create Account">
-                            <input type="reset" class="axil-btn btn-bg-primary submit-btn" name="submit" value="Reset">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+<a id="top"></a>
+	
+	
+	<!-- Page Breadcrumb -->
+	<!-- container -->
+	<div class="container">
+		<div class="page-breadcrumb">
+			<ol class="breadcrumb">
+				<li><a title="Home" href="index.php">TRANG CHỦ</a></li>
+				<li class="active">TẠO TÀI KHOẢN</li>
+			</ol>
+			<div class="return-home-link pull-right">
+				<a title="Return to home page" href="index.php">TRỞ VỀ TRANG CHỦ</a>
+			</div>
+		</div>
+		<div class="page-header bottom-shadow">
+			<h3>TẠO TÀI KHOẢN</h3>
+		</div><!-- Section Header /- -->
+	</div><!-- container /- -->
+	<!-- Page Breadcrumb /- -->
+	
+	<!-- contact-form-details -->
+	<div class="contact-form-details">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6"><!-- User Form -->
+					<div class="section-header">
+						<h3>NGƯỜI DÙNG MỚI</h3>
+					</div><!-- Section Header /- -->
+					<div class="contact-form">
+						<form class="form-horizontal" action="index.php?act=dangky" method="post">
+							<div class="form-group">
+								<label for="firstname" class="col-md-4" >TÊN</label>
+								<div class="col-md-8">
+									<input type="text" class="form-control" id="firstname" name="name" placeholder="NHẬP TÊN CỦA BẠN" required />
+								</div>
+							</div>
+							<div class="form-group">
+								<label  class="col-md-4">EMAIL</label>
+								<div class="col-md-8">
+									<input type="email" class="form-control" id="txt_email" name="email" placeholder="NHẬP EMAIL" required />
+								</div>
+							</div>
+							<div class="form-group">
+								<label  class="col-md-4">ĐỊA CHỈ</label>
+								<div class="col-md-8">
+									<input type="text" class="form-control" id="txt_email" name="address" placeholder="NHẬP ĐỊA CHỈ" required />
+								</div>
+							</div>
+							<div class="form-group">
+								<label  class="col-md-4">SỐ ĐIỆN THOẠI</label>
+								<div class="col-md-8">
+									<input type="text" class="form-control" id="txt_email" name="tel" placeholder="NHẬP SDT" required />
+								</div>
+							</div>
+							<div class="form-group">
+								<label  class="col-md-4">TÀI KHOẢN</label>
+								<div class="col-md-8">
+									<input type="text" class="form-control" id="txt_email" name="user" placeholder="NHẬP TÀI KHOẢN" required />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="password" class="col-md-4">MẬT KHẨU</label>
+								<div class="col-md-8">
+									<input type="password" class="form-control" id="password" name="pass" placeholder="*****" required />
+								</div>
+							</div>
+							<div class="drop-line bottom-shadow"></div>
+							 <div class="form-group">
+								<input type="submit" value="TẠO TÀI KHOẢN" class="btn btn-default  pull-right" name="dangky">
+							</div>
+						</form>
+						<h2 class="thongbao" style=color:red;>
+							<?php
+								if(isset($thongbao)&&($thongbao!="")){
+									echo $thongbao;
+								}
+							?>     
+                    	</h2>   
+					</div>
+				</div><!-- User Form /- -->
+				
+				<div class="col-md-6 col-sm-6"> 
+					<!-- Section Header -->
+					<div class="section-header">
+						<h3>NGƯỜI DÙNG ĐÃ ĐĂNG KÍ</h3>
+					</div><!-- Section Header /- -->
+					<div class="contact-details register-user"> 
+						<div class="register-user-banner">
+							<img src="view/images/register/register-user.png" alt="register-user">
+							<h2>100% KHÁCH HÀNG HÀI LÒNG</h2>
+						</div>						
+						<h3>Nếu bạn có tài khoản, hãy đăng nhập trực tiếp</h3>
+						<p>Aliquam placerat, mi non interdum volutpat, nisi magna euismod arcu, at congue augue ex nec lectus</p>
+						<div class="drop-line bottom-shadow"></div>
+						<a title="sign in" href="index.php?act=dangnhap" class="btn btn-default">ĐĂNG NHẬP</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- Contact Form Details /- -->
+	
+	
