@@ -44,7 +44,7 @@ if (isset($_GET['act'])) {
 
                 if (isset($image)) {
                     // thư mục chứa ảnh sau khi upload
-                    $target_dir = "../../img/";
+                    $target_dir = "../img/";
                     // lấy ra tên của ảnh đẩy từ form
                     $anh = $image['name'];
                     // tạo 1 đường dẫn ảnh đầy đủ trên máy chủ
@@ -79,7 +79,7 @@ if (isset($_GET['act'])) {
 
                 if (isset($image)) {
                     // thư mục chứa ảnh sau khi upload
-                    $target_dir = "../../img/";
+                    $target_dir = "../img/";
                     // lấy ra tên của ảnh đẩy từ form
                     $anh = $image['name'];
                     // tạo 1 đường dẫn ảnh đầy đủ trên máy chủ
