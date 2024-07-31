@@ -1,5 +1,5 @@
 <style>
- .button {
+  .button {
     color: white;
     padding: 8px;
     border: 1px solid;
@@ -7,7 +7,7 @@
     border-radius: 5px 5px 5px 5px;
   }
 
- .button:hover {
+  .button:hover {
     cursor: pointer;
     background-color: red;
   }
@@ -31,7 +31,7 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Danh sách liên hệ</h3>
+              <h3 class="title">Danh sách liên hệ</h3>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
@@ -69,11 +69,11 @@
               </table>
             </div>
             <!-- /.card-body -->
-        <!-- /.col -->
-      </div>
-      <!-- /.row -->
-    </div>
-    <!-- /.container-fluid -->
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
   </section>
   <!-- /.content -->
 </div>
