@@ -4,7 +4,7 @@
     padding: 8px;
     border: 1px solid;
     background-color: green;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
   }
 
   .button:hover {
@@ -12,6 +12,7 @@
     background-color: red;
   }
 </style>
+
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
@@ -42,45 +43,42 @@
                     <th>Tên chức vụ</th>
                     <th>Mô tả</th>
                     <th>Trạng thái</th>
+                    <th>Hành động</th>
                   </tr>
-                  <?php
-                  foreach ($list_chuc_vu as $list) {
-                    extract($list);
-                    if ($trang_thai == 0) {
-                      $trang_thai = "đang hoạt động";
-                    } else {
-                      $trang_thai = "dừng hoạt động";
-                    }
-                    $suacv = "index.php?act=suacv&id=" . $id;
-                    $xoacv = "index.php?act=xoacv&id=" . $id;
-                    echo '<tr>
-                    <td>' . $id . '</td>
-                    <td>' . $ten_chuc_vu . '</td>
-                    <td>' . $mo_ta . '</td>
-                    <td>' . $trang_thai . '</td>
-                    <td>
-                    <a href="' . $suacv . '"><input type="button" class="button" value="Sửa"></a>  
-                    <a href="' . $xoacv . '"><input type="button" class="button" value="Xóa"></a>
-                    </td>
-                </tr>';
-                  }
-                  ?>
-
                 </thead>
-
-                </tfoot>
+                <tbody>
+                  <?php foreach ($list_chuc_vu as $list): ?>
+                    <?php
+                    $trang_thai = $list['trang_thai'] == 0 ? 'đang hoạt động' : 'dừng hoạt động';
+                    $suacv = "index.php?act=suacv&id=" . $list['id'];
+                    $xoacv = "index.php?act=xoacv&id=" . $list['id'];
+                    ?>
+                    <tr>
+                      <td><?php echo $list['id']; ?></td>
+                      <td><?php echo $list['ten_chuc_vu']; ?></td>
+                      <td><?php echo $list['mo_ta']; ?></td>
+                      <td><?php echo $trang_thai; ?></td>
+                      <td>
+                        <a href="<?php echo $suacv; ?>"><input type="button" class="button" value="Sửa"></a>
+                        <a href="<?php echo $xoacv; ?>"
+                          onclick="return confirm('Bạn có chắc chắn muốn xóa chức vụ này?')"><input type="button"
+                            class="button" value="Xóa"></a>
+                      </td>
+                    </tr>
+                  <?php endforeach; ?>
+                </tbody>
               </table>
             </div>
             <!-- /.card-body -->
-            </div>
-            <a href="index.php?act=formaddcv" class="button">Thêm chức vụ</a>
-            <!-- /.card -->
           </div>
-            <!-- /.col -->
-          </div>
-          <!-- /.row -->
+          <a href="index.php?act=formaddcv" class="button">Thêm chức vụ</a>
+          <!-- /.card -->
         </div>
-        <!-- /.container-fluid -->
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
   </section>
   <!-- /.content -->
 </div>

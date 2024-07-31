@@ -4,22 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="path/to/boxicons.min.css">
+    <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- My CSS -->
     <link rel="stylesheet" href="admincss/css/style.css">
     <link rel="stylesheet" href="admincss/css/listing.css">
     <link rel="stylesheet" href="admincss/css/liststyle.css">
-
     <title>Trang quản lý</title>
 </head>
+
 
 <body>
 
@@ -52,11 +55,16 @@
                     <span class="text">Quản lý sản phẩm</span>
                 </a>
             </li>
-
             <li class="">
-                <a href="index.php?act=listnd">
+                <a href="index.php?act=listcv">
                     <i class='bx bxs-group'></i>
-                    <span class="text">Quản lý thành viên</span>
+                    <span class="text">Quản lý chức vụ</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="index.php?act=listtk">
+                    <i class='bx bxs-group'></i>
+                    <span class="text">Quản lý tài khoản</span>
                 </a>
             </li>
             <li class="">
@@ -66,7 +74,7 @@
                 </a>
             </li>
             <li class="">
-                <a href="index.php?act=listhd">
+                <a href="index.php?act=list_dh">
                     <i class='bx bxs-shopping-bag-alt'></i>
                     <span class="text">Quản lý đơn hàng</span>
                 </a>

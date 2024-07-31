@@ -4,7 +4,7 @@
         padding: 8px;
         border: 1px solid;
         background-color: green;
-        border-radius: 5px 5px 5px 5px;
+        border-radius: 5px;
     }
 
     a button[type="submit"]:hover {
@@ -37,19 +37,22 @@
                     <div class="card">
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table id="example2" class="table table-bordered table-hover">
-                                <thead>
-                                    <form action="index.php?act=addcv" method="POST">
-                                        Tên chức vụ <br>
-                                        <input type="text" name="tencv"><br><br>
-                                        Mô tả <br>
-                                        <input type="text" name="mota"><br><br>
-                                        <input type="submit" name="themmoi" value="Thêm chức vụ" class="btn btn-primary">
-                                    </form>
-                                    <a href="index.php?act=listcv"><input type="button" value="Trở về danh sách" class="btn btn-primary"></a>
-                                </thead>
-                                </tfoot>
-                            </table>
+                            <form action="index.php?act=addcv" method="POST">
+                                <div class="form-group">
+                                    <label for="id">ID</label>
+                                    <input type="text" name="id" id="id" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="tencv">Tên chức vụ</label>
+                                    <input type="text" name="tencv" id="tencv" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="mota">Mô tả</label>
+                                    <input type="text" name="mota" id="mota" class="form-control">
+                                </div>
+                                <input type="submit" name="themmoi" value="Thêm chức vụ" class="btn btn-primary">
+                            </form>
+                            <a href="index.php?act=listcv" class="btn btn-secondary">Trở về danh sách</a>
                         </div>
                         <!-- /.card-body -->
                     </div>

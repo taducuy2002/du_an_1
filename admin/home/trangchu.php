@@ -12,56 +12,57 @@
                 </li>
             </ul>
         </div>
-
     </div>
 
     <ul class="box-info">
+        <!-- Hiển thị tổng số đơn hàng -->
         <li>
             <i class='bx bxs-calendar-check'></i>
             <span class="text">
-                <?php foreach ($count_bill as $key => $bill):
-                    extract($bill);
-
-                    ?>
-                    <h3>
-                        <?= $bill['count'] ?>
-                    </h3>
-                <?php endforeach; ?>
-
+                <?php
+                // Tính tổng số đơn hàng
+                $total_orders = 0;
+                foreach ($count_bill as $bill) {
+                    $total_orders += $bill['count'];
+                }
+                ?>
+                <h3><?= $total_orders ?></h3>
                 <p>Đơn Hàng</p>
             </span>
         </li>
+
+        <!-- Hiển thị tổng số khách hàng -->
         <li>
             <i class='bx bxs-group'></i>
             <span class="text">
-                <?php foreach ($count_account as $key => $ac):
-                    extract($ac);
-
-                    ?>
-                    <h3>
-                        <?= $ac['count'] ?>
-                    </h3>
-                <?php endforeach; ?>
+                <?php
+                // Tính tổng số khách hàng
+                $total_customers = 0;
+                foreach ($count_account as $ac) {
+                    $total_customers += $ac['count'];
+                }
+                ?>
+                <h3><?= $total_customers ?></h3>
                 <p>Khách Hàng</p>
             </span>
         </li>
+
+        <!-- Hiển thị tổng doanh thu -->
         <li>
             <i class='bx bxs-dollar-circle'></i>
             <span class="text">
-                <?php foreach ($Sum_total as $key => $money):
-                    extract($money);
-                    ?>
-                    <h3>
-                        <?= number_format($doanh_thu, 0, '.', ',') ?> $
-                    </h3>
-
-                <?php endforeach; ?>
+                <?php
+                // Tính tổng doanh thu
+                $total_revenue = 0;
+                foreach ($Sum_total as $money) {
+                    $total_revenue += $money['doanh_thu'];
+                }
+                ?>
+                <h3><?= number_format($total_revenue, 0, '.', ',') ?> $</h3>
                 <p>Tổng Doanh Thu</p>
             </span>
         </li>
-
     </ul>
-
 
     <div class="table-data">
         <div class="order">
@@ -79,51 +80,38 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($loadAll_bill_home as $key => $bill):
-                        extract($bill);
-                        $kh = $bill["ten_nguoi_nhan"] . '<br>
-                    	' . $bill["email_nguoi_nhan"];
+                    <?php foreach ($loadAll_bill_home as $bill): ?>
+                        <?php
+                        // Trích xuất thông tin đơn hàng
+                        $kh = $bill["ten_nguoi_nhan"] . '<br>' . $bill["email_nguoi_nhan"];
                         $trangthaidh = get_ttdh($bill["trang_thai"]);
                         ?>
                         <tr>
                             <td>
-                                <p>
-                                    <?= $kh ?>
-                                </p>
+                                <p><?= $kh ?></p>
                             </td>
                             <td>
-                                <p>
-                                    <?= $bill["ngay_dat_hang"] ?>
-                                </p>
+                                <p><?= $bill["ngay_dat_hang"] ?></p>
                             </td>
                             <td>
-                                <!-- <select name="" id="" class=" <?php
-                                if ($bill["trang_thai"] == 0) {
-                                    echo 'status completed';
-                                } elseif ($bill["trang_thai"] == 1) {
-                                    echo 'status pending';
-
-                                } elseif ($bill["trang_thai"] == 2) {
-                                    echo 'status cancel';
-                                } elseif ($bill["trang_thai"] == 3) {
-                                    echo 'status process';
-                                } elseif ($bill["trang_thai"] == 4) {
-                                    echo 'status bluecheck';
-                                } ?>">
-                                    <option value=""><?= $trangthaidh ?></option>
-                                </select> -->
-                                <span class=" <?php
-                                if ($bill["trang_thai"] == 0) {
-                                    echo 'status completed';
-                                } elseif ($bill["trang_thai"] == 1) {
-                                    echo 'status pending';
-
-                                } elseif ($bill["trang_thai"] == 2) {
-                                    echo 'status cancel';
-                                } elseif ($bill["trang_thai"] == 3) {
-                                    echo 'status process';
-                                } elseif ($bill["trang_thai"] == 4) {
-                                    echo 'status bluecheck';
+                                <!-- Hiển thị trạng thái đơn hàng với các lớp CSS tương ứng -->
+                                <span class="<?php
+                                switch ($bill["trang_thai"]) {
+                                    case 0:
+                                        echo 'status completed';
+                                        break;
+                                    case 1:
+                                        echo 'status pending';
+                                        break;
+                                    case 2:
+                                        echo 'status cancel';
+                                        break;
+                                    case 3:
+                                        echo 'status process';
+                                        break;
+                                    case 4:
+                                        echo 'status bluecheck';
+                                        break;
                                 } ?>">
                                     <?= $trangthaidh ?>
                                 </span>
@@ -133,6 +121,5 @@
                 </tbody>
             </table>
         </div>
-
     </div>
 </main>
