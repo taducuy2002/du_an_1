@@ -28,7 +28,7 @@ if(is_array($one_bai_viet)){
           </div>
           <div class="form-group">
             <label for="exampleInputFile">Ngày đăng</label>
-            <input type="text" class="form-control" name="ngaydang" id="exampleInputPassword1" value="<?php echo $ngay_dang ?>">
+            <input type="date" class="form-control" name="ngaydang" id="exampleInputPassword1" value="<?php echo $ngay_dang ?>">
           </div>
           <div class="form-group">
           <label for="exampleInputFile">Trạng thái</label><br>

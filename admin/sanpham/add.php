@@ -15,6 +15,17 @@
     input {
         width: 100%;
     }
+
+    .btn-group {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        /* Điều chỉnh khoảng cách giữa các nút */
+    }
+
+    .btn-primary {
+        border-radius: 4px;
+    }
 </style>
 
 <div class="content-wrapper">
@@ -29,7 +40,8 @@
                     <!-- Left navbar links -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i
+                                    class="fas fa-bars"></i></a>
                         </li>
                         <li class="nav-item d-none d-sm-inline-block">
                             <a href="index.php" class="nav-link">Home</a>
@@ -55,43 +67,49 @@
                                     <form action="index.php?act=addsp" method="POST" enctype="multipart/form-data">
                                         Tên sản phẩm <br>
                                         <input type="text" name="tensp"><br><br>
-                                        Giá <br>
+                                        Giá sản phẩm <br>
                                         <input type="text" name="gia"><br><br>
-                                        image <br>
+                                        Ảnh sản phẩm <br>
                                         <input type="file" name="img" accept="image/*"><br><br>
-                                        mô tả <br>
+                                        Mô tả <br>
 
-                                        <textarea name="mota" cols="150" rows="10"></textarea><br><br>
-                                        
+                                        <textarea name="mota" cols="162" rows="10"></textarea><br><br>
+
                                         Danh mục sản phẩm
-                                            <select name="iddm" id="">
+                                        <select name="iddm" id="">
                                             <option value="0">Chọn danh muc</option>
-                                                <?php
-                                                foreach ($list_danhmuc as $danh_muc) {
-                                                    extract($danh_muc);
-                                                    echo '<option value="'.$id.'">' .$ten_danh_muc. '</option>';
-                                                   }
-                                                ?>
-                                            </select><br> <br>
-                                        </div>
-
-                                        <input type="submit" name="themmoi" value="Thêm sản phẩm" class="btn btn-primary">
-                                    </form>
-                                    <a href="index.php?act=listsp"><input type="button" value="Trở về danh sách" class="btn btn-primary"></a>
-                                </thead>
-                                </tfoot>
-                            </table>
+                                            <?php
+                                            foreach ($list_danhmuc as $danh_muc) {
+                                                extract($danh_muc);
+                                                echo '<option value="' . $id . '">' . $ten_danh_muc . '</option>';
+                                            }
+                                            ?>
+                                        </select><br> <br>
                         </div>
-                        <!-- /.card-body -->
+                        <div class="btn-group">
+                            <input type="submit" name="themmoi" value="Thêm sản phẩm" class="btn btn-primary">
+                            </form>
+                            <a href="index.php?act=listsp">
+                                <input type="button" value="Trở về danh sách" class="btn btn-success">
+                            </a>
+                        </div>
+                        </form>
+
+
+                        </thead>
+                        </tfoot>
+                        </table>
                     </div>
-                    <!-- /.card -->
+                    <!-- /.card-body -->
                 </div>
-                <!-- /.col -->
+                <!-- /.card -->
             </div>
-            <!-- /.row -->
+            <!-- /.col -->
         </div>
-        <!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
+        <!-- /.row -->
+</div>
+<!-- /.container-fluid -->
+</section>
+<!-- /.content -->
 </div>
 <!-- /.content-wrapper -->

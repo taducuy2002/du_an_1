@@ -9,7 +9,7 @@ function loadAll_chuc_vu()
 // thêm chức vụ
 function insert_chuc_vu($tencv, $mota)
 {
-    $sql = "INSERT INTO chuc_vu(ten_chuc_vu, mo_ta) VALUES('$tencv', '$mota')";
+    $sql = "INSERT INTO `chuc_vu` (`ten_chuc_vu`, `mo_ta`) VALUES ('$tencv', '$mota')";
     pdo_execute($sql);
 }
 // lấy 1 chức vụ theo id

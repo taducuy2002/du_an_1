@@ -93,7 +93,7 @@
                     <td><img src="../img/' . $img_sp . '" style="width: 100px;"></td>
                     <td>' . $gia_san_pham . '$</td>
                     <td>' . $so_luong . '</td>
-                    <td>' . $thanh_tien . '$</td>
+                    <td>' . $thanh_tien . '</td>
                     </tr>';
                                     }
                                     ?>
@@ -101,7 +101,7 @@
                                 <tfoot>
                                     <tr>
                                         <td colspan="6"><strong>Tổng đơn hàng</strong></td>
-                                        <td colspan="1"><strong><?= $tong_tien ?>$</td>
+                                        <td colspan="1"><strong><?= $tong_tien ?></td>
                                     </tr>
                                 </tfoot>
                             </table>

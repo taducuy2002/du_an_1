@@ -43,6 +43,7 @@
                     <th>Nội dung</th>
                     <th>Ngày đăng</th>
                     <th>Trạng thái</th>
+                    <th>Thao tác</th>
                   </tr>
                   <?php
                   foreach ($list_bai_viet as $list) {

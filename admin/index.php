@@ -353,6 +353,7 @@ if (isset($_GET['act'])) {
                 if (isset($_POST["themmoi"]) && ($_POST["themmoi"])) {
                 $tencv = $_POST["tencv"];
                 $mota = $_POST["mota"];
+               
                 insert_chuc_vu($tencv, $mota);
                 }
                 $list_chuc_vu = loadAll_chuc_vu();
@@ -392,7 +393,7 @@ if (isset($_GET['act'])) {
                 break;
            
     // Xóa bình luận
-          case "xoabinhluan":
+          case "deletebl":
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                 $idkhachhang = $_GET['id'];
                 delete_binhluan($idkhachhang);
@@ -452,7 +453,7 @@ if (isset($_GET['act'])) {
                 $tieude = $_POST["tieude"];
                 $noidung = $_POST["noidung"];
                 $ngay_dang = $_POST("ngaydang");
-                insert_bai_viet($tieude, $noidung, $ngay_dang);
+                insert_bai_viet($tieude, $noidung, $ngaydang);
             }
             $list_bai_viet = loadAll_bai_viet();
             include "baiviet/list.php";

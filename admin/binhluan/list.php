@@ -1,89 +1,92 @@
-<!DOCTYPE html>
-<html lang="vi">
+<style>
+  a .button {
+    color: white;
+    padding: 8px;
+    border: 1px solid;
+    background-color: green;
+    border-radius: 5px 5px 5px 5px;
+  }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quản lý bình luận</title>
-  <style>
-    .button {
-      color: white;
-      padding: 8px;
-      border: 1px solid;
-      background-color: green;
-      border-radius: 5px;
-    }
-
-    .button:hover {
-      cursor: pointer;
-      background-color: red;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="content-wrapper">
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Quản lý bình luận</h1>
-          </div>
-          <!-- <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-              <li class="breadcrumb-item active">Danh sách bình luận</li>
-            </ol>
-          </div> -->
+  a .button:hover {
+    cursor: pointer;
+    background-color: red;
+  }
+</style>
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Quản lý bình luận</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">DataTables</li>
+          </ol>
         </div>
       </div>
-    </section>
-    <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Danh sách bình luận</h3>
-              </div>
-              <div class="card-body">
-                <table id="example2" class="table table-bordered table-hover">
-                  <thead>
-                    <tr>
-                      <th>ID</th>
-                      <th>ID Tài khoản</th>
-                      <th>ID Sản phẩm</th>
-                      <th>Nội dung bình luận</th>
-                      <th>Ngày bình luận</th>
-                      <th>Thao tác</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <?php foreach ($list_binhluan as $binhluan): ?>
+    </div><!-- /.container-fluid -->
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Danh sách bình luận</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>ID Tài khoản</th>
+                    <th>ID Sản phẩm</th>
+                    <th>Bình luận</th>
+                    <th>Ngày bình luận</th>
+                    <th>Điều khiển</th>
+
+                  </tr>
+                  <?php foreach ($list_binhluan as $binhluan): ?>
                       <tr>
-                      <td><?= $binhluan['id_binhluan'] ?></td>
+                          <td><?= $binhluan['id_binhluan'] ?></td>
                           <td><?= $binhluan['id_user'] ?></td>
                           <td><?= $binhluan['id_sanpham'] ?></td>
                           <td><?= $binhluan['content'] ?></td>
                           <td><?= $binhluan['date_comment'] ?></td>
-                       <td>
-                       <a onclick="return confirm('Bạn có chắc chắn muốn xóa bình luận này hay không?')"
-                                 href="index.php?act=xoabinhluan&id=<?= $binhluan['id_binhluan'] ?>">
+                          <td>
+                              <a onclick="return confirm('Bạn có chắc chắn muốn xóa bình luận này hay không?')"
+                                 href="index.php?act=deletebl&id=<?= $binhluan['id_binhluan'] ?>">
                                   <input type="button" value="Xóa" class="button">
                               </a>
 
-                       </td>
+                          </td>
                       </tr>
-                    <?php endforeach; ?>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-</body>
+                  <?php endforeach; ?>
 
-</html>
+
+                </thead>
+
+                </tfoot>
+              </table>
+            </div>
+            <!-- /.card-body -->
+
+          </div>
+
+          <!-- /.card -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

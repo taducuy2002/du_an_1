@@ -48,7 +48,6 @@
                                     </form>
                                     <a href="index.php?act=listcv"><input type="button" value="Trở về danh sách" class="btn btn-primary"></a>
                                 </thead>
-                                </tfoot>
                             </table>
                         </div>
                         <!-- /.card-body -->
