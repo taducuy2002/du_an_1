@@ -1,19 +1,23 @@
 <?php
-function insert_binhluan($noidung, $id_user, $id_pro, $ngaybinhluan)
+function insert_binhluan($noi_dung, $id_user, $id_product, $ngay_bl)
 {
-    $sql = "INSERT INTO binhluan (noidung, iduser, idpro, ngaybinhluan) VALUES ('$noidung', '$id_user', '$id_pro', '$ngaybinhluan')";
-    pdo_execute($sql);
+    $sql = "INSERT INTO binh_luan (noi_dung, id_user, id_product, ngay_bl) VALUES (?, ?, ?, ?)";
+    pdo_execute($sql, [$noi_dung, $id_user, $id_product, $ngay_bl]);
 }
 
 function loadall_binhluan()
 {
-    $sql = "SELECT * FROM binhluan ORDER BY idbl DESC";
+    $sql = "SELECT * FROM binh_luan ORDER BY id_binhluan DESC";
     return pdo_query($sql);
 }
 
-function delete_binhluan($idbl)
+function update_binhluan_trangthai($id, $trangthai)
 {
-    $sql = "DELETE FROM binhluan WHERE idbl = $idbl";
+    $sql = "UPDATE binh_luan SET trangthai = ? WHERE id = ?";
+    pdo_execute($sql, [$trangthai, $id]);
+}
+function delete_binhluan($id) {
+    $sql = "DELETE FROM binh_luan WHERE id_binhluan = '$id'";
     pdo_execute($sql);
 }
 ?>

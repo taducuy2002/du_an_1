@@ -44,6 +44,8 @@
                                         <input type="text" name="tieude"><br><br>
                                         Nội dung bài viết <br>
                                         <textarea name="noidung"  cols="165" rows="10"></textarea>
+                                        Ngày đăng <br>
+                                        <input type="date" name="ngaydang"><br><br>
                                         <input type="submit" name="themmoi" value="Thêm bài viết" class="btn btn-primary">
                                     </form>
                                     <a href="index.php?act=listbv"><input type="button" value="Trở về danh sách" class="btn btn-primary"></a>

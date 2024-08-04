@@ -53,6 +53,19 @@ function pdo_query($sql)
         unset($conn);
     }
 }
+
+function pdo_execute_return_lastInsertID($sql, $sql_args = array()) {
+    try {
+        $conn = pdo_get_connection();
+        $stmt = $conn->prepare($sql);
+        $stmt->execute($sql_args);
+        return $conn->lastInsertId();
+    } catch (PDOException $e) {
+        throw $e;
+    } finally {
+        unset($conn);
+    }
+}
 /**
  * Thực thi câu lệnh sql truy vấn một bản ghi
  * @param string $sql câu lệnh sql

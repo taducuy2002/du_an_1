@@ -10,10 +10,10 @@
                     <div class="table">
                         <div class="table-cell">
                             <ul>
-                                <li><a class="search-open" href="#"><i class="zmdi zmdi-search"></i></a></li>
+                                <!-- <li><a class="search-open" href="#"><i class="zmdi zmdi-search"></i></a></li>
                                 <li><a href="login.html"><i class="zmdi zmdi-lock"></i></a></li>
                                 <li><a href="my-account.html"><i class="zmdi zmdi-account"></i></a></li>
-                                <li><a href="wishlist.html"><i class="zmdi zmdi-favorite"></i></a></li>
+                                <li><a href="wishlist.html"><i class="zmdi zmdi-favorite"></i></a></li> -->
                             </ul>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                                     </div>
                                     <div class="cart-bottom  clearfix">
                                         <a href="index.php?act=addtocart" class="button-one floatleft text-uppercase" data-text="View cart">View cart</a>
-                                        <a href="checkout.html" class="button-one floatright text-uppercase" data-text="Check out">Check out</a>
+                                        <a href="index.php?act=donhang" class="button-one floatright text-uppercase" data-text="Check out">Check out</a>
                                     </div>
                                 </div>
                             </li>
@@ -79,102 +79,20 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="shop.html">products</a>
-                    <div class="mega-menu menu-scroll">
-                        <div class="table">
-                            <div class="table-cell">
-                                <div class="half-width">
-                                    <ul>
-                                        <li class="menu-title">best brands</li>
-                                        <li><a href="#">henning koppel</a></li>
-                                        <li><a href="#">jehs + Laub</a></li>
-                                        <li><a href="#">vicke lindstrand</a></li>
-                                        <li><a href="#">don chadwick</a></li>
-                                        <li><a href="#">akiko kuwahata</a></li>
-                                        <li><a href="#">barbro berlin</a></li>
-                                        <li><a href="#">cecilia hall</a></li>
-                                        <li><a href="#">don chadwick</a></li>
-                                    </ul>
-                                </div>
-                                <div class="half-width">
-                                    <ul>
-                                        <li class="menu-title">popular brands</li>
-                                        <li><a href="#">akiko kuwahata</a></li>
-                                        <li><a href="#">barbro berlin</a></li>
-                                        <li><a href="#">cecilia hall</a></li>
-                                        <li><a href="#">don chadwick</a></li>
-                                        <li><a href="#">henning koppel</a></li>
-                                        <li><a href="#">jehs + Laub</a></li>
-                                        <li><a href="#">vicke lindstrand</a></li>
-                                        <li><a href="#">don chadwick</a></li>
-                                    </ul>
-                                </div>
-                                <div class="full-width">
-                                    <div class="mega-menu-img">
-                                        <a href="single-product.html"><img src="img/megamenu/1.jpg" alt="" /></a>
-                                    </div>
-                                </div>
-                                <div class="pb-80"></div>
-                            </div>
-                        </div>
-                    </div>
+                <li><a href="index.php?act=allsanpham">products</a>
+                    
                 </li>
                 <li><a href="#">Shortcodes</a>
-                    <div class="sub-menu menu-scroll">
-                        <ul>
-                            <li class="menu-title">Shortcodes</li>
-                            <li><a href="elements-accordions.html">Accordion</a></li>
-                            <li><a href="elements-toggles.html">Toggles</a></li>
-                            <li><a href="elements-tab.html">Tab</a></li>
-                            <li><a href="elements-product-tab.html">Product Tab</a></li>
-                            <li><a href="elements-product-tab-2.html">Product Tab 2</a></li>
-                            <li><a href="elements-carousel.html">product carousel</a></li>
-                            <li><a href="elements-carousel-2.html">product carousel 2</a></li>
-                            <li><a href="elements-featured-product.html">Featured Product</a></li>
-                            <li><a href="elements-featured-product-2.html">Featured Product 2</a></li>
-                            <li><a href="elements-button.html">Button</a></li>
-                            <li><a href="elements-table.html">Table</a></li>
-                            <li><a href="elements-progress-bars.html">Progress Bar</a></li>
-                            <li><a href="elements-blog.html">Blog</a></li>
-                            <li><a href="elements-blog-2.html">Blog - 2</a></li>
-                            <li><a href="elements-team.html">Team</a></li>
-                            <li><a href="elements-footer.html">Footer</a></li>
-                            <li><a href="elements-footer-2.html">Footer 2</a></li>
-                            <li><a href="elements-map.html">Map</a></li>
-                        </ul>
-                    </div>
+                    
                 </li>
                 <li><a href="shop-sidebar.html">accesories</a></li>
                 <li><a href="shop-list.html">lookbook</a></li>
                 <li><a href="blog.html">blog</a></li>
-                <li><a href="#">pages</a>
-                    <div class="sub-menu menu-scroll">
-                        <ul>
-                            <li class="menu-title">Page's</li>
-                            <li><a href="index.php?act=sanpham_dm">Cửa hàng</a></li>
-                            <li><a href="shop-sidebar.html">Shop Sidebar</a></li>
-                            <li><a href="shop-grid-right-sidebar.html">Shop Right Sidebar</a></li>
-                            <li><a href="shop-list.html">Shop List</a></li>
-                            <li><a href="shop-list-right-sidebar.html">Shop List right sidebar</a></li>
-                            <li><a href="single-product.html">Single Product</a></li>
-                            <li><a href="single-product-sidebar.html">Single Product Sidebar</a></li>
-                            <li><a href="cart.html">Shopping Cart</a></li>
-                            <li><a href="wishlist.html">Wishlist</a></li>
-                            <li><a href="checkout.html">Checkout</a></li>
-                            <li><a href="order.html">Order</a></li>
-                            <li><a href="login.html">login / Registration</a></li>
-                            <li><a href="my-account.html">My Account</a></li>
-                            <li><a href="404.html">404</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="single-blog.html">Single Blog</a></li>
-                            <li><a href="single-blog-sidebar.html">Single Blog Sidebar</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
+                <li><a href="index.php?act=baiviet">Bài Viết</a>
+                    
                 </li>
                 <li><a href="about.html">about us</a></li>
-                <li><a href="contact.html">contact</a></li>
+                <li><a href="index.php?act=lienhe">LIên hệ</a></li>
             </ul>
         </nav>
     </div>
@@ -249,24 +167,42 @@
     <div class="banner-left floatleft">
         <!-- Slider-banner start -->
         <div class="slider-banner">
-            <div class="single-banner banner-1">
-                <a class="banner-thumb" href="#"><img src="img/banner/banner1.jpg" alt="" id="anhbanner"/></a>
+            <style>
+                .slider-banner{
+                    display: flex;
+                    width: 100%;
+                    height:310px;
+                    flex-direction: column;
+                    gap: 40px;
+                    
+                }
+            </style>
+                <?php
+                foreach ($spnew as $spmoi) {
+                    extract($spmoi);
+                    $hinh = $img_path . $img;
+                    echo'<div class=" single-banner banner-1">
+                <a class="banner-thumb" href="#"><img src="'.$hinh.'" alt="" id="anhbanner"/></a>
                 <span class="pro-label new-label">new</span>
-                <span class="price" id="tex1">$50.00</span>
+                <span class="price" id="tex1">'.$gia.'</span>
                 <div class="banner-brief">
-                    <h2 class="banner-title"><a href="#">Product name</a></h2>
-                    <p class="mb-0">WELCOME TO OUR</p>
+                    <h2 class="banner-title"><a href="#">'.$ten_san_pham.'</a></h2>
+                    
+                    <form action="index.php?act=addtocart" method="post">
+                                <input type="hidden" name="id" value="'.$id.'">
+                               <input type="hidden" name="img" value="'.$img.'">
+                                <input type="hidden" name="name" value="'.$ten_san_pham.'">
+                               <input type="hidden" name="price" value="'.$gia.'">
+                               <input type="submit" name="addtocart" value="Shop now" class="buttonbtn"></a>
+                                </form>
                 </div>
-                <a href="#" class="button-one font-16px" data-text="Buy now">Buy now</a>
-            </div>
-            <div class="single-banner banner-2">
-                <a class="banner-thumb" href="#"><img src="img/banner/banner7.jpg" alt="" id="anhbanner"/></a>
-                <div class="banner-brief">
-                    <h2 class="banner-title"><a href="#">New Product 2024</a></h2>
-                    <p class="hidden-md hidden-sm d-none d-md-block">Lorem Ipsum is simply dummy text of the printing and types sate industry. Lorem Ipsum has been the industry.</p>
-                    <a href="#" class="button-one font-16px" data-text="Buy now">Buy now</a>
-                </div>
-            </div>
+                
+            </div>';
+            
+                }
+                ?>
+                
+           
         </div>
         <!-- Slider-banner end -->
     </div>
@@ -295,7 +231,7 @@
                                     <h3 class="slider-title2 text-uppercase" >gallery 2024</h3>
                                 </div>
                                 <div class="wow fadeIn" data-wow-duration="2.5s" data-wow-delay="3.5s">
-                                    <a href="#" class="button-one style-2 text-uppercase mt-20" data-text="Shop now">Shop now</a>
+                                    <a href="index.php?act=allsanpham" class="button-one style-2 text-uppercase mt-20" data-text="Shop now">Shop now</a>
                                 </div>
                             </div>
                         </div>
@@ -356,23 +292,56 @@
     <div class="sidebar-account d-none d-md-block">
         <div class="table">
             <div class="table-cell">
+                <?php
+                if(isset($_SESSION['tai_khoan'])){
+                    extract($_SESSION['tai_khoan']);
+            
+                ?>
+                <!-- hiển thị thông tin đã đăng nhập -->
                 <ul>
                     <li><a class="search-open" href="#" title="Search"><i class="zmdi zmdi-search"></i></a></li>
                     <li><a href="#" title="Login"><i class="zmdi zmdi-lock"></i></a>
                         <div class="customer-login text-left">
                             <form action="#">
-                                <h4 class="title-1 title-border text-uppercase mb-30">Registered customers</h4>
-                                <p class="text-gray">If you have an account with us, Please login!</p>
-                                <input type="text" name="email" placeholder="Email here..." />
-                                <input type="password" placeholder="Password" />
-                                <p><a class="text-gray" href="#">Forget your password?</a></p>
-                                <button class="button-one submit-button mt-15" data-text="login" type="submit">login</button>
+                           <span style="font-size: 15px;  font-weight: bolder;">Xin chào : <?=$ten_dang_nhap?></span>
+                            <li>
+                                <a href="index.php?act=addtocart">Giỏ hàng</a>
+                            </li>
+                            <li>
+                                <a href="index.php?act=donhang">Đơn hàng của tôi</a>
+                            </li>
+                            <li>
+                            <?php if($chuc_vu !== 1) { ?>
+                                <a href="admin/index.php">Đăng nhập vào admin</a>
+                                <?php } ?>
+                            </li>
+                            </form>
+                            <div class="thoattk">
+                                <a href="index.php?act=thoat">Thoát</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="index.php?act=form" title="Tài khoản của tôi"><i class="zmdi zmdi-account"></i></a></li>
+                    <!-- <li><a href="index.php?act=thoat" title="Wishlist">Thoát</a></li> -->
+                </ul>
+                <?php } else { ?>
+                <ul>
+                    <li><a class="search-open" href="#" title="Search"><i class="zmdi zmdi-search"></i></a></li>
+                    <li><a href="#" title="Login"><i class="zmdi zmdi-lock"></i></a>
+                        <div class="customer-login text-left">
+                            <form action="#">
+                                <h4 class="title-1 title-border text-uppercase mb-30">Khách hàng đã đăng ký</h4>
+                                <p class="text-gray">Nếu bạn có tài khoản với chúng tôi, vui lòng đăng nhập!</p>
+                            
+                                <a href="index.php?act=dangnhap1"  class="button-one submit-button mt-15" data-text="Đăng nhập"   type="submit">Đăng nhập</a>
+                                <p>Bạn chưa có tài khoản:<a class="text-gray" href="index.php?act=fomdangky">Đăng ký tại đây</a></p>
                             </form>
                         </div>
                     </li>
-                    <li><a href="my-account.html" title="My-Account"><i class="zmdi zmdi-account"></i></a></li>
-                    <li><a href="wishlist.html" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a></li>
+                    <li><a href="index.php?act=fomdangky" title="My-Account"><i class="zmdi zmdi-account"></i></a></li>
+                    <!-- <li><a href="index.php?act=thoat" title="Wishlist">Thoát</a></li> -->
                 </ul>
+                <?php } ?>
             </div>
         </div>
     </div>

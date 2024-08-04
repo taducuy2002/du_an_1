@@ -28,9 +28,9 @@ if (is_array($one_chuc_vu)) {
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Trạng thái</label>
-        <select name="status" id="">
-          <option value="0" <?php echo $trang_thai == 0 ? 'selected' : '' ?>>hoạt động</option>
-          <option value="1" <?php echo $trang_thai == 1 ? 'selected' : '' ?>>không hoạt động</option>
+        <select name="trangthai" id="">
+          <option value="0"  <?php echo $trang_thai == 0 ? 'selected' : '' ?>>hoạt động</option>
+          <option value="1"  <?php echo $trang_thai == 1 ? 'selected' : '' ?>>không hoạt động</option>
         </select> <br><br>
       </div>
 

@@ -28,7 +28,7 @@
 <section id="sidebar">
     <a href="#" class="brand">
         <i class='bx bxs-alarm-add	'></i>
-        <span class="text">UniQue</span>
+        <span class="text">Sneaker</span>
     </a>
     <ul class="side-menu top">
         <li class="">
@@ -60,7 +60,7 @@
             </a>
         </li>
         <li class="">
-            <a href="index.php?act=listbinhluan">
+            <a href="index.php?act=listbl">
                 <i class='bx bxs-message-dots'></i>
                 <span class="text">Bình Luận</span>
             </a>
@@ -83,9 +83,15 @@
                 <span class="text">Quản lý chức vụ</span>
             </a>
         </li>
+        <li class="">
+            <a href="index.php?act=listbv">
+                <i class='bx bxs-chart'></i>
+                <span class="text">Quản lý bài viết</span>
+            </a>
+        </li>
 
         <li class="">
-            <a href="../../index.php" class="brand-link">
+            <a href="../index.php" class="brand-link">
                 <i class='bx bxs-user'></i>
                 <span class="text">Trang Người Dùng</span>
             </a>

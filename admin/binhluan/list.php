@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
   <meta charset="UTF-8">
@@ -29,12 +29,12 @@
           <div class="col-sm-6">
             <h1>Quản lý bình luận</h1>
           </div>
-          <div class="col-sm-6">
+          <!-- <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">DataTables</li>
+              <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+              <li class="breadcrumb-item active">Danh sách bình luận</li>
             </ol>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -59,19 +59,20 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <?php foreach ($listbinhluan as $binhluan): ?>
+                    <?php foreach ($list_binhluan as $binhluan): ?>
                       <tr>
-                        <td><?= $binhluan['idbl'] ?></td>
-                        <td><?= $binhluan['id_user'] ?></td>
-                        <td><?= $binhluan['id_pro'] ?></td>
-                        <td><?= $binhluan['noidung'] ?></td>
-                        <td><?= $binhluan['ngaybinhluan'] ?></td>
-                        <td>
-                          <a onclick="return confirm('Bạn có chắc chắn muốn xóa bình luận này hay không?')"
-                            href="index.php?act=xoabl&idbl=<?= $binhluan['idbl'] ?>">
-                            <input type="button" value="Xóa" class="button">
-                          </a>
-                        </td>
+                      <td><?= $binhluan['id_binhluan'] ?></td>
+                          <td><?= $binhluan['id_user'] ?></td>
+                          <td><?= $binhluan['id_sanpham'] ?></td>
+                          <td><?= $binhluan['content'] ?></td>
+                          <td><?= $binhluan['date_comment'] ?></td>
+                       <td>
+                       <a onclick="return confirm('Bạn có chắc chắn muốn xóa bình luận này hay không?')"
+                                 href="index.php?act=xoabinhluan&id=<?= $binhluan['id_binhluan'] ?>">
+                                  <input type="button" value="Xóa" class="button">
+                              </a>
+
+                       </td>
                       </tr>
                     <?php endforeach; ?>
                   </tbody>

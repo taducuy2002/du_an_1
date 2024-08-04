@@ -79,7 +79,6 @@
                                         <th>Ảnh sản phẩm</th>
                                         <th>Giá sản phẩm</th>
                                         <th>Số lượng</th>
-                                        <th>Ram</th>
                                         <th>Thành tiền</th>
                                     </tr>
                                 </thead>
@@ -91,10 +90,9 @@
                     <td>' . $id . '</td>
                     <td>' . $id_san_pham . '</td>
                     <td>' . $ten_san_pham . '</td>
-                    <td><img src="../../img/' . $img_sp . '" style="width: 100px;"></td>
+                    <td><img src="../img/' . $img_sp . '" style="width: 100px;"></td>
                     <td>' . $gia_san_pham . '$</td>
                     <td>' . $so_luong . '</td>
-                    <td>' . $ram . '</td>
                     <td>' . $thanh_tien . '$</td>
                     </tr>';
                                     }

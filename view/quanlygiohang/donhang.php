@@ -1,26 +1,156 @@
+
 <style>
-    .button {
+  /* Body and container styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Button styles */
+  .button {
     color: white;
-    padding: 8px;
-    border: 1px solid;
-    background-color: green;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .btnn {
-    color: black;
-    padding: 8px;
-
-    background-color: whitesmoke;
-    border-radius: 5px 5px 5px 5px;
-    opacity: 0.7;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
   }
 
- .button:hover {
+  .button:hover {
     cursor: pointer;
-    background-color: red;
+    background-color: #45a049;
+    transform: translateY(-2px);
+  }
+
+  .btnn {
+    color: #555;
+    padding: 10px 20px;
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .btnn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  .btnn:hover {
+    background-color: #d6d6d6;
+  }
+
+  /* Table styles */
+  .axil-product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+
+  .axil-product-table th,
+  .axil-product-table td {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .axil-product-table th {
+    background-color: #f8f8f8;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .axil-product-table tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+
+  .axil-product-table tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  /* Header and navigation */
+  .header {
+    background-color: #333;
+    padding: 10px 0;
     color: white;
+  }
+
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header .logo img {
+    max-height: 40px;
+  }
+
+  .mainmenu-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .mainmenu-nav li {
+    margin-right: 15px;
+  }
+
+  .mainmenu-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+
+  .mainmenu-nav a:hover {
+    color: #4CAF50;
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .header .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .mainmenu-nav {
+      margin-top: 10px;
+    }
+
+    .axil-product-table th,
+    .axil-product-table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    .button,
+    .btnn {
+      padding: 8px 12px;
+      font-size: 12px;
+    }
   }
 </style>
+
 <body class="sticky-header">
     <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -28,52 +158,6 @@
 
     <!-- Start Header -->
     <header class="header axil-header header-style-1">
-        <div class="header-top-campaign">
-            <div class="container position-relative">
-                <div class="campaign-content">
-                    <p>Open Doors To A World Of Fashion <a href="#">Discover More</a></p>
-                </div>
-            </div>
-            <button class="remove-campaign"><i class="fal fa-times"></i></button>
-        </div>
-        <div class="axil-header-top">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-sm-6">
-                        <div class="header-top-dropdown">
-                            <div class="dropdown">
-                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    English
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">English</a></li>
-                                    <li><a class="dropdown-item" href="#">Arabic</a></li>
-                                    <li><a class="dropdown-item" href="#">Spanish</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropdown">
-                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    USD
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">USD</a></li>
-                                    <li><a class="dropdown-item" href="#">AUD</a></li>
-                                    <li><a class="dropdown-item" href="#">EUR</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="header-top-link">
-                            <ul class="quick-link">
-                                <li><a href="#">Help</a></li>
-                                <li><a href="sign-up.html">Join Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Start Mainmenu Area  -->
         <div id="axil-sticky-placeholder"></div>
         <div class="axil-mainmenu">
@@ -81,42 +165,14 @@
                 <div class="header-navbar">
                     <div class="header-brand">
                         <a href="index.php" class="logo logo-dark">
-                            <img src="views/Client/assets/images/logo/logo.png" alt="Site Logo">
-                        </a>
-                        <a href="index.php" class="logo logo-light">
-                            <img src="views/Client/assets/images/logo/logo-light.png" alt="Site Logo">
+                            <img src="img/logo/logo2.png" alt="Site Logo">
                         </a>
                     </div>
                     <div class="header-main-nav">
                         <!-- Start Mainmanu Nav -->
                         <nav class="mainmenu-nav">
                             <button class="mobile-close-btn mobile-nav-toggler"><i class="fas fa-times"></i></button>
-                            <div class="mobile-nav-brand">
-                                <a href="index.php" class="logo">
-                                    <img src="views/Client/assets/images/logo/logo.png" alt="Site Logo">
-                                </a>
-                            </div>
-                            <ul class="mainmenu">
-                                <li><a href="index.php?">Trang chủ</a></li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Danh mục sản phẩm</a>
-                                    <ul class="axil-submenu">
-                                        <?php
-                                        foreach ($listdm as $dm) {
-                                            extract($dm);
-                                            $linkdm = "index.php?act=sanpham&id=" . $id;
-                                            echo '<li><a href="' . $linkdm . '">' . $ten_danh_muc . '</a></li>';
-                                        }
-                                        ?>
-                                    </ul>
-                                </li>
-
-                                <li><a href="index.php?act=allsanpham">Sản phẩm</a></li>
-
-
-                                <li><a href="index.php?act=baiviet">Bài viết</a></li>
-                                <li><a href="index.php?act=lienhe">Liên hệ</a></li>
-                            </ul>
+                           
                         </nav>
                         <!-- End Mainmanu Nav -->
                     </div>
@@ -133,9 +189,11 @@
         <div class="axil-product-cart-area axil-section-gap">
             <div class="container">
                 <div class="axil-product-cart-wrap">
+                    <a href="index.php">Trở về trang chủ</a>
                     <div class="product-table-heading">
                         <h4 class="title">Đơn hàng của bạn</h4>
                     </div>
+                    
                     <div class="table-responsive">
                         
                         
@@ -162,7 +220,7 @@
                                         if ($bill['trang_thai'] == 3) {
                                             $a = '<a href="index.php?act=update&id=' . $bill['id'] . '"><button class="button">Đã nhận được hàng</button></a>';
                                         } elseif ($bill['trang_thai'] == 0) {
-                                            $a = '<a href="index.php?act=huydh&id=' . $bill['id'] . '"><button class="button">Hủy</button></a>';
+                                            $a = '<a href="index.php?act=huydonhang&id=' . $bill['id'] . '"><button class="button">Hủy</button></a>';
                                         } elseif ($bill['trang_thai'] == 5) {
                                             $a = '<a href="index.php?act=update&id=' . $bill['id'] . '"><button class="btnn" disabled>Đã hủy</button></a>';
                                         } else {
@@ -178,7 +236,7 @@
                                     <td class="product-subtotal" data-title="Subtotal">' . $bill['tong_tien'] . '$</td>
                                     <td class="product-subtotal" data-title="Subtotal">' . $ttdh . '</td>
                                     <td class="product-subtotal" data-title="Subtotal">
-                                    <a href="index.php?act=donhangchitiet&id=' . $bill['id'] . '"><button class="button">Xem chi tiết</button></a>
+                                    <a href="index.php?act=dhchitiet&id=' . $bill['id'] . '"><button class="button">Xem chi tiết</button></a>
                                     '.$a.'
                                     </td>
                                     

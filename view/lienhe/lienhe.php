@@ -2,47 +2,9 @@
     <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
-    <a href="#top" class="back-to-top" id="backto-top"><i class="fal fa-arrow-up"></i></a>
+
     <!-- Start Header -->
     <header class="header axil-header header-style-1">
-        <div class="axil-header-top">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-sm-6">
-                        <div class="header-top-dropdown">
-                            <div class="dropdown">
-                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    English
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">English</a></li>
-                                    <li><a class="dropdown-item" href="#">Arabic</a></li>
-                                    <li><a class="dropdown-item" href="#">Spanish</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropdown">
-                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    USD
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">USD</a></li>
-                                    <li><a class="dropdown-item" href="#">AUD</a></li>
-                                    <li><a class="dropdown-item" href="#">EUR</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="header-top-link">
-                            <ul class="quick-link">
-                                <li><a href="#">Help</a></li>
-                                <li><a href="sign-up.html">Join Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Start Mainmenu Area  -->
         <div id="axil-sticky-placeholder"></div>
         <div class="axil-mainmenu">
@@ -50,51 +12,22 @@
                 <div class="header-navbar">
                     <div class="header-brand">
                         <a href="index.php" class="logo logo-dark">
-                            <img src="views/Client/assets/images/logo/logo.png" alt="Site Logo">
-                        </a>
-                        <a href="index.php" class="logo logo-light">
-                            <img src="views/Client/assets/images/logo/logo-light.png" alt="Site Logo">
+                            <img src="img/logo/logo2.png" alt="Site Logo">
                         </a>
                     </div>
                     <div class="header-main-nav">
                         <!-- Start Mainmanu Nav -->
                         <nav class="mainmenu-nav">
                             <button class="mobile-close-btn mobile-nav-toggler"><i class="fas fa-times"></i></button>
-                            <div class="mobile-nav-brand">
-                                <a href="index.php" class="logo">
-                                    <img src="views/Client/assets/images/logo/logo.png" alt="Site Logo">
-                                </a>
-                            </div>
-                            <ul class="mainmenu">
-                            <li><a href="index.php">Trang chủ</a></li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Danh mục sản phẩm</a>
-                                    <ul class="axil-submenu">
-                                        <?php
-                                        foreach ($listdm as $dm) {
-                                            extract($dm);
-                                            $linkdm = "index.php?act=sanpham&id=" . $id;
-                                            echo '<li><a href="' . $linkdm . '">' . $ten_danh_muc . '</a></li>';
-                                        }
-                                        ?>
-                                    </ul>
-                                </li>
-
-                                <li><a href="index.php?act=allsanpham">Sản phẩm</a></li>
-                                <li><a href="index.php?act=baiviet">Bài viết</a></li>
-                                <li><a href="index.php?act=lienhe">Liên hệ</a></li>
-                            </ul>
+                           
                         </nav>
                         <!-- End Mainmanu Nav -->
-                    </div>
-                    <div class="header-action">
                     </div>
                 </div>
             </div>
         </div>
         <!-- End Mainmenu Area -->
     </header>
-    <!-- End Header -->
 
     <main class="main-wrapper">
         <!-- Start Breadcrumb Area  -->
@@ -113,9 +46,7 @@
                     </div>
                     <div class="col-lg-6 col-md-4">
                         <div class="inner">
-                            <div class="bradcrumb-thumb">
-                                <img src="views/Client/assets/images/product/product-45.png" alt="Image">
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -192,7 +123,7 @@
                 <div class="axil-google-map-wrap axil-section-gap pb--0">
                     <div class="mapouter">
                         <div class="gmap_canvas">
-                        <iframe width="1080" height="500" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.805073873665!2d105.73874749999999!3d21.0404841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134550ab1db2433%3A0x9febb50e17509deb!2zMTMgUC4gVHLhu4tuaCBWxINuIELDtCwgWHXDom4gUGjGsMahbmcsIE5hbSBU4burIExpw6ptLCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1701083284494!5m2!1svi!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        </div>
+                        <iframe  id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.805073873665!2d105.73874749999999!3d21.0404841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134550ab1db2433%3A0x9febb50e17509deb!2zMTMgUC4gVHLhu4tuaCBWxINuIELDtCwgWHXDom4gUGjGsMahbmcsIE5hbSBU4burIExpw6ptLCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1701083284494!5m2!1svi!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        </div>
                     </div>
                 </div>
                 <!-- End Google Map Area  -->
@@ -208,7 +139,7 @@
                 <div class="col">
                     <div class="service-box service-style-2">
                         <div class="icon">
-                            <img src="views/Client/assets/images/icons/service1.png" alt="Service">
+                            <img src="img/logothung.png" alt="Service">
                         </div>
                         <div class="content">
                             <h6 class="title">Fast &amp; Secure Delivery</h6>
@@ -219,7 +150,7 @@
                 <div class="col">
                     <div class="service-box service-style-2">
                         <div class="icon">
-                            <img src="views/Client/assets/images/icons/service2.png" alt="Service">
+                            <img src="img/logotien.png" alt="Service">
                         </div>
                         <div class="content">
                             <h6 class="title">Money Back Guarantee</h6>
@@ -230,7 +161,7 @@
                 <div class="col">
                     <div class="service-box service-style-2">
                         <div class="icon">
-                            <img src="views/Client/assets/images/icons/service3.png" alt="Service">
+                            <img src="img/logogh.png" alt="Service">
                         </div>
                         <div class="content">
                             <h6 class="title">24 Hour Return Policy</h6>
@@ -241,7 +172,7 @@
                 <div class="col">
                     <div class="service-box service-style-2">
                         <div class="icon">
-                            <img src="views/Client/assets/images/icons/service4.png" alt="Service">
+                            <img src="img/logohotro.png" alt="Service">
                         </div>
                         <div class="content">
                             <h6 class="title">Pro Quality Support</h6>
@@ -319,14 +250,14 @@
                                 <span>Save $3 With App & New User only</span>
                                 <div class="download-btn-group">
                                     <div class="qr-code">
-                                        <img src="views/Client/assets/images/others/qr.png" alt="Axilthemes">
+                                        <img src="img/qr.png" alt="Axilthemes">
                                     </div>
                                     <div class="app-link">
                                         <a href="#">
-                                            <img src="views/Client/assets/images/others/app-store.png" alt="App Store">
+                                            <img src="img/app-store.png" alt="App Store">
                                         </a>
                                         <a href="#">
-                                            <img src="views/Client/assets/images/others/play-store.png" alt="Play Store">
+                                            <img src="img/play-store.png" alt="Play Store">
                                         </a>
                                     </div>
                                 </div>
@@ -361,11 +292,7 @@
                     <div class="col-xl-4 col-lg-12">
                         <div class="copyright-right d-flex flex-wrap justify-content-xl-end justify-content-center align-items-center">
                             <span class="card-text">Accept For</span>
-                            <ul class="payment-icons-bottom quick-link">
-                                <li><img src="views/Client/assets/images/icons/cart/cart-1.png" alt="paypal cart"></li>
-                                <li><img src="views/Client/assets/images/icons/cart/cart-2.png" alt="paypal cart"></li>
-                                <li><img src="views/Client/assets/images/icons/cart/cart-5.png" alt="paypal cart"></li>
-                            </ul>
+                            
                         </div>
                     </div>
                 </div>
@@ -377,6 +304,239 @@
 
     <!-- Product Quick View Modal Start -->
 
-    
+    <style>
+        /* General Styles */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+.header {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    max-height: 50px;
+}
+
+.header .mainmenu-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .mobile-close-btn {
+    display: none; /* Hide on larger screens */
+}
+
+@media (max-width: 768px) {
+    .header .mobile-close-btn {
+        display: block;
+    }
+}
+
+/* Breadcrumb Area Styles */
+.axil-breadcrumb-area {
+    background: #f8f9fa;
+    padding: 20px 0;
+}
+
+.axil-breadcrumb {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.axil-breadcrumb-item {
+    display: inline;
+    margin-right: 10px;
+}
+
+.axil-breadcrumb-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.axil-breadcrumb-item.active {
+    font-weight: bold;
+}
+
+/* Contact Area Styles */
+.axil-contact-page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.contact-form h3 {
+    margin-bottom: 10px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="submit"] {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.contact-form input[type="submit"]:hover {
+    background: #555;
+}
+
+.contact-location,
+.contact-career,
+.opening-hour {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.contact-location span,
+.contact-career p,
+.opening-hour p {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+.axil-footer-area {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.axil-footer-widget {
+    margin-bottom: 20px;
+}
+
+.axil-footer-widget .widget-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+}
+
+.axil-footer-widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.axil-footer-widget ul li {
+    margin-bottom: 10px;
+}
+
+.axil-footer-widget ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.axil-footer-widget ul li a i {
+    margin-right: 10px;
+}
+
+.social-share a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-share a:hover {
+    color: #ddd;
+}
+
+.copyright-area {
+    background: #222;
+    color: #ddd;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.copyright-area .social-share a {
+    margin: 0 5px;
+}
+
+/* Google Map Styles */
+.axil-google-map-wrap {
+    margin-top: 30px;
+}
+
+.mapouter {
+    position: relative;
+    text-align: center;
+    height: 500px;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 100%;
+    width: 100%;
+    iframe{
+        width: 100%;
+        height: 500px;
+    }
+}
+.row--20{
+    margin-left: 100px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+    </style>
 
 </body>

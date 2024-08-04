@@ -16,7 +16,7 @@ if(is_array($one_hoa_don)){
       </div>
       <!-- /.card-header -->
       <!-- form start -->
-      <form action="index.php?act=updatett" method="POST">
+      <form action="index.php?act=updatetrangthai" method="POST">
         <div class="card-body">
            <div class="form-group">
             <label for="exampleInputFile">Trạng thái</label>

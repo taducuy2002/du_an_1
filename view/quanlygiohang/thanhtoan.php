@@ -1,56 +1,62 @@
+<style>
+  body {
+    background: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+
+  .form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Adds padding inside the box */
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  }
+
+  .required:after {
+    content: "*";
+    color: red;
+  }
+</style>
+
+
 <body class="sticky-header">
     <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
-    <a href="#top" class="back-to-top" id="backto-top"><i class="fal fa-arrow-up"></i></a>
+
     <!-- Start Header -->
     <header class="header axil-header header-style-1">
-        <div class="header-top-campaign">
-            <div class="container position-relative">
-                <div class="campaign-content">
-                    <p>Open Doors To A World Of Fashion <a href="#">Discover More</a></p>
-                </div>
-            </div>
-            <button class="remove-campaign"><i class="fal fa-times"></i></button>
-        </div>
-        <div class="axil-header-top">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-sm-6">
-                        <div class="header-top-dropdown">
-                            <div class="dropdown">
-                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    English
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">English</a></li>
-                                    <li><a class="dropdown-item" href="#">Arabic</a></li>
-                                    <li><a class="dropdown-item" href="#">Spanish</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropdown">
-                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    USD
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">USD</a></li>
-                                    <li><a class="dropdown-item" href="#">AUD</a></li>
-                                    <li><a class="dropdown-item" href="#">EUR</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="header-top-link">
-                            <ul class="quick-link">
-                                <li><a href="#">Help</a></li>
-                                <li><a href="sign-up.html">Join Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Start Mainmenu Area  -->
         <div id="axil-sticky-placeholder"></div>
         <div class="axil-mainmenu">
@@ -58,42 +64,14 @@
                 <div class="header-navbar">
                     <div class="header-brand">
                         <a href="index.php" class="logo logo-dark">
-                            <img src="views/Client/assets/images/logo/logo.png" alt="Site Logo">
-                        </a>
-                        <a href="index.php" class="logo logo-light">
-                            <img src="views/Client/assets/images/logo/logo-light.png" alt="Site Logo">
+                            <img src="img/logo/logo2.png" alt="Site Logo">
                         </a>
                     </div>
                     <div class="header-main-nav">
                         <!-- Start Mainmanu Nav -->
                         <nav class="mainmenu-nav">
                             <button class="mobile-close-btn mobile-nav-toggler"><i class="fas fa-times"></i></button>
-                            <div class="mobile-nav-brand">
-                                <a href="index.php" class="logo">
-                                    <img src="views/Client/assets/images/logo/logo.png" alt="Site Logo">
-                                </a>
-                            </div>
-                            <ul class="mainmenu">
-                                <li><a href="index.php?">Trang chủ</a></li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Danh mục sản phẩm</a>
-                                    <ul class="axil-submenu">
-                                        <?php
-                                        foreach ($listdm as $dm) {
-                                            extract($dm);
-                                            $linkdm = "index.php?act=sanpham&id=" . $id;
-                                            echo '<li><a href="' . $linkdm . '">' . $ten_danh_muc . '</a></li>';
-                                        }
-                                        ?>
-                                    </ul>
-                                </li>
-
-                                <li><a href="index.php?act=allsanpham">Sản phẩm</a></li>
-
-
-                                <li><a href="index.php?act=baiviet">Bài viết</a></li>
-                                <li><a href="index.php?act=lienhe">Liên hệ</a></li>
-                            </ul>
+                           
                         </nav>
                         <!-- End Mainmanu Nav -->
                     </div>
@@ -104,6 +82,14 @@
     </header>
     <!-- End Header -->
 
+    <main class="main-wrapper">
+
+        <!-- Start Cart Area  -->
+        <div class="axil-product-cart-area axil-section-gap">
+            <div class="container">
+                <div class="axil-product-cart-wrap">
+                <a href="index.php"><button>Quay lại trang chủ</button></a>
+                    
     <main class="main-wrapper">
 
         <!-- Start Checkout Area  -->
@@ -152,10 +138,9 @@
                             <div class="axil-order-summery order-checkout-summery">
                                 <h5 class="title mb--20">Đơn hàng của bạn</h5>
                                 <table>
-
-                                    <?php
-                                    viewcart(0);
-                                    ?>
+                                 <?php
+                                 viewcart(0);
+                                 ?>
                                 </table>
                                 <div class="order-payment-method">
 
@@ -164,9 +149,9 @@
                                             <input type="radio" id="radio5" value="1" name="pttt" required>
                                             <label for="radio5">Thanh toán khi nhận</label>
                                         </div>
-                                        <p>Thanh toán bằng tiền mặt khi giao hàng.</p>
+                                       
                                     </div>
-
+                                    <p>Thanh toán bằng tiền mặt khi giao hàng.</p>
                                 </div>
                                 <input type="submit" class="axil-btn btn-bg-primary checkout-btn" name="dongydathang" value="Đồng ý đặt hàng">
                             </div>
@@ -250,14 +235,14 @@
                                 <span>Save $3 With App & New User only</span>
                                 <div class="download-btn-group">
                                     <div class="qr-code">
-                                        <img src="views/Client/assets/images/others/qr.png" alt="Axilthemes">
+                                        <img src="img/qr.png" alt="Axilthemes">
                                     </div>
                                     <div class="app-link">
                                         <a href="#">
-                                            <img src="views/Client/assets/images/others/app-store.png" alt="App Store">
+                                            <img src="img/app-store.png" alt="App Store">
                                         </a>
                                         <a href="#">
-                                            <img src="views/Client/assets/images/others/play-store.png" alt="Play Store">
+                                            <img src="img/play-store.png" alt="Play Store">
                                         </a>
                                     </div>
                                 </div>
@@ -292,11 +277,7 @@
                     <div class="col-xl-4 col-lg-12">
                         <div class="copyright-right d-flex flex-wrap justify-content-xl-end justify-content-center align-items-center">
                             <span class="card-text">Accept For</span>
-                            <ul class="payment-icons-bottom quick-link">
-                                <li><img src="views/Client/assets/images/icons/cart/cart-1.png" alt="paypal cart"></li>
-                                <li><img src="views/Client/assets/images/icons/cart/cart-2.png" alt="paypal cart"></li>
-                                <li><img src="views/Client/assets/images/icons/cart/cart-5.png" alt="paypal cart"></li>
-                            </ul>
+                            
                         </div>
                     </div>
                 </div>
@@ -309,3 +290,121 @@
     <!-- Product Quick View Modal Start -->
 
 </body>
+<style>
+.axil-order-summery {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.axil-order-summery h5.title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.axil-order-summery table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.axil-order-summery table th,
+.axil-order-summery table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.order-payment-method {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.single-payment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+.input-group label {
+    margin-bottom: 0; /* Prevent default bottom margin */
+}
+
+.axil-btn.checkout-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+.axil-btn.checkout-btn:hover {
+    background-color: #0056b3;
+}
+
+.axil-footer-widget {
+    background-color: #fff; /* Adjust the background color if needed */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.widget-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.inner span {
+    display: block;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.download-btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-code img {
+    width: 100px; /* Adjust size according to your QR image */
+    height: 100px; /* Keep it square */
+    margin-right: 15px;
+}
+
+.app-link a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.app-link a:last-child {
+    margin-right: 0;
+}
+
+.app-link img {
+    width: 100px; /* Adjust width to scale the store badges appropriately */
+    height: auto;
+}
+
+</style>
+

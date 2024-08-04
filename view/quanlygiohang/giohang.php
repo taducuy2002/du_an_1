@@ -271,7 +271,7 @@
 																	$tongtien = $cart[3] * $cart[4];
 																	$tong += $tongtien;
 																	$tongdon+=$cart[4];
-																	echo '<tr>
+																	echo '<tr> 
 																		<td class="product-thumbnail  text-left">
 																			<div class="single-product">
 																				<div class="product-img">
@@ -312,10 +312,68 @@
 											
 								
 									
-									<div class="classbtn"><a href="index.php?act=home"><input type="button" name="" id="" value="Thêm sản phẩm"></a></div>
-									<div class="classbtn"><a href="index.php?act=delecart"><input type="button" name="" id="" value="Xóa tất cả"></a></div>
+									<div class="cssnoew"><a href="index.php?act=home"><input type="button" name="" id="" value="Thêm sản phẩm"></a></div>
+									<div class="cssnoew"><a href="index.php?act=delecart"><input type="button" name="" id="" value="Xóa tất cả"></a></div>
+									<a href="index.php?act=thanhtoan" class="cssnoew">Thanh toán</a>
 									
-									
+									<!-- css các nút bấm -->
+									<style>
+  /* Styling for the button container */
+  .cssnoew {
+    display: inline-block;
+    margin: 10px 5px;
+  }
+
+  /* Styling for buttons */
+  .cssnoew input[type="button"] {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Hover effect for buttons */
+  .cssnoew input[type="button"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+
+  /* Styling for links */
+  a.cssnoew {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    margin: 10px 5px;
+    border: 1px solid #007BFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Hover effect for links */
+  a.cssnoew:hover {
+    background-color: #e0e0e0;
+    color: #0056b3;
+    transform: translateY(-2px);
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .cssnoew input[type="button"],
+    a.cssnoew {
+      padding: 8px 15px;
+      font-size: 12px;
+    }
+  }
+</style>
+
 			<footer>
 				<!-- Footer-area start -->
 				<div class="footer-area footer-2">

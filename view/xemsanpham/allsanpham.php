@@ -300,35 +300,7 @@
                                                         </div>';
                                                          }
                                                          ?>
-                                                         <!-- <div class="col-lg-4 col-md-6">
-                                                            <div class="single-product">
-                                                                <div class="product-img">
-                                                                    <span class="pro-price-2">$ 56.20</span>
-                                                                    <a href="single-product.html"><img src="img/product/8.jpg" alt="" /></a>
-                                                                </div>
-                                                                <div class="product-info clearfix text-center">
-                                                                    <div class="fix">
-                                                                        <h4 class="post-title"><a href="#">dummy Product name</a></h4>
-                                                                    </div>
-                                                                    <div class="fix">
-                                                                        <span class="pro-rating">
-                                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                                                        </span>
-                                                                    </div>
-                                                                    <div class="product-action clearfix">
-                                                                        <a href="wishlist.html" data-bs-toggle="tooltip" data-placement="top" title="Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
-                                                                        <a href="#" data-bs-toggle="modal"  data-bs-target="#productModal" title="Quick View"><i class="zmdi zmdi-zoom-in"></i></a>
-                                                                        <a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
-                                                                        <a href="cart.html" data-bs-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div> -->
-                                                        <!-- Single-product end -->
+                                                       
                                                     </div>
                                                 </div>
                                                 <div class="tab-pane" id="list-view">                           
@@ -559,14 +531,80 @@
                                         </div>
                                         <!-- Shop-Content End -->
                                     </div>
+
+                                    <!-- css cho phần lọc sản phẩm theo danh mục -->
+                                     <style>
+                                      /* General form styling */
+.widget-search form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the select dropdown */
+.widget-search select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+.widget-search select:focus {
+    border-color: #007bff;
+}
+
+/* Styling the submit button */
+.widget-search input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.widget-search input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .widget-search form {
+        padding: 15px;
+    }
+
+    .widget-search select,
+    .widget-search input[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+                                     </style>
+
                                     <div class="col-md-3 col-sm-12 col-xs-12">
                                         <!-- Widget-Search start -->
                                         <aside class="widget widget-search mb-30">
-                                            <form action="#">
-                                                <input type="text" placeholder="Search here..." />
-                                                <button type="submit">
-                                                    <i class="zmdi zmdi-search"></i>
-                                                </button>
+                                            <form action="index.php?act=locsp" method="POST">
+                                            <select name="iddm" id="">
+                                            <option value="0">Tất cả</option>
+                                                <?php
+                                                foreach ($loadsp_dm as $dm) {
+                                                   extract($dm);
+                                                   echo '<option value="'.$id.'">' .$ten_danh_muc. '</option>';
+                                                }
+                                                ?>
+                                            </select>
+                                            <input type="submit" value="Tìm kiếm" name="btn">
                                             </form>
                                         </aside>
                                         <!-- Widget-search end -->
