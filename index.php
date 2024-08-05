@@ -26,6 +26,8 @@ if(isset($_GET['act'])){
             $listsp = loadAll_sanpham('', 0);
             include "view/xemsanpham/allsanpham.php";
             break;
+        
+            // load sản phẩm theo danh mục
          case "sanpham":
             if(isset($_POST['kyw']) && $_POST['kyw'] !=''){
                 $kyw = $_POST['kyw'];
