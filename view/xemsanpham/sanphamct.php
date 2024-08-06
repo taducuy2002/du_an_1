@@ -175,38 +175,25 @@
 											<li><a href="#"><span class="color color-4"></span></a></li>
 										</ul>
 									</div>
-									<!-- color end -->
-									<!-- Size start -->
-									<div class="size-filter single-pro-size mb-35 clearfix">
-										<ul>
-											<li><span class="color-title text-capitalize">size</span></li>
-											<li><a href="#">M</a></li>
-											<li><a class="active" href="#">S</a></li>
-											<li><a href="#">L</a></li>
-											<li><a href="#">SL</a></li>
-											<li><a href="#">XL</a></li>
-										</ul>
-									</div>
-									<!-- Size end -->
-									<div class="clearfix">
-										<div class="cart-plus-minus">
-											<input type="text" value="02" name="qtybutton" class="cart-plus-minus-box">
-										</div>
-									</div>
+									
                                  ';
 						?>
-						<br><br>
 						<!-- form xử lý khi thêm vào giỏ hàng -->
 						<form action="index.php?act=addtocart" method="post">
-							<input type="hidden" name="id" value="<?= $id ?>">
-							<input type="hidden" name="img" value="<?= $img ?>">
-							<input type="hidden" name="name" value="<?= $ten_san_pham ?>">
-							<input type="hidden" name="price" value="<?= $gia ?>">
-
-							<!-- Ấn để chọn sire -->
-
-							<input type="submit" name="addtocart" value="Add to Cart">
-						</form>
+	                    <input type="hidden" name="id" value="<?= $id ?>">
+	                    <input type="hidden" name="img" value="<?= $img ?>">
+	                    <input type="hidden" name="name" value="<?= $ten_san_pham ?>">
+	                    <input type="hidden" name="price" value="<?= $gia ?>">
+	               <!-- Input for quantity -->
+	                   <label for="qty">Số lượng sản phẩm</label>
+						<div class="clearfix">
+						<div class="cart-plus-minus">
+						<input type="text" value="1" name="quantity" class="cart-plus-minus-box">
+						</div>
+						</div>
+                        <br>
+	                   <input type="submit" name="addtocart" value="Add to Cart">
+                       </form>
 						<!-- Start Product Action Wrapper  -->
 						<!-- Hiển thị danh sách size và số lượng còn trong kho -->
 						<!-- Start Product Action Wrapper  -->
@@ -486,5 +473,6 @@
 	<!-- END Modal -->
 </div>
 <!-- END QUICKVIEW PRODUCT -->
-Gerald Barnes
+
+<!-- css cho phần form -->
 </div>

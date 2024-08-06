@@ -85,7 +85,7 @@ if(isset($_GET['act'])){
                     $name = $_POST['name'];
                     $img = $_POST['img'];
                     $price = $_POST['price'];
-                    $soluong = 1;
+                    $soluong = isset($_POST['quantity']) ? (int)$_POST['quantity'] : 1;
                     $ttien=$soluong*$price;
                     $spadd=[$id,$name,$img, $price,$soluong ,$ttien];
                     array_push($_SESSION['mycart'],$spadd);
