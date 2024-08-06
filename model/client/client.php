@@ -80,6 +80,12 @@ function update_user($id, $tendangnhap, $matkhau, $hoten, $ngaysinh, $sodienthoa
     , email = '$email' , dia_chi = '$diachi'    WHERE id = '$id' ";
     pdo_execute($sql);
 }
+ // quên mật khẩu
+ function Checkemail($email){
+    $sql="select * from tai_khoan where email='".$email."'";
+    $sp=pdo_query_one($sql);
+    return $sp;
+  }
 /// phần comment ở chi tiết sản phẩm
 function loadall_commen($idproduct){
     $sql = "SELECT
