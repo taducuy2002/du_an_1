@@ -122,7 +122,7 @@ body {
                 <div class="col-sm-8">
                     <div class="singin-header-btn">
                         <p>Not a member?</p>
-                        <a href="index.php?act=dangkyform" class="axil-btn btn-bg-secondary sign-up-btn">Sign Up Now</a>
+                        <a href="index.php?act=fomdangky" class="axil-btn btn-bg-secondary sign-up-btn">Đăng ký thành viên</a>
                     </div>
                 </div>
             </div>
