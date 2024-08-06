@@ -117,12 +117,12 @@ body {
         <div class="signin-header">
             <div class="row align-items-center">
                 <div class="col-sm-4">
-                    <a href="index.php" class="site-logo"><img src="img/logo/logo2.png" alt="logo"></a>
+                    <a href="index.php" class="site-logo"><img src="img/logo/logo1.png" alt="logo"></a>
                 </div>
                 <div class="col-sm-8">
                     <div class="singin-header-btn">
-                        <p>Bạn chưa phải là thành viên ?</p>
-                        <a href="index.php?act=fomdangky" class="axil-btn btn-bg-secondary sign-up-btn">Đăng ký thành viên</a>
+                        <p>Not a member?</p>
+                        <a href="index.php?act=dangkyform" class="axil-btn btn-bg-secondary sign-up-btn">Sign Up Now</a>
                     </div>
                 </div>
             </div>
@@ -152,8 +152,8 @@ body {
                                 <input type="password" class="form-control" name="password" >
                             </div>
                             <div class="form-group d-flex align-items-center justify-content-between">
-                                <input type="submit" name="submit" class="axil-btn btn-bg-primary submit-btn" value="Đăng nhập">
-                                <a href="index.php?act=quenmk" class="forgot-btn">Quên mật khẩu ?</a>
+                                <input type="submit" name="submit" class="axil-btn btn-bg-primary submit-btn" value="Sign In">
+                                <a href="forgot-password.html" class="forgot-btn">Forget password?</a>
                             </div>
                         </form>
                     </div>
