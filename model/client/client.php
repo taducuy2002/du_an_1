@@ -202,7 +202,7 @@ function viewcart($del)
         echo '<tbody>
         <tr>
             <td></td>
-            <td class="product-thumbnail"><img src="' . $hinh . '" alt="Digital Product"></a></td>
+            <td class="product-thumbnail"><img src="' . $hinh . '" alt="Digital Product" style="width:150px;"></a></td>
             <td class="product-title"><a href="single-product.html">' . $cart['1'] . '</a></td>
             <td class="product-price" data-title="Price">' . $cart['3'] . '$</td>
             <td class="product-quantity" data-title="Qty">' . $cart['4'] . '</td>   

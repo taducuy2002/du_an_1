@@ -28,6 +28,7 @@ if(isset($_GET['act'])){
             break;
         
             // load sản phẩm theo danh mục
+            // kyw là một biến thể để lưu trữ từ khóa mà người dùng nhập vào biểu mẫu khi tìm kiếm
          case "sanpham":
             if(isset($_POST['kyw']) && $_POST['kyw'] !=''){
                 $kyw = $_POST['kyw'];

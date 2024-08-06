@@ -357,9 +357,9 @@
                     <div class="col-md-8 offset-md-2 p-0">
                         <div class="search-form-wrap">
                             <button class="close-search"><i class="zmdi zmdi-close"></i></button>
-                            <form action="#">
-                                <input type="text" placeholder="Search here..." />
-                                <button class="search-button" type="submit">
+                            <form action="index.php?act=sanpham" method="post">
+                                <input type="text" placeholder="Search here..." name="kyw" />
+                                <button class="search-button" type="submit" name="timkiem">
                                     <i class="zmdi zmdi-search"></i>
                                 </button>
                             </form>
