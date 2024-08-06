@@ -184,6 +184,7 @@
 														<th class="product-thumbnail">Tên sản phẩm</th>
 														<th class="product-price">Giá</th>
 														<th class="product-quantity">Số lượng</th>
+														<!-- <th class="product-quantity">Size</th> -->
 														<th class="product-subtotal">Thành tiền</th>
 														<th class="product-remove">Xóa sản phẩm</th>
 													</tr>

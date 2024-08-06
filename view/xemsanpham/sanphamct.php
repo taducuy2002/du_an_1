@@ -175,30 +175,70 @@
 											<li><a href="#"><span class="color color-4"></span></a></li>
 										</ul>
 									</div>
-									
                                  ';
 						?>
 						<!-- form xử lý khi thêm vào giỏ hàng -->
 						<form action="index.php?act=addtocart" method="post">
-	                    <input type="hidden" name="id" value="<?= $id ?>">
-	                    <input type="hidden" name="img" value="<?= $img ?>">
-	                    <input type="hidden" name="name" value="<?= $ten_san_pham ?>">
-	                    <input type="hidden" name="price" value="<?= $gia ?>">
-	               <!-- Input for quantity -->
-	                   <label for="qty">Số lượng sản phẩm</label>
-						<div class="clearfix">
-						<div class="cart-plus-minus">
-						<input type="text" value="1" name="quantity" class="cart-plus-minus-box">
-						</div>
-						</div>
-                        <br>
-	                   <input type="submit" name="addtocart" value="Add to Cart">
-                       </form>
+                           <input type="hidden" name="id" value="<?= $id ?>">
+                           <input type="hidden" name="img" value="<?= $img ?>">
+                           <input type="hidden" name="name" value="<?= $ten_san_pham ?>">
+                           <input type="hidden" name="price" value="<?= $gia ?>">
+						   <input type="hidden" name="size" id="selected-size" value="">
+
+                          <div class="size-filter single-pro-size mb-35 clearfix">
+                          <ul>
+                             <li><span class="color-title text-capitalize">Size</span></li>
+                            <li><a href="#" class="size-option" data-size="39">39</a></li>
+                            <li><a href="#" class="size-option" data-size="40">40</a></li>
+                            <li><a href="#" class="size-option" data-size="41">41</a></li>
+                        </ul>
+                        </div>
+
+                        <label for="qty">Số lượng sản phẩm</label>
+                        <div class="clearfix">
+                        <div class="cart-plus-minus">
+                       <input type="text" value="1" name="soluong" class="cart-plus-minus-box">
+                      </div>
+                      </div>
+                   <br>
+                        <p>Size: <span id="displayed-size"></span></p>
+                    <input type="submit" name="addtocart" value="Add to Cart">
+                    </form>
+
+                   <script>
+                     document.addEventListener('DOMContentLoaded', function() {
+                    var sizeOptions = document.querySelectorAll('.size-option');
+                     var selectedSizeInput = document.getElementById('selected-size');
+                     var displayedSizeElement = document.getElementById('displayed-size');
+
+                    sizeOptions.forEach(function(option) {
+                    option.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      var size = this.getAttribute('data-size');
+                         selectedSizeInput.value = size;
+                         displayedSizeElement.textContent = size;
+                        });
+                      });
+                     });
+</script>
 						<!-- Start Product Action Wrapper  -->
 						<!-- Hiển thị danh sách size và số lượng còn trong kho -->
 						<!-- Start Product Action Wrapper  -->
 
+                        <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var sizeOptions = document.querySelectorAll('.size-option');
+    var selectedSizeInput = document.getElementById('selected-size');
 
+    sizeOptions.forEach(function(option) {
+        option.addEventListener('click', function(event) {
+            event.preventDefault();
+            var size = this.getAttribute('data-size');
+            selectedSizeInput.value = size;
+        });
+    });
+});
+</script>
 
 
 

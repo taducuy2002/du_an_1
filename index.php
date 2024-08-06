@@ -85,13 +85,17 @@ if(isset($_GET['act'])){
                     $name = $_POST['name'];
                     $img = $_POST['img'];
                     $price = $_POST['price'];
-                    $soluong = isset($_POST['quantity']) ? (int)$_POST['quantity'] : 1;
+                    if (isset($_POST['soluong'])) {
+                        $soluong = $_POST['soluong'];
+                    } else {
+                        $soluong = 1;
+                    }
                     $ttien=$soluong*$price;
                     $spadd=[$id,$name,$img, $price,$soluong ,$ttien];
-                    array_push($_SESSION['mycart'],$spadd);
+                    array_push($_SESSION['mycart'],$spadd); // Thêm sản phẩm vào giỏ hàng
 
                 }
-                include "./view/quanlygiohang/giohang.php";
+                include "./view/quanlygiohang/giohang.php"; // hiển thị lại giỏ hàng
                 break;
             case "delecart":
                 if(isset($_GET['idcart'])){
