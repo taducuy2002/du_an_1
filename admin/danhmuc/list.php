@@ -64,8 +64,8 @@
                     <td>' . $trang_thai . '</td>
                     <td><img src="../img/' . $img . '" style="width: 100px;"></td>
                     <td>
-                    <a href="' . $suadm . '"><input type="button" class="button" value="Sửa"></a>  
-                    <a href="' . $xoadm . '"><input type="button" class="button" value="Xóa"></a>
+                    <a href="' . $suadm . '"><input type="button" class="btn btn-warning" value="Sửa"></a>  
+                    <a href="' . $xoadm . '"><input type="button" class="btn btn-danger" value="Xóa"></a>
                     </td>
                 </tr>';
                   }
@@ -78,7 +78,7 @@
             </div>
             <!-- /.card-body -->
             </div>
-            <a href="index.php?act=themdm" class="button">Thêm danh mục mới</a>
+            <a href="index.php?act=themdm" class="btn btn-primary">Thêm danh mục mới</a>
             <!-- /.card -->
           </div>
             <!-- /.col -->

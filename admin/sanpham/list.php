@@ -49,7 +49,7 @@
                   }
                   ?>
                 </select><br>
-                <input type="submit" value="Tìm kiếm" name="btn" class="button">
+                <input type="submit" value="Tìm kiếm" name="btn" class="btn btn-secondary">
               </form>
               <table id="example2" class="table table-bordered table-hover">
                 <thead>
@@ -80,8 +80,8 @@
               <td>' . $id_danh_muc . '</td>
 
               <td>
-              <a href="' . $suasp . '"><input type="button" class="button" value="Sửa"></a>
-              <a href="' . $xoasp . '"><input type="button" class="button" value="Xóa"></a>
+              <a href="' . $suasp . '"><input type="button" class="btn btn-warning" value="Sửa"></a>
+              <a href="' . $xoasp . '"><input type="button" class="btn btn-danger" value="Xóa"></a>
               </td>
               </tr>';
                   }
@@ -94,7 +94,7 @@
             </div>
             <!-- /.card-body -->
           </div>
-          <a href="index.php?act=themsp" class="button">Thêm sản phẩm</a>
+          <a href="index.php?act=themsp" class="btn btn-primary">Thêm sản phẩm</a>
           <!-- /.card -->
         </div>
         <!-- /.col -->

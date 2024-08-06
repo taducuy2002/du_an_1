@@ -59,10 +59,10 @@
                       <td><?php echo $list['mo_ta']; ?></td>
                       <td><?php echo $trang_thai; ?></td>
                       <td>
-                        <a href="<?php echo $suacv; ?>"><input type="button" class="button" value="Sửa"></a>
+                        <a href="<?php echo $suacv; ?>"><input type="button" class="btn btn-warning" value="Sửa"></a>
                         <a href="<?php echo $xoacv; ?>"
                           onclick="return confirm('Bạn có chắc chắn muốn xóa chức vụ này?')"><input type="button"
-                            class="button" value="Xóa"></a>
+                            class="btn btn-danger" value="Xóa"></a>
                       </td>
                     </tr>
                   <?php endforeach; ?>
@@ -71,7 +71,7 @@
             </div>
             <!-- /.card-body -->
           </div>
-          <a href="index.php?act=formaddcv" class="button">Thêm chức vụ</a>
+          <a href="index.php?act=formaddcv" class="btn btn-primary">Thêm chức vụ</a>
           <!-- /.card -->
         </div>
         <!-- /.col -->

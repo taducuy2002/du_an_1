@@ -332,8 +332,8 @@ if (isset($_GET['act'])) {
         case 'suacv':
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $id = $_GET['id'];
-                $chucvu = load_one_chuc_vu($id); 
-                include 'views/chucvu/edit.php';
+                $chucvu = load_one_chuc_vu($id);
+                include './chucvu/edit.php';
             }
             break;
 

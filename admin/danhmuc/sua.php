@@ -47,7 +47,7 @@ if(is_array($loadone_danh_muc)){
 
         <div class="card-footer">
             <input type="submit" class="btn btn-primary" name="sua" value="Sửa">
-            <a href="index.php?act=listdm"><input type="button" value="Trở về danh sách" class="btn btn-primary"></a>
+            <a href="index.php?act=listdm"><input type="button" value="Trở về danh sách" class="btn btn-success"></a>
         </div>
     </form>
 </div>

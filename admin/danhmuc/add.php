@@ -48,9 +48,11 @@
                                         <input type="text" name="mota"><br><br>
                                         image <br>
                                         <input type="file" name="img" accept="image/*"><br><br>
-                                        <input type="submit" name="themmoi" value="Thêm danh mục" class="btn btn-primary">
+                                        <input type="submit" name="themmoi" value="Thêm danh mục"
+                                            class="btn btn-primary">
                                     </form>
-                                    <a href="index.php?act=listdm"><input type="button" value="Trở về danh sách" class="btn btn-primary"></a>
+                                    <a href="index.php?act=listdm"><input type="button" value="Trở về danh sách"
+                                            class="btn btn-success"></a>
                                 </thead>
                                 </tfoot>
                             </table>
