@@ -166,6 +166,7 @@ if(isset($_GET['act'])){
                         case "form":
                             include "./view/taikhoan/myaccount.php";
                             break;
+                            
                    //Quên mật khẩu
                    case 'quenmk':
                     if(isset($_POST['guiemail'])&&($_POST['guiemail'])){
