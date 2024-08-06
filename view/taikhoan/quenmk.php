@@ -122,6 +122,16 @@ input[type="reset"] {
 input[type="reset"]:hover {
     background-color: #e2e6ea;
 }
+a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none; /* No underline by default */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Underline on hover */
+}
 
 </style>
 <!-- 
@@ -135,7 +145,7 @@ input[type="reset"]:hover {
                 </div>
                 <div class="col-sm-8">
                     <div class="singin-header-btn">
-                        <p>Not a member?</p>
+                        <p>Bạn chưa phải là thành viên?</p>
                         <a href="index.php?act=fomdangky" class="axil-btn btn-bg-secondary sign-up-btn">Đăng ký thành viên</a>
                     </div>
                 </div>
@@ -177,10 +187,3 @@ input[type="reset"]:hover {
             </div>
         </div>
 
-
-  
-
-
-
-
-<!-- Mirrored from new.axilthemes.com/demo/template/etrade/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Nov 2023 09:30:16 GMT -->

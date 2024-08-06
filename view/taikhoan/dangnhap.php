@@ -121,7 +121,7 @@ body {
                 </div>
                 <div class="col-sm-8">
                     <div class="singin-header-btn">
-                        <p>Not a member?</p>
+                        <p>Bạn chưa phải là thành viên ?</p>
                         <a href="index.php?act=fomdangky" class="axil-btn btn-bg-secondary sign-up-btn">Đăng ký thành viên</a>
                     </div>
                 </div>
