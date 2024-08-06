@@ -43,6 +43,8 @@ if(isset($_GET['act'])){
             $listsp = loadAll_sanpham($kyw, $iddm);
             $tendm= load_ten_danhmuc($iddm);
             include "view/xemsanpham/sanpham_dm.php";
+            
+            // phần chi tiết sản phẩm
         case "spchitiet":
             if(isset($_GET['idsp'])&& ($_GET['idsp'])>0){
                 $id = $_GET['idsp'];
@@ -166,7 +168,7 @@ if(isset($_GET['act'])){
                         case "form":
                             include "./view/taikhoan/myaccount.php";
                             break;
-                            
+
                    //Quên mật khẩu
                    case 'quenmk':
                     if(isset($_POST['guiemail'])&&($_POST['guiemail'])){

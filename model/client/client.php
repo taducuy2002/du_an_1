@@ -266,4 +266,13 @@ function insert_lienhe($tenkhachhang, $sodienthoai, $email, $noidung)
             VALUES (NULL, '$tenkhachhang', '$sodienthoai', '$email', '$noidung')";
     pdo_execute($sql);
 }
+// tăng giảm số lượng vào giỏ hàng 
+function tangGiamsoluong($id){
+    $vitri = -1;
+   for($i=0; $i < sizeof($_SESSION['giohang']); $i++){
+    if($_SESSION['giohang'][$i]['id']== $id){
+         $vitri = $i;
+    }
+   }
+}
 ?>

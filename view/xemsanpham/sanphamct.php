@@ -165,9 +165,37 @@
 									<div class="product-description">
 										<p>' . $mo_ta . ' </p>
 									</div>
-									
+									<div class="color-filter single-pro-color mb-20 clearfix">
+										<ul>
+											<li><span class="color-title text-capitalize">color</span></li>
+											<li><a class="active" href="#"><span class="color color-1"></span></a></li>
+											<li><a href="#"><span class="color color-2"></span></a></li>
+											<li><a href="#"><span class="color color-7"></span></a></li>
+											<li><a href="#"><span class="color color-3"></span></a></li>
+											<li><a href="#"><span class="color color-4"></span></a></li>
+										</ul>
+									</div>
+									<!-- color end -->
+									<!-- Size start -->
+									<div class="size-filter single-pro-size mb-35 clearfix">
+										<ul>
+											<li><span class="color-title text-capitalize">size</span></li>
+											<li><a href="#">M</a></li>
+											<li><a class="active" href="#">S</a></li>
+											<li><a href="#">L</a></li>
+											<li><a href="#">SL</a></li>
+											<li><a href="#">XL</a></li>
+										</ul>
+									</div>
+									<!-- Size end -->
+									<div class="clearfix">
+										<div class="cart-plus-minus">
+											<input type="text" value="02" name="qtybutton" class="cart-plus-minus-box">
+										</div>
+									</div>
                                  ';
 						?>
+						<br><br>
 						<!-- form xử lý khi thêm vào giỏ hàng -->
 						<form action="index.php?act=addtocart" method="post">
 							<input type="hidden" name="id" value="<?= $id ?>">
@@ -201,30 +229,15 @@
 					<div class="single-pro-tab-menu">
 						<!-- Nav tabs -->
 						<ul class="nav d-block">
-							<li><a href="#description" data-bs-toggle="tab">Description</a></li>
-							<li><a class="active" href="#reviews" data-bs-toggle="tab">Reviews</a></li>
-							<li><a href="#information" data-bs-toggle="tab">Information</a></li>
-							<li><a href="#tags" data-bs-toggle="tab">Tags</a></li>
+							
+							<li><a class="active" href="#reviews" data-bs-toggle="tab">Đánh giá</a></li>
+							
 						</ul>
 					</div>
 				</div>
 				<div class="col-md-9">
 					<!-- Tab panes -->
 					<div class="tab-content">
-						<div class="tab-pane" id="description">
-							<div class="pro-tab-info pro-description">
-								<h3 class="tab-title title-border mb-30">dummy Product name</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas
-									elese ifend. Phasellus a felis at est bibendum feugiat ut eget eni Praesent et
-									messages in con sectetur posuere dolor non.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas
-									elese ifend. Phasellus a felis at est bibendum feugiat ut eget eni Praesent et
-									messages in con sectetur posuere dolor non.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas
-									elese ifend. Phasellus a felis at est bibendum feugiat ut eget eni Praesent et
-									messages in con sectetur posuere dolor non.</p>
-							</div>
-						</div>
 						<div class="tab-pane active" id="reviews">
 							<div class="pro-tab-info pro-reviews">
 								<div class="customer-review mb-60">
@@ -248,24 +261,7 @@
 															<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas elese ifend. Phasellus a felis at est bibendum feugiat ut eget eni Praesent et messages in con sectetur posuere dolor non.</p>
 														</div>
 													</li> -->
-										<!-- <li class="threaded-comments">
-														<div class="pro-reviewer">
-															<img src="img/reviewer/1.jpg" alt="" />
-														</div>
-														<div class="pro-reviewer-comment">
-															<div class="fix">
-																<div class="floatleft mbl-center">
-																	<h5 class="text-uppercase mb-0"><strong>Gerald Barnes</strong></h5>
-																	<p class="reply-date">27 Jun, 2021 at 2:30pm</p>
-																</div>
-																<div class="comment-reply floatright">
-																	<a href="#"><i class="zmdi zmdi-mail-reply"></i></a>
-																	<a href="#"><i class="zmdi zmdi-close"></i></a>
-																</div>
-															</div>
-															<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas elese ifend. Phasellus a felis at est bibendum feugiat ut eget eni Praesent et messages in con sectetur posuere dolor non.</p>
-														</div>
-													</li> -->
+										
 									</ul>
 								</div>
 
@@ -274,26 +270,24 @@
 									<form action="index.php?act=spchitiet" method="POST">
 										<div class="row">
 											<table class="table table-responsive">
-												<tr>
-													<th>Tên người dùng</th>
-													<th>Nội dung</th>
-													<th>Ngày bình luận</th>
-												</tr>
+									
 												<?php foreach ($load_all_binhluan as $binhluan):
 													extract($binhluan);
 													?>
-													<tr>
-
-														<td>
-															<?= $ten_dang_nhap ?>
-														</td>
-														<td>
-															<?= $content ?>
-														</td>
-														<td>
-															<?= $date_comment ?>
-														</td>
-													</tr>
+													<ul class="product-comments clearfix">
+										           <li class="mb-30">
+														<div class="pro-reviewer-comment">
+															<div class="fix">
+																<div class="floatleft mbl-center">
+																	<h5 class="text-uppercase mb-0"><strong><?=$ten_dang_nhap?></strong></h5>
+																	<p class="reply-date"><?= $date_comment ?></p>
+																</div>
+															</div>
+															<p class="mb-0"><?= $content ?></p>
+														</div>
+													</li>
+										
+									</ul>
 												<?php endforeach; ?>
 											</table>
 											<div class="write_review">
