@@ -166,6 +166,21 @@ if(isset($_GET['act'])){
                         case "form":
                             include "./view/taikhoan/myaccount.php";
                             break;
+
+                        //Quên mật khẩu
+                        case 'quenmk':
+                            if(isset($_POST['guiemail'])&&($_POST['guiemail'])){
+                                $email = $_POST['email'];
+                                $checkemail = Checkemail($email);
+                            if(is_array($checkemail)){
+                                $thongbao = "Mật khẩu của bạn là:". $checkemail['mat_khau'];
+                            }else{
+                                $thongbao = "Email này không tồn tại";
+                            }
+                            }
+                            include './view/taikhoan/quenmk.php';
+                        break;
+
                     // lấy link
                     case "dangnhap1":
                         include "./view/taikhoan/dangnhap.php";

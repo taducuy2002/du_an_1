@@ -108,6 +108,20 @@ body {
         margin-bottom: 20px;
     }
 }
+/* Thêm kiểu cho nút reset mặc định */
+input[type="reset"] {
+    background-color: #f8f9fa; /* Màu nền ban đầu */
+    color: #333; /* Màu chữ ban đầu */
+    border: 1px solid #ccc; /* Viền */
+    padding: 8px 16px; /* Đệm */
+    cursor: pointer; /* Con trỏ chuột */
+    transition: background-color 0.3s ease; /* Chuyển đổi mượt mà */
+}
+
+/* Thêm hiệu ứng khi hover */
+input[type="reset"]:hover {
+    background-color: #e2e6ea;
+}
 
 </style>
 <!-- 
@@ -140,24 +154,26 @@ body {
             <div class="col-lg-6 offset-xl-2">
                 <div class="axil-signin-form-wrap">
                     <div class="axil-signin-form">
-                        <h3 class="title">Sign in to shop.</h3>
-                        <p class="b2 mb--55">Enter your detail below</p>
-                        <form class="singin-form" action="index.php?act=dangnhap" method="POST" >
+                        <h3 class="title">Quên mật khẩu</h3>
+                        <p class="b2 mb--55">Nhập địa chỉ email vào form để xem mật khẩu</p>
+                        <form class="singin-form" action="index.php?act=quenmk" method="POST" >
                             <div class="form-group">
-                                <label>User Name</label>
-                                <input type="text" class="form-control" name="username" >
-                            </div>
-                            <div class="form-group">
-                                <label>Password</label>
-                                <input type="password" class="form-control" name="password" >
+                                <label>Nhập địa chỉ email</label>
+                                <input type="email" class="form-control" name="email" >
                             </div>
                             <div class="form-group d-flex align-items-center justify-content-between">
-                                <input type="submit" name="submit" class="axil-btn btn-bg-primary submit-btn" value="Đăng nhập">
-                                <a href="index.php?act=quenmk" class="forgot-btn">Quên mật khẩu ?</a>
+                                <input type="submit" name="guiemail" class="axil-btn btn-bg-primary submit-btn" value="Gửi">
+                                <input type="reset"  value="Nhập lại">
                             </div>
                         </form>
+                        <?php
+                        if(isset($thongbao)&&($thongbao!="")){
+                            echo $thongbao;
+                        }
+                        ?>
                     </div>
                 </div>
+                <a href="index.php?act=dangnhap1">Quay lại đăng nhập</a>
             </div>
         </div>
 
