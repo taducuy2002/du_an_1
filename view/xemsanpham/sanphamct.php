@@ -229,15 +229,30 @@
 					<div class="single-pro-tab-menu">
 						<!-- Nav tabs -->
 						<ul class="nav d-block">
-							
-							<li><a class="active" href="#reviews" data-bs-toggle="tab">Đánh giá</a></li>
-							
+							<li><a href="#description" data-bs-toggle="tab">Description</a></li>
+							<li><a class="active" href="#reviews" data-bs-toggle="tab">Reviews</a></li>
+							<li><a href="#information" data-bs-toggle="tab">Information</a></li>
+							<li><a href="#tags" data-bs-toggle="tab">Tags</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-md-9">
 					<!-- Tab panes -->
 					<div class="tab-content">
+						<div class="tab-pane" id="description">
+							<div class="pro-tab-info pro-description">
+								<h3 class="tab-title title-border mb-30">dummy Product name</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas
+									elese ifend. Phasellus a felis at est bibendum feugiat ut eget eni Praesent et
+									messages in con sectetur posuere dolor non.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas
+									elese ifend. Phasellus a felis at est bibendum feugiat ut eget eni Praesent et
+									messages in con sectetur posuere dolor non.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas
+									elese ifend. Phasellus a felis at est bibendum feugiat ut eget eni Praesent et
+									messages in con sectetur posuere dolor non.</p>
+							</div>
+						</div>
 						<div class="tab-pane active" id="reviews">
 							<div class="pro-tab-info pro-reviews">
 								<div class="customer-review mb-60">
@@ -276,11 +291,17 @@
 													?>
 													<ul class="product-comments clearfix">
 										           <li class="mb-30">
+														<div class="pro-reviewer">
+															<img src="img/logobinhluan.jfif" alt="" />
+														</div>
 														<div class="pro-reviewer-comment">
 															<div class="fix">
 																<div class="floatleft mbl-center">
 																	<h5 class="text-uppercase mb-0"><strong><?=$ten_dang_nhap?></strong></h5>
 																	<p class="reply-date"><?= $date_comment ?></p>
+																</div>
+																<div class="comment-reply floatright">
+																	
 																</div>
 															</div>
 															<p class="mb-0"><?= $content ?></p>
