@@ -186,4 +186,3 @@ a:hover {
                 <a href="index.php?act=dangnhap1">Quay lại đăng nhập</a>
             </div>
         </div>
-

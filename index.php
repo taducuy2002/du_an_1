@@ -8,6 +8,7 @@ include "model/client/client.php";
 $loadsp_dm = loadAll_danhmuc();
 $listsp = loadAll_sanpham_home();
 $spnew = loadAll_sanpham_moi();
+$topsanpham = loadAll_sanpham_yeuthich_top8();
 $userID = $_SESSION['tai_khoan']['id'] ?? 0;
 // $spyt = loadAll_sanpham_yeuthich_top10();
 // $sptop = loadAll_sanpham_moitop();

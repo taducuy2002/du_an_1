@@ -165,7 +165,7 @@
                 <div class="header-navbar">
                     <div class="header-brand">
                         <a href="index.php" class="logo logo-dark">
-                            <img src="img/logo/logo1.png" alt="Site Logo">
+                            <img src="img/logo/logo2.png" alt="Site Logo">
                         </a>
                     </div>
                     <div class="header-main-nav">
@@ -233,7 +233,7 @@
                                     <td class="product-subtotal" data-title="Subtotal">DuAn1-' . $bill['id'] . '</td>
                                     <td class="product-subtotal" data-title="Subtotal">' . $bill['ngay_dat_hang'] . '</td>
                                     <td class="product-subtotal" data-title="Subtotal">' . $count . '</td>
-                                    <td class="product-subtotal" data-title="Subtotal">' . $bill['tong_tien'] . '$</td>
+                                    <td class="product-subtotal" data-title="Subtotal">' . $bill['tong_tien'] . '</td>
                                     <td class="product-subtotal" data-title="Subtotal">' . $ttdh . '</td>
                                     <td class="product-subtotal" data-title="Subtotal">
                                     <a href="index.php?act=dhchitiet&id=' . $bill['id'] . '"><button class="button">Xem chi tiết</button></a>

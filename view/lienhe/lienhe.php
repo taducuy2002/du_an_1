@@ -12,7 +12,7 @@
                 <div class="header-navbar">
                     <div class="header-brand">
                         <a href="index.php" class="logo logo-dark">
-                            <img src="img/logo/logo1.png" alt="Site Logo">
+                            <img src="img/logo/logo2.png" alt="Site Logo">
                         </a>
                     </div>
                     <div class="header-main-nav">

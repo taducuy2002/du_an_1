@@ -93,9 +93,9 @@
                                     <td class="product-subtotal" data-title="Subtotal">' . $id_san_pham . '</td>
                                     <td class="product-subtotal" data-title="Subtotal">' . $ten_san_pham . '</td>
                                     <td class="product-subtotal" data-title="Subtotal"><img src="img/' . $img_sp . '" style="width: 100px;"></td>
-                                    <td class="product-subtotal" data-title="Subtotal">' . $gia_san_pham . '$</td>
+                                    <td class="product-subtotal" data-title="Subtotal">' . $gia_san_pham . '</td>
                                     <td class="product-subtotal" data-title="Subtotal">' . $so_luong . '</td>
-                                    <td class="product-subtotal" data-title="Subtotal">' . $thanh_tien . '$</td>
+                                    <td class="product-subtotal" data-title="Subtotal">' . $thanh_tien . '</td>
                                     
                                     
                                     </tr>
@@ -109,7 +109,7 @@
                             <tfoot>
                                 <tr>
                                     <td colspan="5"><strong>Tổng đơn hàng</strong></td>
-                                    <td colspan="1"><strong><?= $tong_tien ?>$</td>
+                                    <td colspan="1"><strong><?= $tong_tien ?></td>
                                 </tr>
                             </tfoot>
                         </table>

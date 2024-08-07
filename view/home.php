@@ -1,3 +1,4 @@
+
 <!-- WRAPPER START -->
 <!-- Mobile-header-top Start -->
 <div class="mobile-header-top d-block d-md-none">
@@ -30,7 +31,7 @@
             <div class="row">
                 <div class="col-md-4 offset-md-4 col-7">
                     <div class="logo text-md-center">
-                        <a href="index.php"><img src="img/logo/logo1.png" alt="" style="width:130px"></a>
+                        <a href="index.php"><img src="img/logo/logo2.png" alt="" style="width:130px"></a>
                     </div>
                 </div>
                 <div class="col-md-4 col-5">
@@ -42,17 +43,15 @@
                                     <span>3</span>
                                 </a>
                                 <div class="mini-cart-brief text-left">
-                                    <div class="cart-items">
+                                       <div class="cart-items">
                                         <p class="mb-0">You have <span>03 items</span> in your shopping bag</p>
                                     </div>
 
                                     <div class="all-cart-product clearfix">
                                     </div>
                                     <div class="cart-bottom  clearfix">
-                                        <a href="index.php?act=addtocart" class="button-one floatleft text-uppercase"
-                                            data-text="View cart">View cart</a>
-                                        <a href="index.php?act=donhang" class="button-one floatright text-uppercase"
-                                            data-text="Check out">Check out</a>
+                                        <a href="index.php?act=addtocart" class="button-one floatleft text-uppercase" data-text="View cart">View cart</a>
+                                        <a href="index.php?act=donhang" class="button-one floatright text-uppercase" data-text="Check out">Check out</a>
                                     </div>
                                 </div>
                             </li>
@@ -71,14 +70,28 @@
     <div class="main-menu  d-none d-md-block">
         <nav>
             <ul>
-                <li><a href="index.php?act=home">home</a>
+                <li><a href="index.html">home</a>
+                    <div class="sub-menu menu-scroll">
+                        <ul>
+                            <li class="menu-title">Page's</li>
+                            <li><a href="index.html">Home Version 1</a></li>
+                            <li><a href="index-2.html">Home Version 2</a></li>
+                        </ul>
+                    </div>
                 </li>
-                <li><a href="index.php?act=allsanpham">Sản phẩm</a>
-
+                <li><a href="index.php?act=allsanpham">products</a>
+                    
                 </li>
+                <li><a href="#">Shortcodes</a>
+                    
+                </li>
+                <li><a href="shop-sidebar.html">accesories</a></li>
+                <li><a href="shop-list.html">lookbook</a></li>
+                <li><a href="blog.html">blog</a></li>
                 <li><a href="index.php?act=baiviet">Bài Viết</a>
-
+                    
                 </li>
+                <li><a href="about.html">about us</a></li>
                 <li><a href="index.php?act=lienhe">LIên hệ</a></li>
             </ul>
         </nav>
@@ -142,14 +155,10 @@
         <div class="table">
             <div class="table-cell">
                 <ul>
-                    <li><a href="https://www.google.com.vn/" target="_blank" title="Google Plus"><i
-                                class="zmdi zmdi-google-plus"></i></a></li>
-                    <li><a href="https://x.com/" target="_blank" title="Twitter"><i class="zmdi zmdi-twitter"></i></a>
-                    </li>
-                    <li><a href="https://www.facebook.com/" target="_blank" title="Facebook"><i
-                                class="zmdi zmdi-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank" title="Linkedin"><i
-                                class="zmdi zmdi-linkedin"></i></a></li>
+                    <li><a href="#" target="_blank" title="Google Plus"><i class="zmdi zmdi-google-plus"></i></a></li>
+                    <li><a href="#" target="_blank" title="Twitter"><i class="zmdi zmdi-twitter"></i></a></li>
+                    <li><a href="#" target="_blank" title="Facebook"><i class="zmdi zmdi-facebook"></i></a></li>
+                    <li><a href="#" target="_blank" title="Linkedin"><i class="zmdi zmdi-linkedin"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -159,41 +168,41 @@
         <!-- Slider-banner start -->
         <div class="slider-banner">
             <style>
-                .slider-banner {
+                .slider-banner{
                     display: flex;
                     width: 100%;
-                    height: 310px;
+                    height:310px;
                     flex-direction: column;
                     gap: 40px;
-
+                    
                 }
             </style>
-            <?php
-            foreach ($spnew as $spmoi) {
-                extract($spmoi);
-                $hinh = $img_path . $img;
-                echo '<div class=" single-banner banner-1">
-                <a class="banner-thumb" href="#"><img src="' . $hinh . '" alt="" id="anhbanner"/></a>
+                <?php
+                foreach ($spnew as $spmoi) {
+                    extract($spmoi);
+                    $hinh = $img_path . $img;
+                    echo'<div class=" single-banner banner-1">
+                <a class="banner-thumb" href="#"><img src="'.$hinh.'" alt="" id="anhbanner"/></a>
                 <span class="pro-label new-label">new</span>
-                <span class="price" id="tex1">' . $gia . '</span>
+                <span class="price" id="tex1">'.$gia.'</span>
                 <div class="banner-brief">
-                    <h2 class="banner-title"><a href="#">' . $ten_san_pham . '</a></h2>
+                    <h2 class="banner-title"><a href="#">'.$ten_san_pham.'</a></h2>
                     
                     <form action="index.php?act=addtocart" method="post">
-                                <input type="hidden" name="id" value="' . $id . '">
-                               <input type="hidden" name="img" value="' . $img . '">
-                                <input type="hidden" name="name" value="' . $ten_san_pham . '">
-                               <input type="hidden" name="price" value="' . $gia . '">
+                                <input type="hidden" name="id" value="'.$id.'">
+                               <input type="hidden" name="img" value="'.$img.'">
+                                <input type="hidden" name="name" value="'.$ten_san_pham.'">
+                               <input type="hidden" name="price" value="'.$gia.'">
                                <input type="submit" name="addtocart" value="Shop now" class="buttonbtn"></a>
                                 </form>
                 </div>
                 
             </div>';
-
-            }
-            ?>
-
-
+            
+                }
+                ?>
+                
+           
         </div>
         <!-- Slider-banner end -->
     </div>
@@ -202,9 +211,9 @@
         <div class="slider-area">
             <div class="bend niceties preview-2">
                 <div id="ensign-nivoslider" class="slides">
-                    <img src="img/banner/banner2.jpg" alt="" title="#slider-direction-1" />
-                    <img src="img/banner/banner3.jpg" alt="" title="#slider-direction-2" />
-                    <img src="img/banner/banner1.jpg" alt="" title="#slider-direction-3" />
+                    <img src="img/banner/banner2.jpg" alt="" title="#slider-direction-1"  />
+                    <img src="img/banner/banner3.jpg" alt="" title="#slider-direction-2"  />
+                    <img src="img/banner/banner1.jpg" alt="" title="#slider-direction-3"  />
                 </div>
                 <!-- direction 1 -->
                 <div id="slider-direction-1" class="t-cn slider-direction">
@@ -213,17 +222,16 @@
                         <div class="title-container s-tb-c title-compress">
                             <div class="layer-1">
                                 <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                                    <h2 class="slider-title3 text-uppercase mb-0">welcome to our</h2>
+                                    <h2 class="slider-title3 text-uppercase mb-0" >welcome to our</h2>
                                 </div>
                                 <div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1.5s">
                                     <h2 class="slider-title1 text-uppercase mb-0">WELCOME TO OUR</h2>
                                 </div>
                                 <div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="2.5s">
-                                    <h3 class="slider-title2 text-uppercase">gallery 2024</h3>
+                                    <h3 class="slider-title2 text-uppercase" >gallery 2024</h3>
                                 </div>
                                 <div class="wow fadeIn" data-wow-duration="2.5s" data-wow-delay="3.5s">
-                                    <a href="index.php?act=allsanpham" class="button-one style-2 text-uppercase mt-20"
-                                        data-text="Shop now">Shop now</a>
+                                    <a href="index.php?act=allsanpham" class="button-one style-2 text-uppercase mt-20" data-text="Shop now">Shop now</a>
                                 </div>
                             </div>
                         </div>
@@ -236,19 +244,16 @@
                         <div class="title-container s-tb-c title-compress">
                             <div class="layer-1">
                                 <div class="wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                                    <h2 class="slider-title3 text-uppercase mb-0">welcome to our</h2>
+                                    <h2 class="slider-title3 text-uppercase mb-0" >welcome to our</h2>
                                 </div>
                                 <div class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
                                     <h2 class="slider-title1 text-uppercase">WELCOME TO OUR</h2>
                                 </div>
                                 <div class="wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="0.5s">
-                                    <p class="slider-pro-brief">There are many variations of passages of Lorem Ipsum
-                                        available, but the majority have suffered alteration in some form, by injected
-                                        humour, or randomised words which don't look even slightly believable</p>
+                                    <p class="slider-pro-brief">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
                                 </div>
                                 <div class="wow fadeInUpBig" data-wow-duration="2.5s" data-wow-delay="0.5s">
-                                    <a href="#" class="button-one style-2 text-uppercase mt-20"
-                                        data-text="Shop now">Shop now</a>
+                                    <a href="#" class="button-one style-2 text-uppercase mt-20" data-text="Shop now">Shop now</a>
                                 </div>
                             </div>
                         </div>
@@ -261,22 +266,19 @@
                         <div class="title-container s-tb-c title-compress">
                             <div class="layer-1">
                                 <div class="wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                                    <h2 class="slider-title3 text-uppercase mb-0">welcome to our</h2>
+                                    <h2 class="slider-title3 text-uppercase mb-0" >welcome to our</h2>
                                 </div>
                                 <div class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
                                     <h2 class="slider-title1 text-uppercase mb-0">WELCOME TO OUR</h2>
                                 </div>
                                 <div class="wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="0.5s">
-                                    <h3 class="slider-title2 text-uppercase">gallery 2021</h3>
+                                    <h3 class="slider-title2 text-uppercase" >gallery 2021</h3>
                                 </div>
                                 <div class="wow fadeInUpBig" data-wow-duration="2.5s" data-wow-delay="0.5s">
-                                    <p class="slider-pro-brief">There are many variations of passages of Lorem Ipsum
-                                        available, but the majority have suffered alteration in some form, by injected
-                                        humour, or randomised words which don't look even slightly believable</p>
+                                    <p class="slider-pro-brief">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
                                 </div>
                                 <div class="wow fadeInUpBig" data-wow-duration="3s" data-wow-delay="0.5s">
-                                    <a href="#" class="button-one style-2 text-uppercase mt-20"
-                                        data-text="Shop now">Shop now</a>
+                                    <a href="#" class="button-one style-2 text-uppercase mt-20" data-text="Shop now">Shop now</a>
                                 </div>
                             </div>
                         </div>
@@ -291,39 +293,38 @@
         <div class="table">
             <div class="table-cell">
                 <?php
-                if (isset($_SESSION['tai_khoan'])) {
+                if(isset($_SESSION['tai_khoan'])){
                     extract($_SESSION['tai_khoan']);
-
-                    ?>
-                    <!-- hiển thị thông tin đã đăng nhập -->
-                    <ul>
-                        <li><a class="search-open" href="#" title="Search"><i class="zmdi zmdi-search"></i></a></li>
-                        <li><a href="#" title="Login"><i class="zmdi zmdi-lock"></i></a>
-                            <div class="customer-login text-left">
-                                <form action="#">
-                                    <span style="font-size: 15px;  font-weight: bolder;">Xin chào :
-                                        <?= $ten_dang_nhap ?></span>
-                        <li>
-                            <a href="index.php?act=addtocart">Giỏ hàng</a>
-                        </li>
-                        <li>
-                            <a href="index.php?act=donhang">Đơn hàng của tôi</a>
-                        </li>
-                        <li>
-                            <?php if ($chuc_vu !== 1) { ?>
+            
+                ?>
+                <!-- hiển thị thông tin đã đăng nhập -->
+                <ul>
+                    <li><a class="search-open" href="#" title="Search"><i class="zmdi zmdi-search"></i></a></li>
+                    <li><a href="#" title="Login"><i class="zmdi zmdi-lock"></i></a>
+                        <div class="customer-login text-left">
+                            <form action="#">
+                           <span style="font-size: 15px;  font-weight: bolder;">Xin chào : <?=$ten_dang_nhap?></span>
+                            <li>
+                                <a href="index.php?act=addtocart">Giỏ hàng</a>
+                            </li>
+                            <li>
+                                <a href="index.php?act=donhang">Đơn hàng của tôi</a>
+                            </li>
+                            <li>
+                            <?php if($chuc_vu !== 1) { ?>
                                 <a href="admin/index.php">Đăng nhập vào admin</a>
-                            <?php } ?>
-                        </li>
-                        </form>
-                        <div class="thoattk">
-                            <a href="index.php?act=thoat">Thoát</a>
+                                <?php } ?>
+                            </li>
+                            </form>
+                            <div class="thoattk">
+                                <a href="index.php?act=thoat">Thoát</a>
+                            </div>
                         </div>
-                </div>
-                </li>
-                <li><a href="index.php?act=form" title="Tài khoản của tôi"><i class="zmdi zmdi-account"></i></a></li>
-                <!-- <li><a href="index.php?act=thoat" title="Wishlist">Thoát</a></li> -->
+                    </li>
+                    <li><a href="index.php?act=form" title="Tài khoản của tôi"><i class="zmdi zmdi-account"></i></a></li>
+                    <!-- <li><a href="index.php?act=thoat" title="Wishlist">Thoát</a></li> -->
                 </ul>
-            <?php } else { ?>
+                <?php } else { ?>
                 <ul>
                     <li><a class="search-open" href="#" title="Search"><i class="zmdi zmdi-search"></i></a></li>
                     <li><a href="#" title="Login"><i class="zmdi zmdi-lock"></i></a>
@@ -331,20 +332,18 @@
                             <form action="#">
                                 <h4 class="title-1 title-border text-uppercase mb-30">Khách hàng đã đăng ký</h4>
                                 <p class="text-gray">Nếu bạn có tài khoản với chúng tôi, vui lòng đăng nhập!</p>
-
-                                <a href="index.php?act=dangnhap1" class="button-one submit-button mt-15"
-                                    data-text="Đăng nhập" type="submit">Đăng nhập</a>
-                                <p>Bạn chưa có tài khoản:<a class="text-gray" href="index.php?act=fomdangky">Đăng ký tại
-                                        đây</a></p>
+                            
+                                <a href="index.php?act=dangnhap1"  class="button-one submit-button mt-15" data-text="Đăng nhập"   type="submit">Đăng nhập</a>
+                                <p>Bạn chưa có tài khoản:<a class="text-gray" href="index.php?act=fomdangky">Đăng ký tại đây</a></p>
                             </form>
                         </div>
                     </li>
                     <li><a href="index.php?act=fomdangky" title="My-Account"><i class="zmdi zmdi-account"></i></a></li>
                     <!-- <li><a href="index.php?act=thoat" title="Wishlist">Thoát</a></li> -->
                 </ul>
-            <?php } ?>
+                <?php } ?>
+            </div>
         </div>
-    </div>
     </div>
     <!-- Sidebar-social-media start -->
 </section>
@@ -381,33 +380,33 @@
                     <h2 class="title-border"><a href="#">GIÀY THỂ THAO SNEAKER</a></h2>
                 </div>
                 <div class="product-slider style-1 arrow-left-right">
-
-                    <?php
-                    $i = 0;
-                    foreach ($listsp as $sp) {
-                        extract($sp);
-                        $linksp = "index.php?act=spchitiet&idsp=" . $id;
-                        $hinh = $img_path . $img;
-                        echo '<div class="single-product">  
+            
+                        <?php
+                        $i=0;
+                        foreach ($listsp as $sp){
+                            extract($sp);
+                            $linksp = "index.php?act=spchitiet&idsp=" .$id;
+                            $hinh = $img_path.$img;
+                           echo '<div class="single-product">  
                         <div class="product-img">
                             <span class="pro-label new-label">new</span>
-                            <a href="' . $linksp . '"><img src="' . $hinh . '" alt="" style="width:300px;height:200px;"/></a>
+                            <a href="'.$linksp.'"><img src="'.$hinh.'" alt="" style="width:300px;height:200px;"/></a>
                             <div class="product-action">
                             <form action="index.php?act=addtocart" method="post">
-                                <input type="hidden" name="id" value="' . $id . '">
-                               <input type="hidden" name="img" value="' . $img . '">
-                                <input type="hidden" name="name" value="' . $ten_san_pham . '">
-                               <input type="hidden" name="price" value="' . $gia . '">
+                                <input type="hidden" name="id" value="'.$id.'">
+                               <input type="hidden" name="img" value="'.$img.'">
+                                <input type="hidden" name="name" value="'.$ten_san_pham.'">
+                               <input type="hidden" name="price" value="'.$gia.'">
                                <input type="submit" name="addtocart" value="Add to Cart" class="buttonbtn"></a>
                                 </form>
                             </div>
                         </div>
                         <div class="product-info clearfix">
                             <div class="fix">
-                                <h4 class="post-title floatleft"><a href="#">' . $ten_san_pham . '</a></h4>
+                                <h4 class="post-title floatleft"><a href="#">'.$ten_san_pham.'</a></h4>
                             </div>
                             <div class="fix">
-                                <span class="pro-price floatleft">' . $gia . '</span>
+                                <span class="pro-price floatleft">'.$gia.'</span>
                                 <span class="pro-rating floatright">
                                     
                                 </span>
@@ -415,11 +414,11 @@
                         </div>
                     </div>
                     ';
-                    }
-                    ?>
-
-
-
+                        }
+                        ?>
+                        
+        
+                    
                 </div>
             </div>
         </div>
@@ -442,11 +441,8 @@
                             </div>
                             <div class="discount-info">
                                 <h1 class="text-dark-red d-none d-md-block">Discount 50%</h1>
-                                <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed does eiusmodes tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim venim, quis nostrud exercitation ullamco laboris.</p>
-                                <a href="#" class="button-one font-16px style-3 text-uppercase mt-md-5"
-                                    data-text="Buy now">Buy now</a>
+                                <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed does eiusmodes tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venim, quis nostrud exercitation ullamco laboris.</p>
+                                <a href="#" class="button-one font-16px style-3 text-uppercase mt-md-5" data-text="Buy now">Buy now</a>
                             </div>
                         </div>
                     </div>
@@ -463,11 +459,8 @@
                             </div>
                             <div class="discount-info">
                                 <h1 class="text-dark-red d-none d-md-block">Discount 50%</h1>
-                                <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed does eiusmodes tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim venim, quis nostrud exercitation ullamco laboris.</p>
-                                <a href="#" class="button-one font-16px style-3 text-uppercase mt-md-5"
-                                    data-text="Buy now">Buy now</a>
+                                <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed does eiusmodes tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venim, quis nostrud exercitation ullamco laboris.</p>
+                                <a href="#" class="button-one font-16px style-3 text-uppercase mt-md-5" data-text="Buy now">Buy now</a>
                             </div>
                         </div>
                     </div>
@@ -484,11 +477,8 @@
                             </div>
                             <div class="discount-info">
                                 <h1 class="text-dark-red d-none d-md-block">Discount 50%</h1>
-                                <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed does eiusmodes tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim venim, quis nostrud exercitation ullamco laboris.</p>
-                                <a href="#" class="button-one font-16px style-3 text-uppercase mt-md-5"
-                                    data-text="Buy now">Buy now</a>
+                                <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed does eiusmodes tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venim, quis nostrud exercitation ullamco laboris.</p>
+                                <a href="#" class="button-one font-16px style-3 text-uppercase mt-md-5" data-text="Buy now">Buy now</a>
                             </div>
                         </div>
                     </div>
@@ -505,11 +495,8 @@
                             </div>
                             <div class="discount-info">
                                 <h1 class="text-dark-red d-none d-md-block">Discount 50%</h1>
-                                <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed does eiusmodes tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim venim, quis nostrud exercitation ullamco laboris.</p>
-                                <a href="#" class="button-one font-16px style-3 text-uppercase mt-md-5"
-                                    data-text="Buy now">Buy now</a>
+                                <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed does eiusmodes tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venim, quis nostrud exercitation ullamco laboris.</p>
+                                <a href="#" class="button-one font-16px style-3 text-uppercase mt-md-5" data-text="Buy now">Buy now</a>
                             </div>
                         </div>
                     </div>
@@ -534,32 +521,60 @@
             <div class="col-lg-12 text-center">
                 <!-- Nav tabs -->
                 <ul class="tab-menu nav clearfix">
-
-                    <?php
-                    foreach ($loadsp_dm as $dm) {
-                        extract($dm);
-                        $linkdm = "index.php?act=sanpham&id=" . $id;
+                   
+                <?php
+                foreach ($loadsp_dm as $dm) {
+                   extract($dm);
+                   $linkdm = "index.php?act=sanpham&id=" . $id;
                         $hinh = $img_path . $img;
-                        echo '<li><a class="active" href="' . $linkdm . '">
-                <img class="img-new" src="' . $hinh . '" style="width: 200px; height: 140px;">
+                        echo '<li><a class="active" href="'.$linkdm.'">
+                <img class="img-new" src="' . $hinh . '" style="width: 150px; height: 140px;">
                 <h6 class="cat-title">' . $ten_danh_muc . '</h6>
                 </a></li>';
-
-                    }
-                    ?>
-
+                    
+                }
+                ?>
                 </ul>
             </div>
             <div class="col-lg-12">
-                <!-- Tab panes -->
+            <div class="section-title text-center">
+                    <h2 class="title-border">TOP SẢN PHẨM BÁN CHẠY</h2>
+                </div>
                 <div class="tab-content">
-                    <div class="tab-pane active" id="new-arrivals">
-                        <div class="row">
-                            <!-- Single-product start -->
-
-                            <!-- Single-product end -->
-                        </div>
-                    </div>
+                <div class="tab-pane active" id="new-arrivals">
+									<div class="row">
+                                        <?php
+                                        foreach ($topsanpham as $new) {
+                                           extract($new);
+                                           $linksp = "index.php?act=spchitiet&idsp=" .$id;
+                                           $hinh = $img_path . $img;
+                                           echo '<div class="single-product col-xl-3 col-lg-4 col-md-6">
+											<div class="product-img">
+												<a href="'.$linksp.'"><img src="'.$hinh.'" alt="" style="width:300px; height:200px;" /></a>
+												<div class="product-action">
+                            <form action="index.php?act=addtocart" method="post">
+                                <input type="hidden" name="id" value="'.$id.'">
+                               <input type="hidden" name="img" value="'.$img.'">
+                                <input type="hidden" name="name" value="'.$ten_san_pham.'">
+                               <input type="hidden" name="price" value="'.$gia.'">
+                               <input type="submit" name="addtocart" value="Add to Cart" class="buttonbtn"></a>
+                                </form>
+                            </div>
+											</div>
+											<div class="product-info clearfix">
+												<div class="fix">
+													<h4 class="post-title floatleft"><a href="#">'.$ten_san_pham.'</a></h4>
+												</div>
+												<div class="fix">
+													<span class="pro-price floatleft">'.$gia.'</span>
+												</div>
+											</div>
+										</div>';
+                                        }
+                                        ?>
+			                         
+									</div>
+								</div>
                 </div>
             </div>
         </div>
@@ -577,85 +592,71 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12 text-center mt--20 mt_sm--0">
-                        <a href="index.php?act=allsanpham" class="axil-btn btn-bg-lighter btn-load-more">Tất cả sản
-                            phẩm</a>
+                        <a href="index.php?act=allsanpham" class="stylish-button">Tất cả sản phẩm</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Section-title end -->
-        <div class="row">
-            <!-- Single-blog start -->
-            <div class="col-lg-6">
-                <div class="single-blog mt-30">
-                    <div class="row">
-                        <div class="col-xl-6 col-md-7">
-                            <div class="blog-info">
-                                <div class="post-meta fix">
-                                    <div class="post-date floatleft"><span class="text-dark-red">30</span></div>
-                                    <div class="post-year floatleft">
-                                        <p class="text-uppercase text-dark-red mb-0">June, 2024</p>
-                                        <h4 class="post-title"><a href="#" tabindex="0">Shop sỉ lẻ các loại giày cao
-                                                cấp</a></h4>
-                                    </div>
-                                </div>
-                                <div class="like-share fix">
-                                    <a href="#"><i class="zmdi zmdi-favorite"></i><span>89 Like</span></a>
-                                    <a href="#"><i class="zmdi zmdi-comments"></i><span>59 Comments</span></a>
-                                    <a href="#"><i class="zmdi zmdi-share"></i><span>29 Share</span></a>
-                                </div>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    suffered If you are going to use a passage Lorem Ipsum, you alteration in some form.
-                                </p>
-                                <a href="#" class="button-2 text-dark-red">Read more...</a>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-md-5">
-                            <div class="blog-photo">
-                                <a href="#"><img src="img/anh9.webp" alt="" style="height: 14pc;" /></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Single-blog end -->
-            <!-- Single-blog start -->
-            <div class="col-lg-6">
-                <div class="single-blog mt-30">
-                    <div class="row">
-                        <div class="col-xl-6 col-md-7">
-                            <div class="blog-info">
-                                <div class="post-meta fix">
-                                    <div class="post-date floatleft"><span class="text-dark-red">30</span></div>
-                                    <div class="post-year floatleft">
-                                        <p class="text-uppercase text-dark-red mb-0">June, 2024</p>
-                                        <h4 class="post-title"><a href="#" tabindex="0">Cửa hàng cung cấp sản phẩm dành
-                                                cho giới trẻ</a></h4>
-                                    </div>
-                                </div>
-                                <div class="like-share fix">
-                                    <a href="#"><i class="zmdi zmdi-favorite"></i><span>89 Like</span></a>
-                                    <a href="#"><i class="zmdi zmdi-comments"></i><span>59 Comments</span></a>
-                                    <a href="#"><i class="zmdi zmdi-share"></i><span>29 Share</span></a>
-                                </div>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    suffered If you are going to use a passage Lorem Ipsum, you alteration in some form.
-                                </p>
-                                <a href="#" class="button-2 text-dark-red">Read more...</a>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-md-5">
-                            <div class="blog-photo">
-                                <a href="#"><img src="img/anh8.jpeg" alt="" style="height: 14pc;" /></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Single-blog end -->
-        </div>
     </div>
 </div>
+<style>
+    .stylish-button {
+    display: inline-block; /* Ensures the link behaves like a block element */
+    padding: 8px 20px; /* Adds space inside the button */
+    font-size: 16px; /* Sets the font size */
+    color: #333; /* Dark text color */
+    background-color: #f0f0f0; /* Light gray background color */
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 20px; /* Rounded corners, more pronounced */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Removes underline */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.stylish-button:hover {
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.stylish-button:active {
+    background-color: #d0d0d0; /* Even darker background on click */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); /* Inner shadow for pressed effect */
+}
+.tab-menu li {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0;
+    list-style-type: none; /* Removes default list styling */
+}
+
+.tab-menu a {
+    display: inline-block;
+    text-decoration: none; /* Removes underline */
+    color: black; /* Text color */
+    transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.tab-menu a:hover {
+    transform: scale(1.1); /* Enlarges the link elements on hover */
+}
+
+.img-new {
+    width: 150px; /* Specify width */
+    height: 140px; /* Specify height */
+    display: block; /* Ensures the image takes the full space of <img> tag */
+    margin: 0 auto; /* Centers the image horizontally */
+    border: 1px solid #ccc; /* Adds a border around the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.cat-title {
+    text-align: center; /* Centers the category title */
+    margin-top: 5px; /* Space between image and title */
+}
+
+</style>
 <!-- BLGO-AREA END -->
 <!-- SUBSCRIVE-AREA START -->
 <div class="subscribe-area pt-80">
@@ -664,9 +665,8 @@
             <div class="col-lg-12">
                 <div class="subscribe">
                     <form action="#">
-                        <input type="text" placeholder="Enter your email address" />
-                        <button class="submit-button submit-btn-2 button-one" data-text="subscribe"
-                            type="submit">subscribe</button>
+                        <input type="text" placeholder="Enter your email address"/>
+                        <button class="submit-button submit-btn-2 button-one" data-text="subscribe" type="submit" >subscribe</button>
                     </form>
                 </div>
             </div>
@@ -685,8 +685,8 @@
                         <h3 class="footer-title  title-border">Contact Us</h3>
                         <ul class="footer-contact">
                             <li><span>Address :</span>13 phố Trịnh Văn Bô
-                                phường Phương Canh, Nam Từ Liêm
-                                TP Hà Nội.</li>
+                              phường Phương Canh, Nam Từ Liêm
+                              TP Hà Nội.</li>
                             <li><span>Cell-Phone :</span>098746245-1199388769</li>
                             <li><span>Email :</span>nhom11@gmail.com</li>
                         </ul>
@@ -753,8 +753,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="copyright">
-                        <p class="mb-0">&copy; <a href="https://themeforest.net/user/codecarnival/portfolio"
-                                target="_blank"> CodeCarnival </a> 2022. All Rights Reserved.</p>
+                        <p class="mb-0">&copy; <a href="https://themeforest.net/user/codecarnival/portfolio" target="_blank"> CodeCarnival  </a> 2022. All Rights Reserved.</p>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -772,21 +771,20 @@
 </footer>
 <!-- FOOTER END -->
 <!-- QUICKVIEW PRODUCT -->
-shop
+ shop
 <div id="quickview-wrapper">
-    <!-- Modal -->
-    <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
+   <!-- Modal -->
+   <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
                     <div class="modal-product">
                         <div class="product-images">
                             <div class="main-image images">
-                                <img alt="#" src="img/product/quickview-photo.jpg" />
+                                <img alt="#" src="img/product/quickview-photo.jpg"/>
                             </div>
                         </div><!-- .product-images -->
 
@@ -810,21 +808,16 @@ shop
                                 </form>
                             </div>
                             <div class="quick-desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est
-                                tristique auctor. Donec non est at libero.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero.
                             </div>
                             <div class="social-sharing">
                                 <div class="widget widget_socialsharing_widget">
                                     <h3 class="widget-title-modal">Share this product</h3>
                                     <ul class="social-icons">
-                                        <li><a target="_blank" title="Google +" href="#" class="gplus social-icon"><i
-                                                    class="zmdi zmdi-google-plus"></i></a></li>
-                                        <li><a target="_blank" title="Twitter" href="#" class="twitter social-icon"><i
-                                                    class="zmdi zmdi-twitter"></i></a></li>
-                                        <li><a target="_blank" title="Facebook" href="#" class="facebook social-icon"><i
-                                                    class="zmdi zmdi-facebook"></i></a></li>
-                                        <li><a target="_blank" title="LinkedIn" href="#" class="linkedin social-icon"><i
-                                                    class="zmdi zmdi-linkedin"></i></a></li>
+                                        <li><a target="_blank" title="Google +" href="#" class="gplus social-icon"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                        <li><a target="_blank" title="Twitter" href="#" class="twitter social-icon"><i class="zmdi zmdi-twitter"></i></a></li>
+                                        <li><a target="_blank" title="Facebook" href="#" class="facebook social-icon"><i class="zmdi zmdi-facebook"></i></a></li>
+                                        <li><a target="_blank" title="LinkedIn" href="#" class="linkedin social-icon"><i class="zmdi zmdi-linkedin"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -833,8 +826,8 @@ shop
                 </div><!-- .modal-body -->
             </div><!-- .modal-content -->
         </div><!-- .modal-dialog -->
-    </div>
-    <!-- END Modal -->
+   </div>
+   <!-- END Modal -->
 </div>
 <!-- END QUICKVIEW PRODUCT -->
 
@@ -843,4 +836,4 @@ shop
 
 <!-- all js here -->
 <!-- jquery latest version -->
-Address
+Address 

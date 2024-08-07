@@ -39,12 +39,12 @@ function loadAll_sanpham_moi(){
     $listsp = pdo_query($sql);
     return $listsp;
 }
-// function loadAll_sanpham_yeuthich_top10()
-// {
-//     $sql = "SELECT * FROM san_pham ORDER BY luot_xem DESC LIMIT 8";
-//     $listspyt = pdo_query($sql);
-//     return $listspyt;
-// }
+function loadAll_sanpham_yeuthich_top8()
+{
+    $sql = "SELECT * FROM san_pham ORDER BY luot_xem DESC LIMIT 8";
+    $listspyt = pdo_query($sql);
+    return $listspyt;
+}
 
 function loadone_sanpham($id){
     $sql = "SELECT * FROM san_pham WHERE id ='$id'";
@@ -210,9 +210,9 @@ function viewcart($del)
             <td></td>
             <td class="product-thumbnail"><img src="' . $hinh . '" alt="Digital Product" style="width:150px;"></a></td>
             <td class="product-title"><a href="single-product.html">' . $cart['1'] . '</a></td>
-            <td class="product-price" data-title="Price">' . $cart['3'] . '$</td>
+            <td class="product-price" data-title="Price">' . $cart['3'] . '</td>
             <td class="product-quantity" data-title="Qty">' . $cart['4'] . '</td>   
-            <td class="product-subtotal" data-title="Subtotal">' . $cart['5'] . '$</td>
+            <td class="product-subtotal" data-title="Subtotal">' . $cart['5'] . '</td>
             ' . $xoa . '
         </tr></tbody>';
         $i += 1;
@@ -220,7 +220,7 @@ function viewcart($del)
     echo '
     <tr>    
         <td colspan = "5"><strong>Tổng đơn hàng</strong></td>
-        <td colspan = "2"><strong>' . $tong . '$</strong></td>  
+        <td colspan = "2"><strong>' . $tong . '</strong></td>  
     </tr>';
 }
 

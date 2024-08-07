@@ -168,7 +168,7 @@ body {
     <div class="signin-header">
         <div class="row align-items-center">
             <div class="col-md-6">
-                <a href="index.php" class="site-logo"><img src="img/logo/logo1.png" alt="logo"></a>
+                <a href="index.php" class="site-logo"><img src="img/logo/logo2.png" alt="logo"></a>
             </div>
             <div class="col-md-6">
                 <div class="singin-header-btn">

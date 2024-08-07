@@ -18,101 +18,101 @@
     <link rel="stylesheet" href="admincss/css/listing.css">
     <link rel="stylesheet" href="admincss/css/liststyle.css">
 
-    <title>Sneaker 1998</title>
+    <title>UniQue</title>
 </head>
 
 <body>
 
 
-    <!-- SIDEBAR -->
-    <section id="sidebar">
-        <a href="#" class="brand">
-            <i class='bx bxs-alarm-add	'></i>
-            <span class="text">Sneaker 1998</span>
-        </a>
-        <ul class="side-menu top">
-            <li class="">
-                <a href="index.php?act=home">
-                    <i class='bx bxs-dashboard'></i>
-                    <span class="text">Trang Chủ</span>
-                </a>
-            </li>
+<!-- SIDEBAR -->
+<section id="sidebar">
+    <a href="#" class="brand">
+        <i class='bx bxs-alarm-add	'></i>
+        <span class="text">UniQue</span>
+    </a>
+    <ul class="side-menu top">
+        <li class="">
+            <a href="index.php?act=home">
+                <i class='bx bxs-dashboard'></i>
+                <span class="text">Trang Chủ</span>
+            </a>
+        </li>
 
 
-            <li class="">
-                <a href="index.php?act=listdm">
-                    <i class='bx bxs-category'></i>
-                    <span class="text">Quản lý danh mục</span>
-                </a>
-            </li>
+        <li class="">
+            <a href="index.php?act=listdm">
+                <i class='bx bxs-category'></i>
+                <span class="text">Danh Mục</span>
+            </a>
+        </li>
 
-            <li class="">
-                <a href="index.php?act=listsp">
-                    <i class='bx bxs-shopping-bag'></i>
-                    <span class="text">Quản lý sản phẩm</span>
-                </a>
-            </li>
+        <li class="">
+            <a href="index.php?act=listsp">
+                <i class='bx bxs-shopping-bag'></i>
+                <span class="text">Sản Phẩm</span>
+            </a>
+        </li>
 
-            <li class="">
-                <a href="index.php?act=listnd">
-                    <i class='bx bxs-group'></i>
-                    <span class="text">Quản lý khách hàng</span>
-                </a>
-            </li>
-            <li class="">
-                <a href="index.php?act=listbl">
-                    <i class='bx bxs-message-dots'></i>
-                    <span class="text">Quản lý bình luận</span>
-                </a>
-            </li>
-            <li class="">
-                <a href="index.php?act=listhd">
-                    <i class='bx bxs-shopping-bag-alt'></i>
-                    <span class="text">Quản lý đơn hàng</span>
-                </a>
-            </li>
-            <li class="">
-                <a href="index.php?act=listthongke">
-                    <i class='bx bxs-doughnut-chart'></i>
-                    <span class="text">Thống Kê Doanh Thu</span>
-                </a>
-            </li>
-            <li class="">
-                <a href="index.php?act=listcv">
-                    <i class='bx bxs-chart'></i>
-                    <span class="text">Quản lý chức vụ</span>
-                </a>
-            </li>
-            <li class="">
-                <a href="index.php?act=listbv">
-                    <i class='bx bxs-chart'></i>
-                    <span class="text">Quản lý bài viết</span>
-                </a>
-            </li>
+        <li class="">
+            <a href="index.php?act=listnd" >
+                <i class='bx bxs-group'></i>
+                <span class="text">Khách Hàng</span>
+            </a>
+        </li>
+        <li class="">
+            <a href="index.php?act=listbl">
+                <i class='bx bxs-message-dots'></i>
+                <span class="text">Bình Luận</span>
+            </a>
+        </li>
+        <li class="">
+            <a href="index.php?act=listhd">
+                <i class='bx bxs-shopping-bag-alt'></i>
+                <span class="text">Quản Lý Đơn Hàng</span>
+            </a>
+        </li>
+        <li class="">
+            <a href="index.php?act=listthongke">
+                <i class='bx bxs-doughnut-chart'></i>
+                <span class="text">Thống Kê Doanh Thu</span>
+            </a>
+        </li>
+        <li class="">
+            <a href="index.php?act=listcv">
+                <i class='bx bxs-chart'></i>
+                <span class="text">Quản lý chức vụ</span>
+            </a>
+        </li>
+        <li class="">
+            <a href="index.php?act=listbv">
+                <i class='bx bxs-chart'></i>
+                <span class="text">Quản lý bài viết</span>
+            </a>
+        </li>
 
-            <li class="">
-                <a href="../index.php" class="brand-link">
-                    <i class='bx bxs-user'></i>
-                    <span class="text">Trang Người Dùng</span>
-                </a>
-            </li>
+        <li class="">
+            <a href="../index.php" class="brand-link">
+                <i class='bx bxs-user'></i>
+                <span class="text">Trang Người Dùng</span>
+            </a>
+        </li>
+
+    </ul>
+
+</section>
+<section id="content">
+    <nav>
+        <i class='bx bx-menu'></i>
+
+        <form action="#">
+            <div class="form-input">
+                <input type="search" placeholder="Search...">
+                <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+            </div>
+        </form>
+        <input type="checkbox" id="switch-mode" hidden>
+        <label for="switch-mode" class="switch-mode"></label>
+
 
         </ul>
-
-    </section>
-    <section id="content">
-        <nav>
-            <i class='bx bx-menu'></i>
-
-            <form action="#">
-                <div class="form-input">
-                    <input type="search" placeholder="Search...">
-                    <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
-                </div>
-            </form>
-            <input type="checkbox" id="switch-mode" hidden>
-            <label for="switch-mode" class="switch-mode"></label>
-
-
-            </ul>
-        </nav>
+    </nav>

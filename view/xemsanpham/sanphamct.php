@@ -319,7 +319,7 @@ document.addEventListener('DOMContentLoaded', function() {
 													<ul class="product-comments clearfix">
 										           <li class="mb-30">
 														<div class="pro-reviewer">
-															<img src="img/logobinhluan.jfif" alt="" />
+															<img src="img/logobinhluan.png" alt="" />
 														</div>
 														<div class="pro-reviewer-comment">
 															<div class="fix">
