@@ -240,7 +240,31 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+<style>
+	input[type="submit"] {
+    /* Basic styling */
+    background-color: #007bff; /* Primary blue color */
+    color: white; /* Text color */
+    border: none; /* Removes the border */
+    padding: 10px 20px; /* Top and bottom padding, left and right padding */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Makes the text bold */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth background color and transform transition */
+}
 
+input[type="submit"]:hover, input[type="submit"]:focus {
+    background-color: #0056b3; /* Darker blue when hovered or focused */
+    transform: scale(1.05); /* Slightly increase size on hover and focus */
+}
+
+input[type="submit"]:active {
+    background-color: #004080; /* Even darker blue when active/clicked */
+    transform: scale(0.98); /* Slightly decrease size when clicked */
+}
+
+</style>
 
 
 						<!-- Single-pro-slider Small-photo end -->
@@ -346,7 +370,7 @@ document.addEventListener('DOMContentLoaded', function() {
 														<textarea class="form-control" name="noidung" cols="30" rows="3"
 															placeholder="Viết đánh giá để mọi người có thể hiểu hơn về sản phẩm"></textarea>
 													</div>
-													<button class="btn_1" name="guibinhluan">Gửi bình luận</button>
+													<input type="submit" name="guibinhluan" value="Gửi bình luận"> 
 												<?php else: ?>
 													<div class="form-group">
 														Vui lòng đăng nhập để bình luận!
